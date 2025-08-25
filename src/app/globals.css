@@ -29,7 +29,7 @@ body {
 
 @layer components {
     .container {
-        @apply px-6 mx-auto md:!max-w-[78rem];
+        @apply px-6 mx-auto md:!max-w-[80rem];
     }
 }
 
