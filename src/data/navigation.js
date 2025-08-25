@@ -1,0 +1,41 @@
+// data/navigation.js
+export const navItems = [
+    { path: "#about", label: "À propos" },
+    { path: "#work", label: "Réalisations" },
+    { path: "#process", label: "Processus" },
+    { path: "#price", label: "Offres" },
+    { path: "#faq", label: "FAQ" }
+];
+
+export const navItemsMobile = [
+    { path: "#about", label: "À propos" },
+    { path: "#work", label: "Réalisations" },
+    { path: "#process", label: "Processus" },
+    { path: "#price", label: "Offres" },
+    { path: "#faq", label: "FAQ" }
+];
+
+export const contactLinks = [
+    { title: "pro@simontessard.fr", href: "mailto:pro@simontessard.fr", target: "_blank" }
+];
+
+export const navigationLinks1 = [
+    { title: "À propos", href: "#about" },
+    { title: "Réalisations", href: "#work" },
+    { title: "Processus", href: "#process" },
+];
+
+export const navigationLinks2 = [
+    { title: "Offres", href: "#price" },
+    { title: "Témoignages", href: "#testimonials" },
+    { title: "FAQ", href: "#faq" }
+];
+
+export const navigationSecondaryLinks = [
+    { title: "Training Thérapie", href: "https://www.training-therapie.fr/" },
+    { title: "Training Thérapie Pro", href: "https://pros.training-therapie.fr/" },
+    { title: "Festival Ciné Citoyen", href: "https://festival-cinecitoyen.ouest-france.fr/" },
+    { title: "Festival Film de Demain", href: "https://filmdedemain.fr" },
+    { title: "Maxime Le Bec", href: "https://maximelebec.fr" },
+    { title: "Iniva Hôtel", href: "https://inivatourism.com/" }
+];

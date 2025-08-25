@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Training Thérapie Pro",
+    "description": "Site e-commerce pour des kinésithérapeutes, avec catalogue de produits, panier et paiement en ligne.",
+    "image": "/projects/project-tt.jpg",
+    "logo": "/projects/logo-tt-pro.png",
+    "url": "https://pros.training-therapie.fr/"
+  },
+  {
+    "title": "Festival du Film de Demain",
+    "description": "Site vitrine pour un festival de cinéma, présentant les films, le programme et les informations pratiques.",
+    "image": "/projects/project-fdd.jpg",
+    "logo": "/projects/logo-ffd.webp",
+    "url": "https://filmdedemain.fr"
+  },
+  {
+    "title": "Iniva Hôtel",
+    "description": "Site vitrine pour un hôtel avec présentation des chambres, services et réservation en ligne. Mise en avant des activités locales.",
+    "image": "/projects/mockup.jpg",
+    "logo": "/projects/logo-iniva.png",
+    "url": "https://inivatourism.com/"
+  },
+  {
+    "title": "Maxime Le Bec",
+    "description": "Un site vitrine pour un graphiste freelance, avec portfolio, témoignages clients et formulaire de contact.",
+    "image": "/projects/mockup-maxim.jpg",
+    "logo": "/projects/logo-maxime.png",
+    "url": "https://maximelebec.fr"
+  },
+
+  {
+    "title": "Festival Ciné Citoyen",
+    "description": "Site vitrine pour un festival de cinéma, présentant les films, le programme et les informations pratiques.",
+    "image": "/projects/project-cc.jpg",
+    "logo": "/projects/logo-fcc.png",
+    "url": "https://festival-cinecitoyen.ouest-france.fr/"
+  }
+]

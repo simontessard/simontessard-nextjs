@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Jonathan Lecompte",
+    "role": "CEO",
+    "company": "Agence Novastra",
+    "text": "J'ai fait appel à Simon pour m'accompagner sur la création du site web d’un de mes clients. Il a su s’adapter rapidement aux besoins du projet. Une collaboration efficace et professionnelle !",
+    "img": "collab/novastra.png"
+  },
+  {
+    "name": "Maxime Le bec",
+    "role": "Graphiste",
+    "company": "Freelance",
+    "text": "Simon et moi avons collaboré à la refonte de mon portfolio. Il a su développer la maquette que je lui avais fournie avec une grande précision, respectant chaque détail au pixel près. Le projet a été mené rapidement et efficacement.",
+    "img": "collab/maxim.png",
+    "linkedin": "https://www.linkedin.com/in/maxime-le-bec-805079185/"
+  }
+]

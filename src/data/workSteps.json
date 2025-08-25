@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "number": "01",
+    "title": "On fait connaissance ?",
+    "description": "Je prends le temps de comprendre vos besoins lors d'un entretien approfondi. Nous explorons ensemble votre projet, vos objectifs et vos attentes pour définir la meilleure approche technique."
+  },
+  {
+    "id": 2,
+    "number": "02",
+    "title": "Place à la préparation",
+    "description": "Je conçois une solution sur mesure et établis un planning détaillé. Vous recevez une proposition claire incluant les spécifications techniques, les délais et le budget pour une transparence totale."
+  },
+  {
+    "id": 3,
+    "number": "03",
+    "title": "On donne vie à vos idées",
+    "description": "Je code votre projet avec rigueur et passion, en appliquant les meilleures pratiques. Des points réguliers vous permettent de suivre l'avancement et d'ajuster si nécessaire."
+  },
+  {
+    "id": 4,
+    "number": "04",
+    "title": "À vos côtés",
+    "description": "Une fois votre projet finalisé et testé, je vous accompagne dans sa mise en ligne. Mon engagement ne s'arrête pas là : je reste disponible pour vous former et assurer la maintenance."
+  }
+]

@@ -1,0 +1,74 @@
+'use client';
+
+import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import BackHome from "@/app/components/header/BackHome";
+import Nav from "@/app/components/header/Nav";
+import MenuButton from "@/app/components/header/MenuButton";
+import CTABase from "@/app/components/ui/CTABase";
+import Menu from "@/app/components/header/Menu";
+
+export default function Header() {
+    const headerRef = useRef(null);
+
+    useEffect(() => {
+        const el = headerRef.current;
+        if (!el) return;
+
+        // entrée du header (depuis -translate-y-[150%])
+        gsap.to(el, { y: 0, delay: 1, duration: 0.6, ease: 'circ.out' });
+
+        const mm = gsap.matchMedia();
+
+        mm.add('(min-width: 1650px)', () => {
+            const animHeader = gsap.timeline({ paused: true });
+
+            animHeader.to(el, { yPercent: -150, duration: 0.6, ease: 'circ.in' });
+
+            const st = ScrollTrigger.create({
+                trigger: el,
+                start: '+=400px',
+                end: 99999,
+                onUpdate: (self) => {
+                    self.direction === -1 ? animHeader.reverse() : animHeader.play();
+                },
+                onEnter: () => el.classList.add('css-backdrop-filter', 'lg:bg-black/40'),
+                onLeave: () => el.classList.remove('css-backdrop-filter', 'lg:bg-black/40'),
+            });
+
+            return () => {
+                st.kill();
+                animHeader.kill();
+            };
+        });
+
+        return () => mm.revert();
+    }, []);
+
+    return (
+        <>
+            <header
+                style={{backdropFilter: 'blur(10px)'}}
+                ref={headerRef}
+                className="js-header fixed left-0 top-0 z-99 -translate-y-[150%] pointer-events-none
+                   flex items-center w-full py-2 transition-colors duration-500"
+            >
+                <div className="container size-fit max-lg:flex max-lg:justify-between py-2 2xl:px-6 items-center rounded-xl lg:grid lg:grid-cols-5 w-full">
+                    <BackHome />
+                    <Nav />
+                    <MenuButton />
+                    <CTABase
+                        variant="white"
+                        to="mailto:pro@simontessard.fr"
+                        text="Prendre contact"
+                        customClass="max-lg:hidden ml-auto"
+                    />
+                </div>
+            </header>
+
+            <Menu />
+
+        </>
+    );
+}

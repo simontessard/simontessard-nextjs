@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Site One Page*",
+    "citation": "Une page unique, conçue pour convertir.",
+    "description": "Parfait pour les entrepreneurs et entreprises souhaitant une présence en ligne claire, impactante et rapide à déployer.",
+    "list": [
+      "Sections modulables selon les objectifs",
+      "Optimisation pour la conversion (CRO)",
+      "Design UI/UX Figma sur-mesure",
+      "Référencement naturel (SEO)",
+      "Gestion de contenu via CMS adapté",
+      "Hiérarchie de contenu pensée pour convaincre",
+      "Animations valorisant l’image de marque",
+      "Rendu mobile moderne",
+      "Livraison très rapide"
+    ],
+    "price": "1990€"
+  },
+  {
+    "title": "Site Complet",
+    "citation": "Multi-pages, pensé pour évoluer avec votre activité.",
+    "description": "Idéal pour les entrepreneurs et entreprises souhaitant un site complet pour présenter leur activité et attirer des clients.",
+    "list": [
+      "Architecture complète et évolutive",
+      "Arborescence multipages",
+      "Design UI/UX Figma sur-mesure",
+      "Référencement naturel (SEO)",
+      "Gestion de contenu via CMS adapté",
+      "Hiérarchie de contenu pensée pour convaincre",
+      "Animations valorisant l’image de marque",
+      "Rendu mobile moderne",
+      "Accompagnement personnalisé de A à Z"
+    ],
+    "price": "Sur devis",
+    "popular": true
+  }
+]
