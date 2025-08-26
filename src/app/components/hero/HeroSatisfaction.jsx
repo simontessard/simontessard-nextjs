@@ -60,7 +60,7 @@ export default function HeroSatisfaction() {
                     className="js-hero-satisfaction--bull scale-60 opacity-0 shrink-0 object-cover rounded-full size-10"
                 />
                 <img
-                    src="/placeholders/placeholder-1.jpg"
+                    src="/placeholders/photographer.jpg"
                     alt=""
                     className="js-hero-satisfaction--bull scale-60 opacity-0 -translate-x-10 shrink-0 rounded-full object-cover size-10"
                 />

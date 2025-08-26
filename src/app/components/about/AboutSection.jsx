@@ -25,7 +25,7 @@ export default function AboutSection() {
                         />
                     </a>
 
-                    <div className="shrink-0 flex flex-col justify-between w-full lg:py-1 lg:w-1/2 lg:aspect-square rounded-xl h-full">
+                    <div className="flex flex-col justify-between min-h-max lg:py-1 w-full lg:w-1/2 lg:aspect-square rounded-xl">
                         <div>
                             <Uptitle withScrollTrigger className="mb-4 md:mb-5 xl:mb-6 text-start">
                                 Qui suis-je ?
@@ -58,7 +58,6 @@ export default function AboutSection() {
                                 Expert en design et en expérience utilisateur, nous concevons des sites modernes et efficaces, pensés
                                 pour répondre aux besoins des entrepreneurs, artisans et petites entreprises.
                             </AnimText>
-
                         </div>
 
                         <CTABase
