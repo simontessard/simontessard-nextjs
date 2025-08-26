@@ -20,7 +20,7 @@ export default function HeroSection() {
             <div className="container flex justify-between items-end">
                 <div className="flex flex-col items-center mx-auto">
                     <Uptitle className="text-white">
-                        Création de sites web
+                        Création & refonte de sites web
                     </Uptitle>
 
                     <AnimText
@@ -38,7 +38,7 @@ export default function HeroSection() {
                        lg:text-xl mb-6 md:mb-8"
                     >
                         On combine technologie, performance et design <br />
-                        pour créer ou refondre votre site internet.
+                        pour créer ou refondre votre site web.
                     </AnimParagraph>
 
                     <CTABase

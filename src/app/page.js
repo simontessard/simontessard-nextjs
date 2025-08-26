@@ -9,14 +9,15 @@ import FAQSection from "@/app/components/faq/FaqSection";
 import CtaSection from "@/app/components/cta/CtaSection";
 import ProjectsSection from "@/app/components/projects/ProjectsSection";
 import CompareImageSection from "@/app/components/compare/CompareImageSection";
+import CountUpSection from "@/app/components/dividers/CountUpSection";
 
 export default function Home() {
   return (
     <main>
       <HeroSection/>
-      <AboutSection/>
       <CompareImageSection/>
-      <BrandList/>
+      <AboutSection/>
+      <CountUpSection/>
       <ProjectsSection/>
       <ProcessSection/>
       <Citation/>
