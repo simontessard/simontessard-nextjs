@@ -46,18 +46,25 @@ export default function AboutSection() {
                                 tag="p"
                                 className="font-figtree tracking-tight font-light md:text-lg xl:text-xl"
                             >
-                                Passionné par la création de sites web performants, j’aime (re)donner vie à des
-                                entreprises sur la toile.
+                                Expert en intégration d'interface et en expérience utilisateur, je conçois des sites marquants,
+                                pensés pour que vos visiteurs deviennent vos clients.
                             </AnimText>
-
                             <AnimText
                                 withScrollTrigger
                                 tag="p"
                                 className="font-figtree tracking-tight font-light md:text-lg xl:text-xl"
                             >
-                                Expert en intégration d'interface et en expérience utilisateur, je conçois des sites marquants,
-                                pensés pour que vos visiteurs deviennent vos clients.
+                                Chaque interaction devient une expérience : j’anime vos idées pour transformer un simple site en une vitrine digitale mémorable.
                             </AnimText>
+                            <AnimText
+                                withScrollTrigger
+                                tag="p"
+                                className="font-figtree tracking-tight font-light md:text-lg xl:text-xl"
+                            >
+                                En tant que freelance, je vous accompagne avec flexibilité et réactivité pour livrer des sites uniques, adaptés à vos objectifs et à votre image.
+                            </AnimText>
+
+
                         </div>
 
                         <CTABase

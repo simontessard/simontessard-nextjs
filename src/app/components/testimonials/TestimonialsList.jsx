@@ -120,8 +120,7 @@ export const AnimatedTestimonials = ({
                         <p className="font-figtree text-sm text-gray-500">
                             {testimonials[active].designation}
                         </p>
-                        <motion.p className="mt-8 text-lg text-gray-600">
-                            <span className="pr-1">«</span>
+                        <motion.p className="font-figtree tracking-tight italic mt-8 text-lg text-gray-600">
                             {testimonials[active].quote.split(" ").map((word, index) => (
                                 <motion.span
                                     key={index}
@@ -140,27 +139,26 @@ export const AnimatedTestimonials = ({
                                         ease: "easeInOut",
                                         delay: 0.02 * index,
                                     }}
-                                    className="inline-block italic"
+                                    className="inline-block"
                                 >
                                     {word}&nbsp;
                                 </motion.span>
 
                             ))}
-                            »
                         </motion.p>
                     </motion.div>
                     <div className="flex gap-2.5 pt-12 md:pt-0">
                         <button
                             onClick={handlePrev}
-                            className="group/button cursor-pointer flex size-8 md:size-10 items-center justify-center rounded-xl bg-gray-100"
+                            className="group/button cursor-pointer flex size-10 md:size-12 items-center justify-center rounded-xl bg-black"
                         >
-                            <IconArrowLeft className="size-5 md:size-6 text-black transition-transform duration-300" />
+                            <IconArrowLeft className="size-5 md:size-6 text-white transition-transform duration-300" />
                         </button>
                         <button
                             onClick={handleNext}
-                            className="group/button cursor-pointer flex size-8 md:size-10 items-center justify-center rounded-xl bg-gray-100"
+                            className="group/button cursor-pointer flex size-10 md:size-12 items-center justify-center rounded-xl bg-black"
                         >
-                            <IconArrowRight className="size-5 md:size-6 text-black transition-transform duration-300" />
+                            <IconArrowRight className="size-5 md:size-6 text-white transition-transform duration-300" />
                         </button>
                     </div>
                 </div>
