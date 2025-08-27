@@ -20,6 +20,7 @@ export const contactLinks = [
 ];
 
 export const navigationLinks1 = [
+    { title: "Transformation", href: "#compare" },
     { title: "À propos", href: "#about" },
     { title: "Réalisations", href: "#work" },
     { title: "Processus", href: "#process" },

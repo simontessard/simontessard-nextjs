@@ -5,7 +5,8 @@ import {Compare} from "@/app/components/compare/Compare";
 
 export default function CompareImageSection() {
     return (
-        <section className="section-white bg-white-secondary py-16 md:py-18 xl:py-22 2xl:py-26">
+        <section id="compare"
+            className="section-white bg-white-secondary py-16 md:py-18 xl:py-22 2xl:py-26">
 
             <div className="container">
                 <Uptitle className="text-black" withScrollTrigger>Avant / Après</Uptitle>
@@ -32,7 +33,7 @@ export default function CompareImageSection() {
                 <div className="p-4 border border-neutral-800 rounded-3xl bg-neutral-900 mb-8 xl:mb-10 2xl:mb-12">
                     <Compare
                         firstImage="/compare.png"
-                        secondImage="/after.png"
+                        secondImage="/after-fdd.png"
                         firstImageClassName="object-cover object-left-top"
                         secondImageClassname="object-cover object-left-top"
                         className="aspect-[16/9] size-full"
