@@ -1,7 +1,7 @@
 import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";
-import CompareComponent from "@/app/components/compare/CompareComponent";
 import CTABase from "@/app/components/ui/CTABase";
+import {Compare} from "@/app/components/compare/Compare";
 
 export default function CompareImageSection() {
     return (
@@ -29,7 +29,17 @@ export default function CompareImageSection() {
                     qui reflète vos ambitions et capte leur attention.
                 </AnimText>
 
-                <CompareComponent/>
+                <div className="p-4 border border-neutral-800 rounded-3xl bg-neutral-900 mb-8 xl:mb-10 2xl:mb-12">
+                    <Compare
+                        firstImage="/compare.png"
+                        secondImage="/after.png"
+                        firstImageClassName="object-cover object-left-top"
+                        secondImageClassname="object-cover object-left-top"
+                        className="aspect-[16/9] size-full"
+                        slideMode="hover"
+                        autoplay={true}
+                    />
+                </div>
 
                 <CTABase
                     withScrollTrigger
