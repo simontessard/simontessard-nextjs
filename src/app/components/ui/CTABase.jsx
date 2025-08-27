@@ -7,14 +7,14 @@ import { gsap } from 'gsap';
 function TextFlip({ text, innerRef }) {
     return (
         <span ref={innerRef} className="relative shrink-0 flex size-fit opacity-0 translate-y-2">
-      <span className="inline-block size-fit relative overflow-hidden">
-        <span className="inline-block md:group-hover:-translate-y-full transition-transform duration-700 ease-in-out">
-          {text}
-        </span>
-        <span className="max-md:hidden absolute left-0 bottom-0 translate-y-full md:group-hover:translate-y-0 transition-transform duration-700 ease-in-out inline-block size-fit">
-          {text}
-        </span>
-      </span>
+            <span className="inline-block size-fit relative overflow-hidden">
+                <span className="inline-block md:group-hover:-translate-y-full transition-transform duration-700 ease-in-out">
+                    {text}
+                </span>
+                <span className="max-md:hidden absolute left-0 bottom-0 translate-y-full md:group-hover:translate-y-0 transition-transform duration-700 ease-in-out inline-block size-fit">
+                    {text}
+                </span>
+            </span>
     </span>
     );
 }
@@ -34,8 +34,8 @@ export default function CTABase({
     const tlRef = useRef(null);
 
     const variantClasses = {
-        black: 'bg-black border-4 border-[#ffffff29] text-white',
-        white: 'bg-white text-black border-4 border-[#ffffff29]',
+        black: 'bg-black border-4 border-black text-white',
+        white: 'bg-white border-4 border-[#ffffff29] text-black',
         blue: 'bg-theme-primary border-4 border-[#ffffff29] text-white',
     };
 

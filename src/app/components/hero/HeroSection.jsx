@@ -41,18 +41,20 @@ export default function HeroSection() {
                         conçus pour marquer les esprits.
                     </AnimParagraph>
 
-                    <CTABase
-                        hideArrow={true}
-                        target="#work"
-                        text="Dernières réalisations"
-                        customClass="max-md:hidden mb-8 xl:mb-10"
-                    />
+                    <div className="flex gap-4 mb-8 md:mb-10">
+                        <CTABase
+                            hideArrow={true}
+                            target="#work"
+                            text="Dernières réalisations"
+                            customClass="hidden"
+                        />
 
-                    <CTABase
-                        to="mailto:pro@simontessard.fr"
-                        text="Prendre contact"
-                        customClass="md:hidden mb-8"
-                    />
+                        <CTABase
+                            variant="black"
+                            to="mailto:pro@simontessard.fr"
+                            text="Prendre contact"
+                        />
+                    </div>
 
                     <HeroSatisfaction/>
                 </div>
