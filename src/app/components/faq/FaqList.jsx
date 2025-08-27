@@ -1,11 +1,10 @@
 'use client';
 
-import React, { useEffect, useRef, useState, memo } from 'react';
+import { useEffect, useRef, useState, memo } from 'react';
 import { gsap } from 'gsap';
 import rawFaq from '@/data/faq.json';
 import AnimText from '@/app/components/utils/AnimText';
 
-// ✅ Empêche les re-renders inutiles de l'anim au clic
 const MemoAnimText = memo(
     AnimText,
     (prev, next) =>

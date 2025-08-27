@@ -12,10 +12,9 @@ export default function FaqInfo() {
                     Encore des questions ?
                 </AnimText>
 
-                <span className="text-gray-500 text-sm">
-          <span className="inline-block size-2 rounded-xs bg-gray-500 mr-2"></span>
-          Je suis là pour vous guider.
-        </span>
+                <p className="text-gray-500 text-sm">
+                    Je suis là pour vous guider.
+                </p>
             </div>
 
             <svg

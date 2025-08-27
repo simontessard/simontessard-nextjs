@@ -6,7 +6,7 @@ import CTABase from "@/app/components/ui/CTABase";
 import Uptitle from "@/app/components/utils/Uptitle";
 import HeroSatisfaction from "@/app/components/hero/HeroSatisfaction";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
-import ButtonRotatingGradient from "@/app/components/ui/GradientButton";
+import ShinyText from "@/app/components/ui/ShinyText";
 
 export default function HeroSection() {
     return (
