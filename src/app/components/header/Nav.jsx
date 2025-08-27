@@ -22,7 +22,7 @@ export default function Nav() {
                         <a
                             href={item.path || '#'}
                             onClick={(e) => scrollTo(e, item.path)}
-                            className="group flex relative text-white py-[1.15rem] font-light font-figtree px-4 size-fit"
+                            className="group flex relative text-black py-[1.15rem] font-figtree px-4 size-fit"
                         >
               <span className="relative inline-block overflow-hidden size-fit mx-auto">
                 <span className="inline-block md:group-hover:-translate-y-full transition-transform duration-700 ease-in-out">

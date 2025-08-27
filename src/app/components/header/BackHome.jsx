@@ -17,11 +17,11 @@ export default function BackHome() {
         <a
             href="#"
             onClick={scrollToTop}
-            className="js-back-home group block size-fit pointer-events-auto"
+            className="js-back-home group block size-fit lg:bg-theme-primary rounded-lg lg:p-1 pointer-events-auto"
             aria-label="Revenir en haut de page"
         >
             <img
-                className="size-13 md:size-16"
+                className="size-13 lg:size-11"
                 src="/logotest.png"
                 alt="Scroll to top icon"
             />

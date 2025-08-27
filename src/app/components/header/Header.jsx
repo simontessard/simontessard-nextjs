@@ -33,8 +33,8 @@ export default function Header() {
                 onUpdate: (self) => {
                     self.direction === -1 ? animHeader.reverse() : animHeader.play();
                 },
-                onEnter: () => el.classList.add('css-backdrop-filter', 'lg:bg-black/40'),
-                onLeave: () => el.classList.remove('css-backdrop-filter', 'lg:bg-black/40'),
+                // onEnter: () => el.classList.add('css-backdrop-filter', 'lg:bg-black/40'),
+                // onLeave: () => el.classList.remove('css-backdrop-filter', 'lg:bg-black/40'),
             });
 
             return () => {
@@ -48,18 +48,16 @@ export default function Header() {
 
     return (
         <>
-            <header
-                style={{backdropFilter: 'blur(10px)'}}
-                ref={headerRef}
-                className="js-header fixed left-0 top-0 z-99 -translate-y-[150%] pointer-events-none
-                   flex items-center w-full py-2 transition-colors duration-500"
+            <header ref={headerRef}
+                className="js-header fixed  left-0 top-0 lg:top-4 z-99 -translate-y-[150%] pointer-events-none
+                   flex items-center w-full py-1 transition-colors duration-500 lg:px-4"
             >
-                <div className="container size-fit max-lg:flex max-lg:justify-between py-2 2xl:px-6 items-center rounded-xl lg:grid lg:grid-cols-5 w-full">
+                <div className="container lg:bg-white lg:shadow-md size-fit max-lg:flex max-lg:justify-between py-2 2xl:px-6 items-center rounded-xl lg:grid lg:grid-cols-5 w-full">
                     <BackHome />
                     <Nav />
                     <MenuButton />
                     <CTABase
-                        variant="white"
+                        variant="black"
                         to="mailto:pro@simontessard.fr"
                         text="Prendre contact"
                         customClass="max-lg:hidden ml-auto"
@@ -68,7 +66,6 @@ export default function Header() {
             </header>
 
             <Menu />
-
         </>
     );
 }

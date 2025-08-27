@@ -37,8 +37,8 @@ export default function HeroSection() {
                         className="font-figtree font-light text-center text-white/95 tracking-tight leading-[1.6]
                        lg:text-xl mb-6 md:mb-8"
                     >
-                        On combine technologie, performance et design <br />
-                        pour créer ou refondre votre site web.
+                        Des sites web à la croisée de la performance et du design, <br/>
+                        conçus pour marquer les esprits.
                     </AnimParagraph>
 
                     <CTABase

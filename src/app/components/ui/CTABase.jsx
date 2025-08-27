@@ -35,7 +35,7 @@ export default function CTABase({
 
     const baseClasses = [
         'cta-base pointer-events-auto cursor-pointer opacity-0 scale-80 relative group gap-2 flex w-fit items-center',
-        'font-figtree rounded-xl font-medium transition-colors duration-500 px-4 py-2',
+        'font-figtree rounded-xl font-medium transition-colors duration-500 px-4 py-2.5',
         variant === 'black'
             ? 'bg-theme-primary border-4 border-[#ffffff29] text-white'
             : 'bg-white text-black border-4 border-[#ffffff29]',

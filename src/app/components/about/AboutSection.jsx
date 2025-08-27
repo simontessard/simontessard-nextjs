@@ -55,7 +55,7 @@ export default function AboutSection() {
                                 tag="p"
                                 className="font-figtree tracking-tight font-light md:text-lg xl:text-xl"
                             >
-                                Expert en intégration d'interface et en expérience utilisateur, nous concevons des sites marquants,
+                                Expert en intégration d'interface et en expérience utilisateur, je conçois des sites marquants,
                                 pensés pour que vos visiteurs deviennent vos clients.
                             </AnimText>
                         </div>
