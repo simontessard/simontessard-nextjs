@@ -52,7 +52,7 @@ export default function Header() {
                 className="js-header fixed  left-0 top-0 lg:top-4 z-99 -translate-y-[150%] pointer-events-none
                    flex items-center w-full py-1 transition-colors duration-500 lg:px-4"
             >
-                <div className="container lg:bg-white lg:shadow-md size-fit max-lg:flex max-lg:justify-between py-2 2xl:px-6 items-center rounded-xl lg:grid lg:grid-cols-5 w-full">
+                <div className="container lg:bg-white lg:shadow-md size-fit max-lg:flex max-lg:justify-between py-1.5 px-4 items-center rounded-xl lg:grid lg:grid-cols-5 w-full">
                     <BackHome />
                     <Nav />
                     <MenuButton />
