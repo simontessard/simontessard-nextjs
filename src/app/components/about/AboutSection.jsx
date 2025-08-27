@@ -46,8 +46,8 @@ export default function AboutSection() {
                                 tag="p"
                                 className="font-figtree tracking-tight font-light md:text-lg xl:text-xl"
                             >
-                                Passionné par la création de sites web performants et sur-mesure, j’aime (re)donner vie à des
-                                entreprises sur la toile, en maximisant le potentiel de chaque projet.
+                                Passionné par la création de sites web performants, j’aime (re)donner vie à des
+                                entreprises sur la toile.
                             </AnimText>
 
                             <AnimText
@@ -55,8 +55,8 @@ export default function AboutSection() {
                                 tag="p"
                                 className="font-figtree tracking-tight font-light md:text-lg xl:text-xl"
                             >
-                                Expert en design et en expérience utilisateur, nous concevons des sites modernes et efficaces, pensés
-                                pour répondre aux besoins des entrepreneurs, artisans et petites entreprises.
+                                Expert en intégration d'interface et en expérience utilisateur, nous concevons des sites marquants,
+                                pensés pour que vos visiteurs deviennent vos clients.
                             </AnimText>
                         </div>
 
