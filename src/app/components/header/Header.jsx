@@ -57,7 +57,7 @@ export default function Header() {
                     <Nav />
                     <MenuButton />
                     <CTABase
-                        variant="black"
+                        variant="blue"
                         to="mailto:pro@simontessard.fr"
                         text="Prendre contact"
                         customClass="max-lg:hidden ml-auto"

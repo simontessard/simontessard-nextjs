@@ -71,7 +71,7 @@ export default function PriceItem({
                         withScrollTrigger
                         to="mailto:pro@simontessard.fr"
                         text="Choisir cette offre"
-                        variant={popular ? 'black' : undefined}
+                        variant={popular ? 'blue' : undefined}
                         customClass="w-full justify-center"
                     />
                 </div>

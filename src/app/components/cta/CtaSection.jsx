@@ -28,7 +28,7 @@ export default function CtaSection() {
 
                 <CTABase
                     withScrollTrigger
-                    variant="black"
+                    variant="blue"
                     to="mailto:pro@simontessard.fr"
                     text="Prendre contact"
                     customClass="max-md:mx-auto"

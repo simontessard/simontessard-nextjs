@@ -37,7 +37,7 @@ export default function TestimonialsSection() {
 
             <CTABase
                 withScrollTrigger
-                variant="black"
+                variant="blue"
                 to="mailto:pro@simontessard.fr"
                 text="Lancer mon projet"
                 customClass="mx-auto"
