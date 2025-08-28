@@ -3,15 +3,6 @@
 import { useEffect, useRef, useState, memo } from 'react';
 import { gsap } from 'gsap';
 import rawFaq from '@/data/faq.json';
-import AnimText from '@/app/components/utils/AnimText';
-
-const MemoAnimText = memo(
-    AnimText,
-    (prev, next) =>
-        prev.tag === next.tag &&
-        prev.useScrollTrigger === next.useScrollTrigger &&
-        prev.children === next.children // string inchangée => pas de re-render
-);
 
 export default function FaqList() {
     const [faq, setFaq] = useState(() => rawFaq.map((it) => ({ ...it, open: false })));
@@ -86,10 +77,9 @@ export default function FaqList() {
                                 item.open ? 'text-white' : 'md:group-hover:text-white',
                             ].join(' ')}
                         >
-                            {/* ✅ Utilise la version mémoïisée : n’est pas re-rendue au clic */}
-                            <MemoAnimText useScrollTrigger tag="span">
+                            <span>
                                 {item.question}
-                            </MemoAnimText>
+                            </span>
                         </h3>
 
                         <svg

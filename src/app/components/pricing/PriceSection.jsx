@@ -37,7 +37,7 @@ export default function PriceSection() {
                             title={item.title}
                             citation={item.citation}
                             price={item.price}
-                            desc={item.description}      // note: le JSON a "description"
+                            desc={item.description}
                             list={item.list}
                             popular={item.popular}
                         />
