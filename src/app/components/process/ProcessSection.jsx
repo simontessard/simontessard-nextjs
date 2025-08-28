@@ -31,14 +31,6 @@ export default function ProcessSection() {
                 </AnimParagraph>
 
                 <ProcessList />
-
-                <CTABase
-                    withScrollTrigger
-                    variant="blue"
-                    to="mailto:pro@simontessard.fr"
-                    text="Lancer mon projet"
-                    customClass="mx-auto"
-                />
             </div>
         </section>
     );

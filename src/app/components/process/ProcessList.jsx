@@ -48,7 +48,7 @@ export default function ProcessList() {
     return (
         <ul
             className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 xl:gap-x-20 max-lg:gap-y-12
-                 text-black-primary font-figtree tracking-tight max-w-8xl mx-auto size-full mb-8 xl:mb-10 2xl:mb-12"
+                 text-black-primary font-figtree tracking-tight max-w-8xl mx-auto size-full"
         >
             {workSteps.map((step, index) => (
                 <li
