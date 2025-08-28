@@ -26,7 +26,7 @@ export default function TestimonialsSection() {
             <AnimParagraph
                 withScrollTrigger
                 tag="p"
-                className="css-subtitle-section container"
+                className="css-subtitle-section container mb-14 2xl:mb-24"
             >
                 Parce qu’un bon site, ça se mesure aussi à la satisfaction
                 <br className="hidden md:block" />
@@ -35,13 +35,6 @@ export default function TestimonialsSection() {
 
             <AnimatedTestimonials testimonials={testimonials} />
 
-            <CTABase
-                withScrollTrigger
-                variant="blue"
-                to="mailto:pro@simontessard.fr"
-                text="Lancer mon projet"
-                customClass="mx-auto"
-            />
         </section>
     );
 }
