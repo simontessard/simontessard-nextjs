@@ -30,7 +30,7 @@ export default function HeroBackground() {
 
     return (
         <>
-            <div className="absolute z-50 top-0 left-0 size-full bg-black/15 pointer-events-none" />
+            <div className="absolute z-50 top-0 left-0 size-full bg-black/5 pointer-events-none" />
             <Image
                 ref={imgRef}
                 src="/background_epic.png"
