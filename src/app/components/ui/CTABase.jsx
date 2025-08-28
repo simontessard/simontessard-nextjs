@@ -26,6 +26,7 @@ export default function CTABase({
                                     customClass = '',
                                     hideArrow = false,
                                     target = '',
+                                    external = false,
                                     withScrollTrigger = false,
                                     scrollTriggerOptions = { start: 'top 80%', end: 'bottom 20%' },
                                 }) {
@@ -77,7 +78,9 @@ export default function CTABase({
     const Wrapper = hideArrow ? 'button' : Link;
     const wrapperProps = hideArrow
         ? { type: 'button', onClick: handleClick }
-        : { href: to };
+        : external
+            ? { href: to, target: '_blank', rel: 'noopener noreferrer' } // 👈 gestion des liens externes
+            : { href: to };
 
     return (
         <Wrapper ref={rootEl} className={baseClasses} {...wrapperProps}>
