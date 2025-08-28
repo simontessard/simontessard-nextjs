@@ -49,7 +49,7 @@ export default function HeroSection() {
                         />
 
                         <CTABase
-                            variant="blue"
+                            variant="white"
                             to="mailto:pro@simontessard.fr"
                             text="Prendre contact"
                         />

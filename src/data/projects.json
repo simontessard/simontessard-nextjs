@@ -8,21 +8,21 @@
   },
   {
     "title": "Festival du Film de Demain",
-    "description": "Site vitrine pour un festival de cinéma, présentant les films, le programme et les informations pratiques.",
+    "description": "Site vitrine pour un festival de cinéma, présentant les films, le programme, les invités présents, des actualités et des informations pratiques génériques.",
     "image": "/projects/project-fdd.jpg",
     "logo": "/projects/logo-ffd.webp",
     "url": "https://filmdedemain.fr"
   },
   {
     "title": "Iniva Hôtel",
-    "description": "Site vitrine pour un hôtel avec présentation des chambres, services et réservation en ligne. Mise en avant des activités locales.",
+    "description": "Site vitrine pour une chaîne d’hôtels, mettant en avant ses services et présentant également les activités locales afin d’aider le visiteur à se projeter.",
     "image": "/projects/mockup.jpg",
     "logo": "/projects/logo-iniva.png",
     "url": "https://inivatourism.com/"
   },
   {
     "title": "Maxime Le Bec",
-    "description": "Un site vitrine pour un graphiste freelance, avec portfolio, témoignages clients et formulaire de contact.",
+    "description": "Un site vitrine pour un graphiste freelance, avec un portfolio et ses projets ainsi que les témoignages de ses clients et des sections appel à l'action.",
     "image": "/projects/mockup-maxim.jpg",
     "logo": "/projects/logo-maxime.png",
     "url": "https://maximelebec.fr"
@@ -30,7 +30,8 @@
 
   {
     "title": "Festival Ciné Citoyen",
-    "description": "Site vitrine pour un festival de cinéma, présentant les films, le programme et les informations pratiques.",
+    "description": "Site vitrine pour un festival de cinéma à Vannes, présentant les films, le programme, les partenaires, les actualités et des informations pratiques.",
+
     "image": "/projects/project-cc.jpg",
     "logo": "/projects/logo-fcc.png",
     "url": "https://festival-cinecitoyen.ouest-france.fr/"
