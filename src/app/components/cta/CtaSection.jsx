@@ -33,7 +33,7 @@ export default function CtaSection() {
                 <CTABase
                     withScrollTrigger
                     variant="white"
-                    to="mailto:pro@simontessard.fr"
+                    to="/contact"
                     text="Prendre contact"
                     customClass="max-md:mx-auto"
                 />

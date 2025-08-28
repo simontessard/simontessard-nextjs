@@ -46,7 +46,7 @@ export default function CompareImageSection() {
                 <CTABase
                     withScrollTrigger
                     variant="blue"
-                    to="mailto:pro@simontessard.fr"
+                    to="/contact"
                     text="Lancer mon projet"
                     customClass="mx-auto"
                 />

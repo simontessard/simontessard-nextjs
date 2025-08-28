@@ -58,8 +58,8 @@ export default function Header() {
                     <MenuButton />
                     <CTABase
                         variant="blue"
-                        to="mailto:pro@simontessard.fr"
-                        text="Prendre contact"
+                        to="/contact"
+                        text="Réserver un appel"
                         customClass="max-lg:hidden ml-auto"
                     />
                 </div>

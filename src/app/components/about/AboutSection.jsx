@@ -64,14 +64,13 @@ export default function AboutSection() {
                                 En tant que freelance, je vous accompagne avec flexibilité et réactivité pour livrer des sites uniques, adaptés à vos objectifs et à votre image.
                             </AnimText>
 
-
                         </div>
 
                         <CTABase
                             withScrollTrigger
                             variant="blue"
-                            to="mailto:pro@simontessard.fr"
-                            text="Prendre contact"
+                            to="/contact"
+                            text="Réserver un appel"
                         />
 
                     </div>

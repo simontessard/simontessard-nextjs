@@ -35,7 +35,7 @@ export default function ProjectsSection() {
             <CTABase
                 withScrollTrigger
                 variant="blue"
-                to="mailto:pro@simontessard.fr"
+                to="/contact"
                 text="Lancer mon projet"
                 customClass="mx-auto"
             />

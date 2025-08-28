@@ -69,7 +69,7 @@ export default function PriceItem({
 
                     <CTABase
                         withScrollTrigger
-                        to="mailto:pro@simontessard.fr"
+                        to="/contact"
                         text="Choisir cette offre"
                         variant={popular ? 'blue' : undefined}
                         customClass="w-full justify-center"
