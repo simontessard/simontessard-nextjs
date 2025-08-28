@@ -11,13 +11,13 @@ import FooterContact from "@/app/components/footer/FooterContact";
 
 export default function Footer() {
     return (
-        <footer className="bg-black">
+        <footer className="bg-white">
             <div className="container pb-5 md:pb-6 pt-16 md:pt-18 xl:pt-20 flex flex-col justify-end lg:justify-between h-full">
                 {/* Top */}
                 <div className="flex max-md:flex-col justify-between mb-8 md:mb-20">
                     <div className="max-lg:mb-8">
                         <img
-                            className="size-14 md:size-16"
+                            className="size-14 md:size-16 bg-theme-primary rounded-md p-1 mb-2 md:mb-4"
                             src="/logotest.png"
                             alt="Scroll to top icon"
                         />
@@ -25,7 +25,7 @@ export default function Footer() {
                         <AnimText
                             withScrollTrigger
                             tag="p"
-                            className="font-figtree font-light md:text-lg text-white"
+                            className="font-figtree font-light md:text-lg text-black"
                         >
                             Toute l&apos;expertise d&apos;une agence <br />
                             accessible à des prix mini.
@@ -44,12 +44,12 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <hr className="text-white/20 mb-6 md:mb-10" />
+                <hr className="text-black/20 mb-6 md:mb-10" />
 
                 {/* Bottom */}
                 <div className="flex max-md:flex-col-reverse max-lg:gap-5 justify-between">
                     <div className="flex justify-center items-center">
-                        <span className="font-figtree tracking-tight text-white opacity-90 text-xs sm:text-sm md:text-base max-lg:text-center">
+                        <span className="font-figtree tracking-tight text-black text-xs sm:text-sm md:text-base max-lg:text-center">
                             © 2025 Simon TESSARD. Tous droits réservés.
                         </span>
                     </div>

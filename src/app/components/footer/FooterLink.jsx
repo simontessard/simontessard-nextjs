@@ -4,13 +4,17 @@ import { useCallback } from 'react';
 import { gsap } from 'gsap';
 
 export default function FooterLink({ title, href, arrow = false }) {
-    const scrollWithGsap = useCallback(() => {
+    const scrollWithNative = useCallback(() => {
         if (href?.startsWith('#')) {
-            gsap.to(window, {
-                duration: 2,
-                scrollTo: { y: href, offsetY: 0 },
-                ease: 'power2.out',
-            });
+            const target = document.querySelector(href);
+            if (target) {
+                const rect = target.getBoundingClientRect();
+                const absoluteY = window.scrollY + rect.top;
+                window.scrollTo({
+                    top: absoluteY,
+                    behavior: 'smooth',
+                });
+            }
         }
     }, [href]);
 
@@ -18,14 +22,14 @@ export default function FooterLink({ title, href, arrow = false }) {
         (e) => {
             if (!arrow) {
                 e.preventDefault();
-                scrollWithGsap();
+                scrollWithNative();
             }
         },
-        [arrow, scrollWithGsap]
+        [arrow, scrollWithNative]
     );
 
     return (
-        <li className="group overflow-hidden font-figtree tracking-tight md:text-lg font-light text-white">
+        <li className="group overflow-hidden font-figtree tracking-tight md:text-lg font-light text-gray-500">
             <a
                 href={href}
                 onClick={handleClick}
@@ -44,7 +48,7 @@ export default function FooterLink({ title, href, arrow = false }) {
 
                 {arrow && (
                     <svg
-                        className="shrink-0 size-5 md:size-6 stroke-white"
+                        className="shrink-0 size-5 md:size-6 stroke-gray-500"
                         width="32"
                         height="33"
                         viewBox="0 0 32 33"

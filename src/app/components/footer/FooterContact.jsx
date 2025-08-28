@@ -8,7 +8,7 @@ export default function FooterContact({ title, href, target = '_blank' }) {
             <Link
                 href={href}
                 target={target}
-                className="max-md:text-sm font-light text-gray-300 md:hover:text-white transition-colors duration-300"
+                className="max-md:text-sm font-light text-black md:hover:text-gray-500 transition-colors duration-300"
             >
                 {title}
             </Link>

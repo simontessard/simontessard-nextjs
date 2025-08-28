@@ -1,17 +1,24 @@
 'use client';
 
 import { useCallback } from 'react';
-import { gsap } from 'gsap';
 import { navItems } from '@/data/navigation';
 
 export default function Nav() {
     const scrollTo = useCallback((e, target) => {
         e.preventDefault();
-        gsap.to(window, {
-            duration: 2,
-            scrollTo: { y: target, offsetY: 0 },
-            ease: 'power2.out',
-        });
+
+        if (typeof window === 'undefined') return;
+
+        const el = document.querySelector(target);
+        if (el) {
+            const rect = el.getBoundingClientRect();
+            const absoluteY = window.scrollY + rect.top;
+
+            window.scrollTo({
+                top: absoluteY,
+                behavior: 'smooth',
+            });
+        }
     }, []);
 
     return (
