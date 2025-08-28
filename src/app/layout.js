@@ -13,7 +13,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <LenisProvider>
-          <Header/>
           {children}
           <Footer/>
         </LenisProvider>

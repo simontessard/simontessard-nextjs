@@ -2,6 +2,7 @@ import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";
 import CTABase from "@/app/components/ui/CTABase";
 import ProjectsList from "@/app/components/projects/ProjectsList";
+import AnimParagraph from "@/app/components/utils/AnimParagraph";
 
 export default function ProjectsSection() {
     return (
@@ -19,7 +20,7 @@ export default function ProjectsSection() {
                 Quelques <span className="css-word-italic">réussites</span> marquantes.
             </AnimText>
 
-            <AnimText
+            <AnimParagraph
                 withScrollTrigger
                 tag="p"
                 className="css-subtitle-section container text-black md:max-w-3xl"
@@ -27,7 +28,7 @@ export default function ProjectsSection() {
                 Des exemples concrets de ce à quoi pourrait ressembler votre site,
                 <br className="max-md:hidden" />
                 et comment il pourrait vous aider à atteindre vos objectifs.
-            </AnimText>
+            </AnimParagraph>
 
             <ProjectsList/>
 

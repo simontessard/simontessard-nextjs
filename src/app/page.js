@@ -10,22 +10,26 @@ import CtaSection from "@/app/components/cta/CtaSection";
 import ProjectsSection from "@/app/components/projects/ProjectsSection";
 import CompareImageSection from "@/app/components/compare/CompareImageSection";
 import CountUpSection from "@/app/components/dividers/CountUpSection";
+import Header from "@/app/components/header/Header";
 
 export default function Home() {
   return (
-    <main>
-      <HeroSection/>
-      <CompareImageSection/>
-      <AboutSection/>
-      <CountUpSection/>
-      <ProjectsSection/>
-      <ProcessSection/>
-      <Citation/>
-      <PriceSection/>
-      <BrandList/>
-      <TestimonialsSection/>
-      <FAQSection/>
-      <CtaSection/>
-    </main>
+      <>
+          <Header/>
+          <main>
+              <HeroSection/>
+              <CompareImageSection/>
+              <AboutSection/>
+              <CountUpSection/>
+              <ProjectsSection/>
+              <ProcessSection/>
+              <Citation/>
+              <PriceSection/>
+              <BrandList/>
+              <TestimonialsSection/>
+              <FAQSection/>
+              <CtaSection/>
+          </main>
+      </>
   );
 }

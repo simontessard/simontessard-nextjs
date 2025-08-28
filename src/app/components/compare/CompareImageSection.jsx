@@ -2,6 +2,7 @@ import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";
 import CTABase from "@/app/components/ui/CTABase";
 import {Compare} from "@/app/components/compare/Compare";
+import AnimParagraph from "@/app/components/utils/AnimParagraph";
 
 export default function CompareImageSection() {
     return (
@@ -19,7 +20,7 @@ export default function CompareImageSection() {
                     <span className="css-word-italic">Transformez</span> votre site.
                 </AnimText>
 
-                <AnimText
+                <AnimParagraph
                     withScrollTrigger
                     tag="p"
                     className="css-subtitle-section container text-black md:max-w-3xl
@@ -28,7 +29,7 @@ export default function CompareImageSection() {
                     Surprenez vos visiteurs avec une vitrine repensée,
                     <br className="max-md:hidden" />
                     qui reflète vos ambitions et capte leur attention.
-                </AnimText>
+                </AnimParagraph>
 
                 <div className="p-4 border border-neutral-800 rounded-2xl bg-neutral-900 mb-8 xl:mb-10 2xl:mb-12">
                     <Compare
