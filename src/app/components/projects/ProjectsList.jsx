@@ -52,10 +52,10 @@ export const Card = ({i, title, description, src, url, color, progress, range, t
                     scale,
                     top: `calc(-5vh + ${i * 25}px)`,
                 }}
-                className={`relative bg-white -top-[25%] md:h-[550px] 2xl:h-[600px] w-[92%] md:w-[70%] rounded-xl origin-top
-                flex max-md:flex-col-reverse justify-between shadow-lg border border-white/30 overflow-hidden duration-300`}
+                className={`relative bg-white -top-[25%] lg:h-[550px] 2xl:h-[600px] w-[92%] md:w-[70%] rounded-xl origin-top
+                flex max-lg:flex-col-reverse justify-between shadow-lg border border-white/30 overflow-hidden duration-300`}
             >
-                    <div className="md:w-[45%] pt-2 pb-4 px-4 md:p-6 xl:p-8 2xl:p-12">
+                    <div className="lg:w-[45%] pt-2 pb-4 px-4 md:p-6 xl:p-8 2xl:p-12">
                         <h3 className="text-2xl md:text-3xl xl:text-4xl text-black tracking-tight font-figtree font-semibold
                             mb-3 md:mb-6">
                             {title}
@@ -70,7 +70,7 @@ export const Card = ({i, title, description, src, url, color, progress, range, t
                     </div>
 
                     {src && (
-                        <div className="flex md:w-[55%] p-3 md:p-6">
+                        <div className="flex lg:w-[55%] p-3 md:p-6">
                             <img
                                 src={src}
                                 alt={title || 'Project Image'}
