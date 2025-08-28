@@ -50,8 +50,8 @@ export default function HeroSection() {
 
                         <CTABase
                             variant="white"
-                            to="mailto:pro@simontessard.fr"
-                            text="Prendre contact"
+                            to="/contact"
+                            text="Lancer mon projet"
                         />
                     </div>
 
