@@ -29,13 +29,16 @@ export default function HeroBackground() {
     }, []);
 
     return (
-        <Image
-            ref={imgRef}
-            src="/background_epic.png"
-            alt=""
-            fill
-            className="absolute top-0 left-0 scale-110 size-full object-cover rounded-b-2xl"
-            priority
-        />
+        <>
+            <div className="absolute z-50 top-0 left-0 size-full bg-black/35 pointer-events-none" />
+            <Image
+                ref={imgRef}
+                src="/main.jpg"
+                alt=""
+                fill
+                className="absolute top-0 left-0 scale-110 size-full object-cover rounded-b-2xl"
+                priority
+            />
+        </>
     );
 }

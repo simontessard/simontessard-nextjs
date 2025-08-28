@@ -6,7 +6,6 @@ import CTABase from "@/app/components/ui/CTABase";
 import Uptitle from "@/app/components/utils/Uptitle";
 import HeroSatisfaction from "@/app/components/hero/HeroSatisfaction";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
-import ShinyText from "@/app/components/ui/ShinyText";
 
 export default function HeroSection() {
     return (
@@ -17,10 +16,10 @@ export default function HeroSection() {
 
             <HeroBackground />
 
-            <div className="container flex justify-between items-end">
+            <div className="relative z-51 container flex justify-between items-end">
                 <div className="flex flex-col items-center mx-auto">
                     <Uptitle className="text-white">
-                        Création & refonte de sites web
+                        Création de sites web
                     </Uptitle>
 
                     <AnimText
@@ -41,16 +40,16 @@ export default function HeroSection() {
                         conçus pour marquer les esprits.
                     </AnimParagraph>
 
-                    <div className="flex gap-4 mb-8 md:mb-10">
+                    <div className="flex max-md:flex-col max-md:items-center size-fit gap-4 mb-8 md:mb-10">
                         <CTABase
+                            variant="black"
                             hideArrow={true}
                             target="#work"
                             text="Dernières réalisations"
-                            customClass="hidden"
                         />
 
                         <CTABase
-                            variant="white"
+                            variant="blue"
                             to="mailto:pro@simontessard.fr"
                             text="Prendre contact"
                         />
