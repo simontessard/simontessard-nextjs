@@ -16,7 +16,7 @@ export const navItemsMobile = [
 ];
 
 export const contactLinks = [
-    { title: "Mentions légales", href: "/legals", target: "_blank" }
+    { title: "Mentions légales", href: "/legals" }
 ];
 
 export const navigationLinks1 = [

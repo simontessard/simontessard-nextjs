@@ -45,14 +45,14 @@ export default function MenuButton() {
             <button
                 ref={menuButtonRef}
                 onClick={openMenu}
-                className={['js-menu-button lg:hidden cursor-pointer pointer-events-auto -translate-y-[200%] flex flex-col items-center justify-center',
-                    'gap-1.5 transition-colors bg-black text-white font-light leading-[1] font-figtree p-4 size-10 rounded-xl',
+                className={['js-menu-button ml-2 lg:hidden cursor-pointer pointer-events-auto -translate-y-[200%] flex flex-col items-center justify-center',
+                    'gap-1.5 transition-colors bg-black text-white font-light leading-[1] font-figtree p-4 size-13 rounded-xl',
                 ].join(' ')}
                 aria-label="Ouvrir le menu"
                 type="button"
             >
-                <span className="w-4 h-0.25 bg-white" />
-                <span className="w-4 h-0.25 bg-white" />
+                <span className="w-5 h-0.25 bg-white" />
+                <span className="w-5 h-0.25 bg-white" />
             </button>
     );
 }

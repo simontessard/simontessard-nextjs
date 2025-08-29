@@ -19,14 +19,11 @@ export default function Header() {
         // entrée du header (depuis -translate-y-[150%])
         gsap.to(el, { y: 0, delay: 1, duration: 0.6, ease: 'circ.out' });
 
-        const mm = gsap.matchMedia();
+        const animHeader = gsap.timeline({ paused: true });
 
-        mm.add('(min-width: 1650px)', () => {
-            const animHeader = gsap.timeline({ paused: true });
+        animHeader.to(el, { yPercent: -150, duration: 0.6, ease: 'circ.in' });
 
-            animHeader.to(el, { yPercent: -150, duration: 0.6, ease: 'circ.in' });
-
-            const st = ScrollTrigger.create({
+        const st = ScrollTrigger.create({
                 trigger: el,
                 start: '+=400px',
                 end: 99999,
@@ -35,33 +32,30 @@ export default function Header() {
                 },
                 // onEnter: () => el.classList.add('css-backdrop-filter', 'lg:bg-black/40'),
                 // onLeave: () => el.classList.remove('css-backdrop-filter', 'lg:bg-black/40'),
-            });
-
-            return () => {
-                st.kill();
-                animHeader.kill();
-            };
         });
 
-        return () => mm.revert();
+        return () => {
+                st.kill();
+                animHeader.kill();
+        };
     }, []);
 
     return (
         <>
             <header ref={headerRef}
-                className="js-header fixed left-0 top-0 lg:top-3 z-99 -translate-y-[150%] pointer-events-none
-                   flex items-center w-full py-1 transition-colors duration-500 lg:px-4"
+                className="js-header fixed left-0 top-2 lg:top-3 z-99 -translate-y-[150%] pointer-events-none
+                   flex items-center w-full py-1 transition-colors duration-500 px-4"
             >
-                <div className="container lg:bg-white lg:shadow-md size-fit max-lg:flex max-lg:justify-between py-1.5 px-4 items-center rounded-xl lg:grid lg:grid-cols-5 w-full">
+                <div className="container bg-white shadow-md size-fit max-lg:flex max-lg:justify-between py-1.5 px-2 md:px-4 items-center rounded-xl lg:grid lg:grid-cols-5 w-full">
                     <BackHome />
                     <Nav />
-                    <MenuButton />
                     <CTABase
                         variant="blue"
                         to="/contact"
                         text="Réserver un appel"
-                        customClass="max-lg:hidden ml-auto"
+                        customClass="ml-auto"
                     />
+                    <MenuButton />
                 </div>
             </header>
 

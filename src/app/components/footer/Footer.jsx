@@ -18,7 +18,7 @@ export default function Footer() {
                 <div className="flex max-md:flex-col justify-between mb-8 md:mb-20">
                     <div className="max-lg:mb-8">
                         <img
-                            className="size-14 md:size-16 bg-theme-primary rounded-md p-1 mb-4"
+                            className="size-14 md:size-16 bg-theme-primary rounded-lg p-1 mb-4"
                             src="/logo.png"
                             alt="Logo Simon TESSARD"
                         />
@@ -69,7 +69,6 @@ export default function Footer() {
                                     key={`contact-${index}`}
                                     title={link.title}
                                     href={link.href}
-                                    target={link.target}
                                 />
                             ))}
                         </div>
