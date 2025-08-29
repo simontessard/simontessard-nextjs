@@ -19,7 +19,7 @@ export default function Footer() {
                     <div className="max-lg:mb-8">
                         <img
                             className="size-14 md:size-16 bg-theme-primary rounded-md p-1 mb-4"
-                            src="/logotest.png"
+                            src="/logo.png"
                             alt="Logo Simon TESSARD"
                         />
 

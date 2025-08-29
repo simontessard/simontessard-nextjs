@@ -1,4 +1,3 @@
-import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";
 import CTABase from "@/app/components/ui/CTABase";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
@@ -9,8 +8,7 @@ export default function CtaSection() {
                  className="section-white container md:rounded-t-xl">
 
             <div className="js-cursor-cta--hover relative flex flex-col items-center justify-center shadow-sm overflow-hidden
-                   py-12 md:py-16 px-6 md:px-8 xl:px-30 2xl:px-40 rounded-t-xl md:rounded-t-2xl text-center text-white size-full"
-            >
+                   py-12 md:py-16 px-6 md:px-8 xl:px-30 2xl:px-40 rounded-t-xl md:rounded-t-2xl text-center text-white size-full">
 
                 <AnimText
                     useScrollTrigger
@@ -34,8 +32,8 @@ export default function CtaSection() {
                     withScrollTrigger
                     variant="white"
                     to="/contact"
-                    text="Prendre contact"
-                    customClass="max-md:mx-auto"
+                    text="Réserver un appel"
+                    customClass="mx-auto"
                 />
             </div>
         </section>

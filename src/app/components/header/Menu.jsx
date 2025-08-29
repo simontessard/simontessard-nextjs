@@ -58,8 +58,8 @@ export default function Menu() {
 
                 <div className="bg-theme-primary rounded-lg p-1">
                     <img
-                        className="size-9 md:size-11"
-                        src="/logotest.png"
+                        className="size-10 md:size-11"
+                        src="/logo.png"
                         alt="Logo Simon TESSARD"
                     />
                 </div>
