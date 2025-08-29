@@ -1,3 +1,5 @@
+"use client";
+
 import Cal, { getCalApi } from "@calcom/embed-react";
 import {useEffect, useRef} from "react";
 import { gsap } from 'gsap';
