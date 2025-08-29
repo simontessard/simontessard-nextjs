@@ -31,7 +31,7 @@ export default function CompareImageSection() {
                     qui reflète vos ambitions et capte leur attention.
                 </AnimParagraph>
 
-                <div className="p-4 border border-neutral-800 rounded-2xl bg-neutral-900 mb-8 xl:mb-10 2xl:mb-12">
+                <div className="p-2 md:p-4 border border-neutral-800 rounded-2xl bg-neutral-900 mb-8 xl:mb-10 2xl:mb-12">
                     <Compare
                         firstImage="/compare/before-fdd.png"
                         secondImage="/compare/after-fdd.png"

@@ -36,7 +36,7 @@ export const AnimatedTestimonials = ({
     };
     return (
         <div className="mx-auto max-w-sm px-4 font-sans antialiased md:max-w-5xl md:px-8 lg:px-12">
-            <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
+            <div className="relative grid grid-cols-1 gap-12 md:gap-20 md:grid-cols-2">
                 <div>
                     <div className="relative h-80 md:h-96 w-full">
                         <AnimatePresence>
@@ -109,7 +109,7 @@ export const AnimatedTestimonials = ({
                                 <IconStar
                                     key={i}
                                     fill="fill-theme-primary"
-                                    className="size-3 md:size-4 lg:size-5"
+                                    className="size-4 lg:size-5"
                                 />
                             ))}
                         </div>
@@ -147,7 +147,7 @@ export const AnimatedTestimonials = ({
                             ))}
                         </motion.p>
                     </motion.div>
-                    <div className="flex gap-2.5 pt-12 md:pt-0">
+                    <div className="flex gap-2.5 pt-8 md:pt-0">
                         <button
                             onClick={handlePrev}
                             className="group/button cursor-pointer flex size-10 md:size-12 items-center justify-center rounded-xl bg-black-primary"

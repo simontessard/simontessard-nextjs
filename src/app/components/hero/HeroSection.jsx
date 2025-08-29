@@ -36,7 +36,7 @@ export default function HeroSection() {
                         className="font-figtree font-light text-center text-white/95 tracking-tight leading-[1.6]
                        lg:text-xl mb-6 md:mb-8"
                     >
-                        Freelance créant des sites web entre performance et design, <br/>
+                        Freelance créant des sites web entre performance et design, <br className="max-md:hidden"/>
                         conçus pour marquer les esprits.
                     </AnimParagraph>
 
