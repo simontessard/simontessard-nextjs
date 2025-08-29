@@ -55,11 +55,14 @@ export default function Menu() {
     return (
         <div className="js-menu hidden bg-black/90 fixed z-100 top-0 left-0 flex-col justify-between size-full p-6 pt-6 md:p-8">
             <div className="flex items-center justify-between">
-                <img
-                    className="size-13 md:size-16"
-                    src="/logotest.png"
-                    alt="Scroll to top icon"
-                />
+
+                <div className="bg-theme-primary rounded-lg p-1">
+                    <img
+                        className="size-9 md:size-11"
+                        src="/logotest.png"
+                        alt="Logo Simon TESSARD"
+                    />
+                </div>
 
                 <button
                     onClick={closeMenu}
