@@ -9,13 +9,8 @@ if (typeof window !== 'undefined') {
     gsap.registerPlugin(ScrollTrigger, SplitText);
 }
 
-export default function AnimText({
-                                     tag = 'h1',
-                                     className = '',
-                                     useScrollTrigger = false,
-                                     scrollTriggerOptions = { trigger: null, start: 'top 72%', end: 'bottom top' },
-                                     children,
-                                 }) {
+export default function AnimText({ tag = 'h1', className = '', useScrollTrigger = false,
+                                   scrollTriggerOptions = { trigger: null, start: 'top 72%', end: 'bottom top' }, children }) {
     const textRef = useRef(null);
     const Tag = tag;
 
@@ -23,7 +18,6 @@ export default function AnimText({
         const el = textRef.current;
         if (!el) return;
 
-        // ---- Pré-traitement des <br> (comme dans ton Nuxt) ----
         const brs = el.querySelectorAll('br');
         brs.forEach((br) => br.classList.add('split-text-br'));
 
@@ -73,7 +67,7 @@ export default function AnimText({
                 if (tween.scrollTrigger) tween.scrollTrigger.kill();
                 tween.kill();
             }
-            split.revert(); // restore DOM initial
+            split.revert();
         };
     }, [useScrollTrigger, scrollTriggerOptions]);
 

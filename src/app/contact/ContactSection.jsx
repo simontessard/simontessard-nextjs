@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {gsap} from "gsap";
 import {useEffect, useRef} from "react";
+import Calendar from "@/app/contact/Calendar";
 
 export default function ContactSection() {
     const logoRef = useRef(null);
@@ -21,7 +22,8 @@ export default function ContactSection() {
     }, []);
 
     return (
-        <section className="bg-black-primary flex flex-col items-center h-screen pt-10 md:pt-14">
+        <section className="bg-black-primary flex flex-col items-center min-h-screen pt-10 md:pt-14
+        pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
 
             <Link ref={logoRef} href="/" className="opacity-0 scale-90">
                 <Image src="/logotest.png" alt="Logo Simon TESSARD"
@@ -33,10 +35,11 @@ export default function ContactSection() {
                 Réserver un appel de 30 minutes
             </Uptitle>
 
-            <AnimText tag="h1" className="css-title-section text-white text-center max-w-4xl">
+            <AnimText tag="h1" className="css-title-section text-white text-center max-w-4xl mb-10 md:mb-12 xl:mb-14 2xl:mb-16">
                 Ensemble créons quelque chose de <span className="css-word-italic">mémorable.</span>
             </AnimText>
 
+            <Calendar/>
         </section>
     )
 }

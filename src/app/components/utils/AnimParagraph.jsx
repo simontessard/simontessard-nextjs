@@ -16,9 +16,6 @@ export default function AnimParagraph({
     useEffect(() => {
         if (!textRef.current) return;
 
-        // état initial
-        gsap.set(textRef.current, { y: 20, opacity: 0 });
-
         const animConfig = { y: 0, opacity: 1, duration: 0.8, ease: 'circ.out' };
 
         if (withScrollTrigger) {
@@ -40,7 +37,7 @@ export default function AnimParagraph({
     }, [withScrollTrigger, scrollTriggerOptions]);
 
     return (
-        <Tag ref={textRef} className={className}>
+        <Tag ref={textRef} className={`opacity-0 translate-y-8 ${className}`}>
             {children}
         </Tag>
     );

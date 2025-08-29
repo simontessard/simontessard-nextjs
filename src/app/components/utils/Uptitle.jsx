@@ -3,12 +3,9 @@
 import { useEffect, useRef, useMemo } from 'react';
 import { gsap } from 'gsap';
 
-export default function Uptitle({
-                                           withScrollTrigger = false,
-                                           scrollTriggerOptions = { start: 'top 72%', end: 'bottom 20%' },
-                                           className = '',
-                                           children,
-                                       }) {
+export default function Uptitle({ withScrollTrigger = false,
+                                  scrollTriggerOptions = { start: 'top 72%', end: 'bottom 20%' },
+                                  className = '', children }) {
     const textEl = useRef(null);
     const textContent = useRef(null);
     const leftBracket = useRef(null);
@@ -16,9 +13,8 @@ export default function Uptitle({
 
     const baseClasses = useMemo(
         () =>
-            [
-                'text-xs md:text-sm 2xl:text-base uppercase font-figtree text-center tracking-tight',
-                'mb-4 md:mb-5 xl:mb-6',
+            ['text-xs md:text-sm 2xl:text-base uppercase font-figtree text-center tracking-tight',
+              'mb-4 md:mb-5 xl:mb-6',
                 className,
             ]
                 .filter(Boolean)
@@ -28,10 +24,6 @@ export default function Uptitle({
 
     useEffect(() => {
         if (!textEl.current) return;
-
-        gsap.set(textContent.current, { y: 10, opacity: 0 });
-        gsap.set(leftBracket.current, { x: -10, opacity: 0 });
-        gsap.set(rightBracket.current, { x: 10, opacity: 0 });
 
         const tl = gsap.timeline({
             scrollTrigger: withScrollTrigger
@@ -49,22 +41,20 @@ export default function Uptitle({
             duration: 0.5,
             ease: 'circ.out',
         })
-            .to(leftBracket.current, {
-                x: 0,
-                opacity: 1,
-                duration: 0.3,
-                ease: 'power2.out',
-            })
-            .to(
-                rightBracket.current,
-                {
-                    x: 0,
-                    opacity: 1,
-                    duration: 0.3,
-                    ease: 'power2.out',
-                },
-                '<' // commence en même temps que l'anim précédente
-            );
+        .to(leftBracket.current, {
+           x: 0,
+           opacity: 1,
+           duration: 0.3,
+           ease: 'power2.out',
+        })
+        .to(rightBracket.current, {
+             x: 0,
+             opacity: 1,
+             duration: 0.3,
+             ease: 'power2.out',
+           },
+          '<'
+        );
 
         return () => {
             if (tl.scrollTrigger) tl.scrollTrigger.kill();
@@ -74,15 +64,15 @@ export default function Uptitle({
 
     return (
         <p ref={textEl} className={baseClasses}>
-      <span className="inline-block mr-2" ref={leftBracket}>
-        [
-      </span>
-            <span className="inline-block" ref={textContent}>
-        {children}
-      </span>
-            <span className="inline-block ml-2" ref={rightBracket}>
-        ]
-      </span>
+            <span className="inline-block opacity-0 -translate-x-4 mr-2" ref={leftBracket}>
+                [
+            </span>
+            <span className="inline-block opacity-0 translate-y-4" ref={textContent}>
+                {children}
+            </span>
+            <span className="inline-block opacity-0 translate-x-4 ml-2" ref={rightBracket}>
+                ]
+            </span>
         </p>
     );
 }
