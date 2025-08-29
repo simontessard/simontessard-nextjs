@@ -41,7 +41,7 @@ export default function FooterMenu({
                 customClass,
             ].join(' ')}
         >
-            <h4 className="font-figtree font-light text-black tracking-tight md:text-lg mb-0.5 md:mb-1">
+            <h4 className="font-figtree text-black tracking-tight md:text-lg mb-0.5 md:mb-1">
                 {title}
             </h4>
 
