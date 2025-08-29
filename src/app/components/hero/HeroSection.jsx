@@ -42,16 +42,9 @@ export default function HeroSection() {
 
                     <div className="flex max-md:flex-col max-md:items-center size-fit gap-4 mb-8 md:mb-10">
                         <CTABase
-                            variant="black"
-                            hideArrow={true}
-                            target="#work"
-                            text="Dernières réalisations"
-                        />
-
-                        <CTABase
                             variant="white"
                             to="/contact"
-                            text="Lancer mon projet"
+                            text="Lancer mon projet maintenant"
                         />
                     </div>
 
