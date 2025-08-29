@@ -19,7 +19,7 @@ body {
     --font-chivo: 'Chivo', var(--font-sans);
     --font-figtree: 'Figtree', var(--font-sans);
     --font-stix: 'STIX Two Text', var(--font-sans);
-    --color-black-primary: #0e131a;
+    --color-black-primary: #1a1a1a;
     --color-white-primary: #f6f3f4;
     --color-grey-primary: #ccbfc4;
     --color-grey-text : #b3b3b3;

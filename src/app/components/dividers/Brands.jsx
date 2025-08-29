@@ -46,7 +46,7 @@ export default function BrandList() {
     return (
         <div
             ref={containerRef}
-            className="js-brand--list py-4 xl:py-6 bg-black relative opacity-0 overflow-hidden w-full"
+            className="js-brand--list py-4 xl:py-6 bg-black-primary relative opacity-0 overflow-hidden w-full"
         >
             <ul
                 ref={trackRef}
