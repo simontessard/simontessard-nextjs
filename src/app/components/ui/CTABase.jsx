@@ -20,14 +20,9 @@ function TextFlip({ text, innerRef }) {
 }
 
 export default function CTABase({
-                                    to = '/',
-                                    text,
-                                    variant = 'white',
-                                    customClass = '',
-                                    hideArrow = false,
-                                    target = '',
-                                    external = false,
-                                    withScrollTrigger = false,
+                                    to = '/', text, variant = 'white',
+                                    customClass = '', hideArrow = false,
+                                    target = '', external = false, withScrollTrigger = false,
                                     scrollTriggerOptions = { start: 'top 80%', end: 'bottom 20%' },
                                 }) {
     const rootEl = useRef(null);
