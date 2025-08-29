@@ -44,7 +44,7 @@ export default function HeroSection() {
                         <CTABase
                             variant="white"
                             to="/contact"
-                            text="Lancer mon projet maintenant"
+                            text="Lancer mon projet"
                         />
                     </div>
 
