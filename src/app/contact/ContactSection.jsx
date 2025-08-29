@@ -6,8 +6,8 @@ import HomeLogo from "@/app/components/utils/HomeLogo";
 export default function ContactSection() {
 
     return (
-        <section className="bg-black-primary flex flex-col items-center min-h-screen pt-10 md:pt-14
-        pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
+        <section className="bg-black-primary flex flex-col items-center min-h-screen
+        pt-10 md:pt-14 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
 
             <HomeLogo/>
 

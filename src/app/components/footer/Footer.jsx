@@ -62,7 +62,6 @@ export default function Footer() {
                         </span>
                     </div>
 
-                    {/*
                     <div className="flex justify-center md:justify-end items-center gap-5 md:gap-6 lg:gap-8">
                         <div className="flex gap-3 md:gap-5 2xl:gap-6">
                             {contactLinks.map((link, index) => (
@@ -75,7 +74,6 @@ export default function Footer() {
                             ))}
                         </div>
                     </div>
-                    */}
 
                 </div>
             </div>

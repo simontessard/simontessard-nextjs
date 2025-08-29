@@ -6,7 +6,7 @@ import HomeLogo from "@/app/components/utils/HomeLogo";
 
 export default function Custom404 () {
     return (
-        <div className="min-h-screen flex flex-col justify-center items-center bg-black-primary text-white">
+        <section className="min-h-screen flex flex-col justify-center items-center bg-black-primary text-white">
 
             <HomeLogo/>
 
@@ -24,6 +24,6 @@ export default function Custom404 () {
                 to="/"
                 text="Retour à l'accueil"
             />
-        </div>
+        </section>
     );
 };

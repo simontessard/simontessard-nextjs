@@ -16,7 +16,7 @@ export const navItemsMobile = [
 ];
 
 export const contactLinks = [
-    { title: "pro@simontessard.fr", href: "mailto:pro@simontessard.fr", target: "_blank" }
+    { title: "Mentions légales", href: "/legals", target: "_blank" }
 ];
 
 export const navigationLinks1 = [
