@@ -6,18 +6,6 @@ import { gsap } from 'gsap';
 export default function MenuButton() {
     const menuButtonRef = useRef(null);
 
-    useEffect(() => {
-        const btn = menuButtonRef.current;
-        if (!btn) return;
-
-        gsap.to(btn, {
-            y: 1,
-            delay: 1.2,
-            duration: 0.7,
-            ease: 'power2.out',
-        });
-    }, []);
-
     const openMenu = useCallback(() => {
         gsap.to('.js-menu', {
             display: 'flex',
@@ -45,7 +33,7 @@ export default function MenuButton() {
             <button
                 ref={menuButtonRef}
                 onClick={openMenu}
-                className={['js-menu-button ml-2 lg:hidden cursor-pointer pointer-events-auto -translate-y-[200%] flex flex-col items-center justify-center',
+                className={['js-menu-button ml-2 lg:hidden cursor-pointer pointer-events-auto flex flex-col items-center justify-center',
                     'gap-1.5 transition-colors bg-black text-white font-light leading-[1] font-figtree p-4 size-12 rounded-xl',
                 ].join(' ')}
                 aria-label="Ouvrir le menu"
