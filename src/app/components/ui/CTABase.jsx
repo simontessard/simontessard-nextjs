@@ -59,7 +59,7 @@ export default function CTABase({
         });
 
         tl.to(rootEl.current, { opacity: 1, scale: 1, duration: 1 });
-        tl.to(textEl.current, { opacity: 1, y : 0, duration: 0.6, ease: 'power4.inOut' }, "-=0.8");
+        tl.to(textEl.current, { opacity: 1, y : 0, duration: 0.6, ease: 'power4.inOut' }, "-=.95");
 
         tlRef.current = tl;
 
