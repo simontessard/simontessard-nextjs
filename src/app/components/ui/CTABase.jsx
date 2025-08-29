@@ -42,7 +42,7 @@ export default function CTABase({
 
     const baseClasses = [
         'cta-base pointer-events-auto cursor-pointer opacity-0 scale-80 relative group gap-2 flex w-fit items-center',
-        'font-figtree rounded-xl font-medium transition-colors duration-500 px-4 py-2.5',
+        'font-figtree rounded-xl max-md:text-sm font-medium transition-colors duration-500 px-4 py-2.5',
         variantClasses[variant] || variantClasses.white, // fallback si variant non défini
         customClass,
     ].join(' ');
