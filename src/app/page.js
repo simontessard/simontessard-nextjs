@@ -11,6 +11,7 @@ import ProjectsSection from "@/app/components/projects/ProjectsSection";
 import CompareImageSection from "@/app/components/compare/CompareImageSection";
 import CountUpSection from "@/app/components/dividers/CountUpSection";
 import Header from "@/app/components/header/Header";
+import Footer from "@/app/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
               <FAQSection/>
               <CtaSection/>
           </main>
+          <Footer/>
       </>
   );
 }
