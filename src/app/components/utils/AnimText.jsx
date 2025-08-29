@@ -41,6 +41,7 @@ export default function AnimText({ tag = 'h1', className = '', useScrollTrigger 
         });
 
         gsap.set(split.words, { y: 100, opacity: 0 });
+        gsap.set(el, { opacity: 1 });
 
         const tweenConfig = {
             y: 0,
@@ -72,7 +73,7 @@ export default function AnimText({ tag = 'h1', className = '', useScrollTrigger 
     }, [useScrollTrigger, scrollTriggerOptions]);
 
     return (
-        <Tag ref={textRef} className={className}>
+        <Tag ref={textRef} className={`opacity-0 ${className}`}>
             {children}
         </Tag>
     );
