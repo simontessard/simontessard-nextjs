@@ -21,9 +21,10 @@ export default function BrandList() {
         if (!container || !track) return;
 
         const ctx = gsap.context(() => {
-            gsap.to(container, {
+            gsap.to('.js-brand--item', {
                 opacity: 1,
-                duration: 2,
+                duration: 1,
+                stagger: 0.1,
                 scrollTrigger: {
                     trigger: container,
                     start: 'top 85%',
@@ -47,7 +48,7 @@ export default function BrandList() {
     return (
         <div
             ref={containerRef}
-            className="js-brand--list py-4 xl:py-6 bg-black-primary relative opacity-0 overflow-hidden w-full"
+            className="js-brand--list py-4 xl:py-6 bg-black-primary relative overflow-hidden w-full"
         >
             <ul
                 ref={trackRef}
@@ -56,7 +57,7 @@ export default function BrandList() {
                 {duplicatedProjects.map((brand, index) => (
                     <li
                         key={`${brand.title || 'brand'}-${index}`}
-                        className="shrink-0 group relative flex items-center justify-center p-4 md:p-6 2xl:p-7"
+                        className="js-brand--item opacity-0 shrink-0 group relative flex items-center justify-center p-4 md:p-6 2xl:p-7"
                     >
                         {brand.logo ? (
                             <Image
