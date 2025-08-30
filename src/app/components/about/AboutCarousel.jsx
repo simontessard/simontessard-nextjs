@@ -30,7 +30,7 @@ export default function AboutCarousel() {
                         className="relative flex aspect-square size-full"
                     >
                         <img
-                            className="absolute top-0 left-0 size-full object-cover rounded-xl"
+                            className="absolute top-0 left-0 size-full object-cover object-[55%_70%] rounded-xl"
                             alt={slide.alt}
                             src={slide.src}
                         />
