@@ -84,7 +84,7 @@ export const AnimatedTestimonials = ({
                         </AnimatePresence>
                     </div>
                 </div>
-                <div className="flex flex-col justify-between py-4">
+                <div className="flex flex-col justify-between py-2 md:py-4">
                     <motion.div
                         key={active}
                         initial={{
@@ -120,7 +120,7 @@ export const AnimatedTestimonials = ({
                         <p className="font-figtree text-sm text-gray-500">
                             {testimonials[active].designation}
                         </p>
-                        <motion.p className="font-figtree tracking-tight italic mt-8 text-lg text-gray-600">
+                        <motion.p className="font-figtree tracking-tight italic mt-6 md:mt-8 md:text-lg text-gray-600">
                             {testimonials[active].quote.split(" ").map((word, index) => (
                                 <motion.span
                                     key={index}
@@ -147,18 +147,18 @@ export const AnimatedTestimonials = ({
                             ))}
                         </motion.p>
                     </motion.div>
-                    <div className="flex gap-2.5 pt-8 md:pt-0">
+                    <div className="flex gap-2.5 pt-6 md:pt-0">
                         <button
                             aria-label="Témoignage précédent"
                             onClick={handlePrev}
-                            className="group/button cursor-pointer flex size-10 md:size-12 items-center justify-center rounded-xl bg-black-primary"
+                            className="group/button cursor-pointer flex size-12 items-center justify-center rounded-xl bg-black-primary"
                         >
                             <IconArrowLeft className="size-5 md:size-6 text-white transition-transform duration-300" />
                         </button>
                         <button
                             aria-label="Témoignage suivant"
                             onClick={handleNext}
-                            className="group/button cursor-pointer flex size-10 md:size-12 items-center justify-center rounded-xl bg-black-primary"
+                            className="group/button cursor-pointer flex size-12 items-center justify-center rounded-xl bg-black-primary"
                         >
                             <IconArrowRight className="size-5 md:size-6 text-white transition-transform duration-300" />
                         </button>
