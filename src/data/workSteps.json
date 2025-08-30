@@ -1,15 +1,21 @@
 [
   {
+    "id": 0,
+    "number": "00",
+    "title": "Appel découverte",
+    "description": "Un premier échange pour faire connaissance et comprendre vos besoins de manière globale. Cet appel permet d’identifier vos attentes principales, de vérifier si je suis la bonne personne pour avancer avec vous, et de vous proposer une offre commerciale adaptée."
+  },
+  {
     "id": 1,
     "number": "01",
-    "title": "On fait connaissance ?",
-    "description": "Je prends le temps de comprendre vos besoins lors d'un entretien approfondi. Nous explorons ensemble votre projet, vos objectifs et vos attentes pour définir la meilleure approche technique."
+    "title": "Exploration approfondie",
+    "description": "Je prends le temps de comprendre vos besoins lors d'un entretien plus approfondi. Nous explorons ensemble votre projet, vos objectifs et vos attentes pour définir la meilleure approche possible par rapport à vos contraintes."
   },
   {
     "id": 2,
     "number": "02",
-    "title": "Place à la préparation",
-    "description": "Je conçois une solution sur mesure et établis un planning détaillé. Vous recevez une proposition claire incluant les spécifications techniques, les délais et le budget pour une transparence totale."
+    "title": "Préparation sur mesure",
+    "description": "Je transforme vos besoins en un plan de projet structuré : arborescence du site, choix techniques et planning détaillé. Vous disposez ainsi d’une feuille de route claire pour suivre chaque étape en toute transparence."
   },
   {
     "id": 3,
