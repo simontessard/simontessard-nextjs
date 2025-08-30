@@ -4,13 +4,13 @@
     "designation": "CEO Novastra",
     "quote": "J'ai fait appel à Simon pour m'accompagner sur la création du site web d’un de mes clients. Il a su s’adapter rapidement aux besoins du projet. Une collaboration efficace et professionnelle !",
     "img": "collab/novastra.png",
-    "src": "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "src": "/placeholders/photographer.jpg"
   },
   {
     "name": "Maxime Le bec",
     "designation": "Graphiste Freelance",
     "quote": "Simon et moi avons collaboré à la refonte de mon portfolio. Il a su développer la maquette que je lui avais fournie avec une grande précision, respectant chaque détail au pixel près. Le projet a été mené rapidement et efficacement.",
     "img": "collab/maxim.png",
-    "src": "/placeholders/max1.png"
+    "src": "/placeholders/max1.jpg"
   }
 ]

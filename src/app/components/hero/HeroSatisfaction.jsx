@@ -55,7 +55,7 @@ export default function HeroSatisfaction() {
         >
             <div className="relative w-24 flex">
                 <img
-                    src="/placeholders/max1.png"
+                    src="/placeholders/max1.jpg"
                     alt=""
                     className="js-hero-satisfaction--bull scale-60 opacity-0 shrink-0 object-cover rounded-full size-10"
                 />
