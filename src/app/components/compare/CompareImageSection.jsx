@@ -3,6 +3,7 @@ import AnimText from "@/app/components/utils/AnimText";
 import CTABase from "@/app/components/ui/CTABase";
 import {Compare} from "@/app/components/compare/Compare";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
+import CompareImageContainer from "@/app/components/compare/CompareImageContainer";
 
 export default function CompareImageSection() {
     return (
@@ -31,17 +32,7 @@ export default function CompareImageSection() {
                     qui reflète vos ambitions et capte leur attention.
                 </AnimParagraph>
 
-                <div className="p-2 md:p-4 border border-neutral-800 rounded-2xl bg-neutral-900 mb-8 xl:mb-10 2xl:mb-12">
-                    <Compare
-                        firstImage="/compare/before-fdd.jpg"
-                        secondImage="/compare/after-fdd.jpg"
-                        firstImageClassName="object-cover object-left-top"
-                        secondImageClassname="object-cover object-left-top"
-                        className="aspect-[16/9] size-full"
-                        slideMode="hover"
-                        autoplay={true}
-                    />
-                </div>
+                <CompareImageContainer/>
 
                 <CTABase
                     withScrollTrigger
