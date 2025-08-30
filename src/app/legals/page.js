@@ -4,6 +4,7 @@ import LegalsContent from "@/app/legals/LegalsContent";
 
 export const metadata = {
     title: "Mentions légales",
+    description: "Consultez les mentions légales de mon site web pour en savoir plus sur mon entreprise.",
 }
 
 export default function Page() {
