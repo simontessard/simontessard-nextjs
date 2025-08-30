@@ -11,8 +11,8 @@ export default function ProjectsList() {
         offset: ['start start', 'end end'],
     });
     return (
-            <div className="bg-white-secondary" ref={container}>
-                <section className="text-white   w-full bg-white-secondary">
+            <div ref={container}>
+                <section className="text-white w-full bg-white-secondary">
                     {projects.map((project, i) => {
                         const targetScale = 1 - (projects.length - i) * 0.05;
                         return (
@@ -22,7 +22,6 @@ export default function ProjectsList() {
                                 url={project?.url}
                                 src={project?.image}
                                 title={project?.title}
-                                color={project?.color}
                                 description={project?.description}
                                 progress={scrollYProgress}
                                 range={[i * 0.25, 1]}
@@ -35,7 +34,7 @@ export default function ProjectsList() {
             </div>
     );
 }
-export const Card = ({i, title, description, src, url, color, progress, range, targetScale}) => {
+export const Card = ({i, title, description, src, url, progress, range, targetScale}) => {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
         target: container,
