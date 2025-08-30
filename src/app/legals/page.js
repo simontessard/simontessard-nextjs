@@ -2,6 +2,10 @@ import AnimText from "@/app/components/utils/AnimText";
 import HomeLogo from "@/app/components/utils/HomeLogo";
 import LegalsContent from "@/app/legals/LegalsContent";
 
+export const metadata = {
+    title: "Mentions légales",
+}
+
 export default function Page() {
     return (
         <main className="flex flex-col  items-center bg-black-primary text-white
