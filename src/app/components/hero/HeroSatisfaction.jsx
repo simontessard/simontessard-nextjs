@@ -56,12 +56,12 @@ export default function HeroSatisfaction() {
             <div className="relative w-24 flex">
                 <img
                     src="/placeholders/max1.jpg"
-                    alt=""
+                    alt="Maxime Le bec, client satisfait"
                     className="js-hero-satisfaction--bull scale-60 opacity-0 shrink-0 object-cover rounded-full size-10"
                 />
                 <img
                     src="/placeholders/photographer.jpg"
-                    alt=""
+                    alt="Jonathan Lecompte, client satisfait"
                     className="js-hero-satisfaction--bull scale-60 opacity-0 -translate-x-10 shrink-0 rounded-full object-cover size-10"
                 />
                 <div

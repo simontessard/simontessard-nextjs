@@ -10,7 +10,8 @@ export default function ProjectsSection() {
             id="work"
             className="section-white flex flex-col bg-white-primary py-16 md:py-18 xl:py-22 2xl:py-26"
         >
-            <Uptitle className="text-black" withScrollTrigger>Portfolio</Uptitle>
+            <Uptitle className="text-black"
+                     withScrollTrigger>Portfolio</Uptitle>
 
             <AnimText
                 useScrollTrigger

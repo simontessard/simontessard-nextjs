@@ -33,7 +33,7 @@ export default function CompareImageSection() {
 
                 <div className="p-2 md:p-4 border border-neutral-800 rounded-2xl bg-neutral-900 mb-8 xl:mb-10 2xl:mb-12">
                     <Compare
-                        firstImage="/compare/before-fdd.png"
+                        firstImage="/compare/before-fdd.jpg"
                         secondImage="/compare/after-fdd.jpg"
                         firstImageClassName="object-cover object-left-top"
                         secondImageClassname="object-cover object-left-top"

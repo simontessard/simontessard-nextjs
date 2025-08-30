@@ -13,7 +13,7 @@ export default function FAQSection() {
 
                 <AnimText
                     useScrollTrigger
-                    tag="h3"
+                    tag="h2"
                     className="css-title-section text-black mb-6 md:mb-12"
                 >
                     Questions <span className="css-word-italic">fréquentes.</span>
