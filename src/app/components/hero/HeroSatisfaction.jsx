@@ -10,7 +10,7 @@ export default function HeroSatisfaction() {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
-            const tl = gsap.timeline({ delay: 1.5 });
+            const tl = gsap.timeline({ delay: 1.2 });
 
             const bulls = gsap.utils.toArray('.js-hero-satisfaction--bull');
 

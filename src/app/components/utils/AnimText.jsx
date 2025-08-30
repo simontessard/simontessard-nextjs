@@ -60,7 +60,7 @@ export default function AnimText({ tag = 'h1', className = '', useScrollTrigger 
             };
             tween = gsap.to(split.words, { ...tweenConfig, scrollTrigger: triggerOpts });
         } else {
-            tween = gsap.to(split.words, { ...tweenConfig, delay: 0.75 });
+            tween = gsap.to(split.words, { ...tweenConfig, delay: 0.2 });
         }
 
         return () => {

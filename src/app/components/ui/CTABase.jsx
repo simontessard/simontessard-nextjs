@@ -50,7 +50,7 @@ export default function CTABase({
         const tl = gsap.timeline({
             defaults: { ease: 'power2.out' },
             scrollTrigger: withScrollTrigger ? { trigger: rootEl.current, ...scrollTriggerOptions } : undefined,
-            delay: withScrollTrigger ? 0 : 1.2,
+            delay: withScrollTrigger ? 0 : 1,
         });
 
         tl.to(rootEl.current, { opacity: 1, scale: 1, duration: 1 });

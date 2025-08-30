@@ -31,7 +31,7 @@ export default function AnimParagraph({
                 tween.kill();
             };
         } else {
-            const tween = gsap.to(textRef.current, { ...animConfig, delay: 1.2 });
+            const tween = gsap.to(textRef.current, { ...animConfig, delay: .8 });
             return () => tween.kill();
         }
     }, [withScrollTrigger, scrollTriggerOptions]);
