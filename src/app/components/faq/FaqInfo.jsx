@@ -6,7 +6,7 @@ export default function FaqInfo() {
             <div className="w-full">
                 <AnimText
                     useScrollTrigger
-                    tag="h4"
+                    tag="h3"
                     className="text-black text-xl md:text-2xl xl:text-3xl font-figtree font-bold uppercase tracking-tight mb-4 md:mb-6 md:max-w-[12rem]"
                 >
                     Encore des questions ?

@@ -3,6 +3,7 @@ import { useTransform, motion, useScroll } from 'motion/react';
 import { useRef } from 'react';
 import projects from '@/data/projects.json';
 import CTABase from "@/app/components/ui/CTABase";
+import Image from "next/image";
 
 export default function ProjectsList() {
     const container = useRef(null);
@@ -70,7 +71,9 @@ export const Card = ({i, title, description, src, url, progress, range, targetSc
 
                     {src && (
                         <div className="flex lg:w-[55%] p-3 md:p-6">
-                            <img
+                            <Image
+                                width={1620}
+                                height={1080}
                                 src={src}
                                 alt={title || 'Project Image'}
                                 className="size-full object-cover rounded-xl"
