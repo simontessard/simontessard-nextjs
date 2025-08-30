@@ -32,7 +32,7 @@ export default function Uptitle({ withScrollTrigger = false,
                     ...scrollTriggerOptions,
                 }
                 : undefined,
-            delay: withScrollTrigger ? 0 : 1.2,
+            delay: withScrollTrigger ? 0 : .9,
         });
 
         tl.to(textContent.current, {
