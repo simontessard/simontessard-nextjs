@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef } from 'react';
 import { gsap } from 'gsap';
 import projects from '@/data/projects.json';
+import Image from "next/image";
 
 export default function BrandList() {
     const containerRef = useRef(null);
@@ -58,7 +59,9 @@ export default function BrandList() {
                         className="shrink-0 group relative flex items-center justify-center p-4 md:p-6 2xl:p-7"
                     >
                         {brand.logo ? (
-                            <img
+                            <Image
+                                width={200}
+                                height={200}
                                 src={brand.logo}
                                 alt={`${brand.title ?? 'Brand'} logo`}
                                 className="size-14 md:size-18 xl:size-20 object-contain rounded-lg"
@@ -72,9 +75,9 @@ export default function BrandList() {
                             className="absolute inset-0 rounded-2xl"
                             aria-label={`Visiter le site de ${brand.title ?? 'la marque'}`}
                         >
-              <span className="sr-only">
-                Visiter {brand.title ?? 'la marque'}
-              </span>
+                            <span className="sr-only">
+                                Visiter {brand.title ?? 'la marque'}
+                            </span>
                         </a>
                     </li>
                 ))}
