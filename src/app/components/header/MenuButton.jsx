@@ -34,13 +34,13 @@ export default function MenuButton() {
                 ref={menuButtonRef}
                 onClick={openMenu}
                 className={['js-menu-button ml-2 lg:hidden cursor-pointer pointer-events-auto flex flex-col items-center justify-center',
-                    'gap-1.5 transition-colors bg-black text-white font-light leading-[1] font-figtree p-4 size-12 rounded-xl',
+                    'gap-1.5 p-4 size-12 rounded-xl',
                 ].join(' ')}
                 aria-label="Ouvrir le menu"
                 type="button"
             >
-                <span className="w-5 h-0.25 bg-white" />
-                <span className="w-5 h-0.25 bg-white" />
+                <span className="w-6.5 h-0.5 bg-black" />
+                <span className="w-6.5 h-0.5 bg-black" />
             </button>
     );
 }
