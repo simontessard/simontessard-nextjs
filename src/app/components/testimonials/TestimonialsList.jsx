@@ -149,12 +149,14 @@ export const AnimatedTestimonials = ({
                     </motion.div>
                     <div className="flex gap-2.5 pt-8 md:pt-0">
                         <button
+                            aria-label="Témoignage précédent"
                             onClick={handlePrev}
                             className="group/button cursor-pointer flex size-10 md:size-12 items-center justify-center rounded-xl bg-black-primary"
                         >
                             <IconArrowLeft className="size-5 md:size-6 text-white transition-transform duration-300" />
                         </button>
                         <button
+                            aria-label="Témoignage suivant"
                             onClick={handleNext}
                             className="group/button cursor-pointer flex size-10 md:size-12 items-center justify-center rounded-xl bg-black-primary"
                         >
