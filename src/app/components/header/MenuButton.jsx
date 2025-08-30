@@ -34,7 +34,7 @@ export default function MenuButton() {
                 ref={menuButtonRef}
                 onClick={openMenu}
                 className={['js-menu-button ml-2 lg:hidden cursor-pointer pointer-events-auto flex flex-col items-center justify-center',
-                    'gap-1.5 p-4 size-12 rounded-xl',
+                    'gap-1.5 p-4 w-10 h-12 rounded-xl',
                 ].join(' ')}
                 aria-label="Ouvrir le menu"
                 type="button"
