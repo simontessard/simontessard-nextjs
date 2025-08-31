@@ -37,7 +37,7 @@ export default function Menu() {
     return (
         <div
             className="js-menu hidden bg-black/90 fixed z-[100] inset-0
-                 flex-col justify-end size-full p-6 pt-6 md:p-8"
+            flex-col justify-end size-full p-4"
             role="dialog"
             aria-modal="true"
             aria-label="Menu principal"
