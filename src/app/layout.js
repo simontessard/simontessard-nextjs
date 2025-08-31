@@ -1,5 +1,30 @@
 import "./globals.css";
 import LenisProvider from "@/app/components/utils/LenisProvider";
+import { Figtree } from "next/font/google";
+import { STIX_Two_Text } from "next/font/google";
+import { Chivo } from "next/font/google";
+
+const figtree = Figtree({
+    subsets: ["latin"],
+    variable: "--font-figtree",
+    display: "swap",
+    weight: ["300", "400", "500", "700"],
+});
+
+const stix = STIX_Two_Text({
+    subsets: ["latin"],
+    variable: "--font-stix",
+    style: ['normal', 'italic'],
+    display: "swap",
+    weight: ["400", "500", "700"],
+});
+
+const chivo = Chivo({
+    subsets: ["latin"],
+    variable: "--font-chivo",
+    display: "swap",
+    weight: ["400", "500", "600", "700"],
+});
 
 const siteUrl = "https://www.simontessard.fr";
 
@@ -29,7 +54,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+        <body className={`${figtree.variable} ${stix.variable} ${chivo.variable}`}>
         <LenisProvider>
           {children}
         </LenisProvider>

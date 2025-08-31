@@ -50,7 +50,7 @@ export default function PriceItem({
                     <AnimText
                         useScrollTrigger
                         tag="h3"
-                        className="text-black text-2xl md:text-3xl font-figtree font-semibold mb-1 md:mb-2"
+                        className="text-black text-2xl md:text-3xl font-figtree font-bold mb-1 md:mb-2"
                     >
                         {title}
                     </AnimText>

@@ -20,7 +20,7 @@ export default function CtaSection() {
                     tag="h2"
                     className="font-figtree tracking-tight
                     text-3xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-7xl
-                    leading-[.95] font-semibold mb-2 md:mb-4 xl:mb-6">
+                    leading-[.95] font-medium mb-2 md:mb-4 xl:mb-6">
                     Lancez <span className="css-word-italic">votre</span> projet <br />
                     dès <span className="css-word-italic">aujourd&apos;hui.</span>
                 </AnimText>
