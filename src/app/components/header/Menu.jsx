@@ -54,19 +54,11 @@ export default function Menu() {
 
     return (
         <div className="js-menu hidden bg-black/90 fixed z-100 top-0 left-0 flex-col justify-between size-full p-6 pt-6 md:p-8">
-            <div className="flex items-center justify-between">
-
-                <div className="bg-theme-primary rounded-lg p-1">
-                    <img
-                        className="size-10 md:size-11"
-                        src="/logo.png"
-                        alt="Logo Simon TESSARD"
-                    />
-                </div>
+            <div className="flex items-center justify-end">
 
                 <button
                     onClick={closeMenu}
-                    className="self-end cursor-pointer text-black bg-white-primary font-light p-2.5 size-10 flex justify-center items-center leading-[1] font-figtree rounded-xl"
+                    className="self-end cursor-pointer text-black bg-white-primary font-light p-2.5 size-12 flex justify-center items-center leading-[1] font-figtree rounded-xl"
                     aria-label="Fermer le menu"
                     type="button"
                 >
