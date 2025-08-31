@@ -7,7 +7,6 @@ export default function CompareImageContainer() {
     useEffect(() => {
         gsap.to('.compare-image--container', {
             y: 0,
-            opacity: 1,
             duration: 1,
             ease: 'power2.inOut',
             scrollTrigger: {
@@ -18,7 +17,7 @@ export default function CompareImageContainer() {
     }, []);
 
     return (
-        <div className="compare-image--container translate-y-10 md:translate-y-20 opacity-50 p-2 md:p-4 border border-neutral-800 rounded-2xl bg-neutral-900 mb-8 xl:mb-10 2xl:mb-12">
+        <div className="compare-image--container translate-y-6 md:translate-y-14 p-2 md:p-4 border border-neutral-800 rounded-2xl bg-neutral-900 mb-8 xl:mb-10 2xl:mb-12">
             <Compare
                 firstImage="/compare/before-fdd.jpg"
                 secondImage="/compare/after-fdd.jpg"

@@ -44,7 +44,7 @@ export default function PriceSection() {
                     ))}
                 </div>
 
-                <p className="text-center text-[11px] md:text-xs text-gray-500">
+                <p className="text-center text-[11px] md:text-xs text-gray-700">
                     *Investir dans un Site One Page, c’est aussi préparer l’avenir : son coût est intégralement déduit
                     si vous faites évoluer vers un Site Complet par la suite.
                 </p>

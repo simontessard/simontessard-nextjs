@@ -33,7 +33,7 @@ export default function AboutSection() {
 
                         <div className="flex flex-col gap-6 lg:gap-8 max-md:mb-6">
                             <AnimText
-                                withScrollTrigger
+                                useScrollTrigger
                                 tag="p"
                                 className="font-figtree tracking-tight font-light md:text-lg xl:text-xl"
                             >
@@ -41,14 +41,14 @@ export default function AboutSection() {
                                 pensés pour que vos visiteurs deviennent vos clients.
                             </AnimText>
                             <AnimText
-                                withScrollTrigger
+                                useScrollTrigger
                                 tag="p"
                                 className="font-figtree tracking-tight font-light md:text-lg xl:text-xl"
                             >
                                 Chaque interaction devient une expérience : j’anime vos idées pour transformer un simple site en une vitrine digitale mémorable.
                             </AnimText>
                             <AnimText
-                                withScrollTrigger
+                                useScrollTrigger
                                 tag="p"
                                 className="font-figtree tracking-tight font-light md:text-lg xl:text-xl"
                             >
