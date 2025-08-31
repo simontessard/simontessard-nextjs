@@ -16,7 +16,6 @@ export default function Header() {
         const el = headerRef.current;
         if (!el) return;
 
-        // entrée du header (depuis -translate-y-[150%])
         gsap.to(el, { y: 0, delay: .8, duration: 0.6, ease: 'circ.out' });
 
         const animHeader = gsap.timeline({ paused: true });
@@ -43,7 +42,7 @@ export default function Header() {
     return (
         <>
             <header ref={headerRef}
-                className="js-header fixed left-0 top-4 lg:top-6 z-99 -translate-y-[150%] pointer-events-none
+                className="js-header fixed left-0 top-4 lg:top-6 z-101 -translate-y-[150%] pointer-events-none
                    flex items-center w-full py-1 transition-colors duration-500 px-3 md:px-4"
             >
                 <div className="container bg-white shadow-md size-fit max-lg:flex max-lg:justify-between py-1.5 px-2 md:px-3 items-center rounded-xl lg:grid lg:grid-cols-5 w-full">
