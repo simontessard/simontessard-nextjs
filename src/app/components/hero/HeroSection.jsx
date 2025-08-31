@@ -37,7 +37,7 @@ export default function HeroSection() {
                        lg:text-xl mb-6 md:mb-8"
                     >
                         Freelance créant des sites web entre performance et design, <br className="max-md:hidden"/>
-                        conçus pour marquer les esprits.
+                        réfléchis pour marquer les esprits.
                     </AnimParagraph>
 
                     <div className="flex max-md:flex-col max-md:items-center size-fit gap-4 mb-8 md:mb-10">

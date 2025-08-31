@@ -34,7 +34,7 @@ export default function HeroBackground() {
             <Image
                 ref={imgRef}
                 src="/background_epic.png"
-                alt=""
+                alt="Fonds bleu avec des formes abstraites"
                 fill
                 className="absolute top-0 left-0 scale-110 size-full object-cover rounded-b-2xl"
                 priority

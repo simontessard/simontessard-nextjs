@@ -57,7 +57,7 @@ export const Card = ({i, title, description, src, url, progress, range, targetSc
             >
                     <div className="lg:w-[45%] pt-2 pb-4 px-4 md:p-6 xl:p-8 2xl:p-12">
                         <h3 className="text-2xl md:text-3xl xl:text-4xl text-black tracking-tight font-figtree font-bold
-                            mb-3 md:mb-6">
+                            md:max-w-sm mb-3 md:mb-6">
                             {title}
                         </h3>
                         {description && (

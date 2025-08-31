@@ -8,7 +8,7 @@ export default function CompareImageContainer() {
         gsap.to('.compare-image--container', {
             y: 0,
             duration: 1,
-            ease: 'power2.inOut',
+            ease: 'power2.out',
             scrollTrigger: {
                 trigger: '.compare-image--container',
                 start: 'top 75%',
