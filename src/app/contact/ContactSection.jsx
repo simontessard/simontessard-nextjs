@@ -16,7 +16,7 @@ export default function ContactSection() {
             </Uptitle>
 
             <AnimText tag="h1" className="css-title-section container text-white text-center max-w-4xl mb-10 md:mb-12 xl:mb-14 2xl:mb-16">
-                Ensemble créons quelque chose de <span className="css-word-italic">mémorable.</span>
+                Créons <span className="css-word-italic">ensemble</span> votre <span className="css-word-italic">projet.</span>
             </AnimText>
 
             <Calendar/>
