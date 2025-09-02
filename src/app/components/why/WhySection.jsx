@@ -1,0 +1,45 @@
+import Uptitle from "@/app/components/utils/Uptitle";
+import AnimText from "@/app/components/utils/AnimText";
+import AnimParagraph from "@/app/components/utils/AnimParagraph";
+import TwoColumns from "@/app/components/why/TwoColumns";
+import CTABase from "@/app/components/ui/CTABase";
+
+export default function WhySection() {
+    return (
+        <section id="why"
+            className="bg-gradient-primary py-14 md:py-16 xl:py-22 2xl:py-26">
+
+            <Uptitle className="text-white"
+                     withScrollTrigger>Freelance vs Agence</Uptitle>
+
+            <AnimText
+                useScrollTrigger
+                tag="h2"
+                className="css-title-section text-white container mb-4 md:mb-5 xl:mb-6"
+            >
+                Pourquoi <span className="css-word-italic"> choisir </span>
+                <br/>
+                un <span className="css-word-italic"> freelance </span>?
+            </AnimText>
+
+            <AnimParagraph
+                withScrollTrigger
+                tag="p"
+                className="css-subtitle-section container text-white md:max-w-3xl mb-14 2xl:mb-24"
+            >
+                Regardons ensemble les avantages concrets à choisir un freelance.
+            </AnimParagraph>
+
+            <TwoColumns/>
+
+            <CTABase
+                withScrollTrigger
+                variant="white"
+                to="/contact"
+                text="Réserver un appel"
+                customClass="mx-auto mt-6 md:mt-10"
+            />
+
+        </section>
+    );
+}

@@ -1,0 +1,30 @@
+{
+  "freelance": {
+    "pros": [
+      {
+        "title": "Coût moins élevé",
+        "description": "Avec une structure allégée, le freelance offre un excellent rapport qualité-prix et des solutions adaptées à votre budget."
+      },
+      {
+        "title": "Grande flexibilité",
+        "description": "Il peut adapter rapidement son organisation et ses méthodes en fonction des besoins spécifiques de votre projet."
+      },
+      {
+        "title": "Communication directe",
+        "description": "Un seul interlocuteur du début à la fin, ce qui évite les intermédiaires et rend les échanges plus clairs et rapides."
+      },
+      {
+        "title": "Engagement personnel",
+        "description": "Sa réputation dépend de la qualité de son travail, il s’investit donc pleinement dans chaque projet."
+      },
+      {
+        "title": "Délais plus courts",
+        "description": "Pas de lourdeur hiérarchique, les décisions et l’exécution sont plus rapides."
+      },
+      {
+            "title": "Expertise spécialisée",
+            "description": "Souvent très pointu dans son domaine, il apporte une expertise de haut niveau adaptée à vos besoins."
+      }
+    ]
+  }
+}

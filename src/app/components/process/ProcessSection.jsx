@@ -1,7 +1,6 @@
 import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";
 import ProcessList from "@/app/components/process/ProcessList";
-import CTABase from "@/app/components/ui/CTABase";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
 
 export default function ProcessSection() {

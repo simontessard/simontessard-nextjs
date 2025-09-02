@@ -12,6 +12,7 @@ import CompareImageSection from "@/app/components/compare/CompareImageSection";
 import CountUpSection from "@/app/components/dividers/CountUpSection";
 import Header from "@/app/components/header/Header";
 import Footer from "@/app/components/footer/Footer";
+import WhySection from "@/app/components/why/WhySection";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
               <AboutSection/>
               <CountUpSection/>
               <ProjectsSection/>
+              <WhySection/>
               <ProcessSection/>
               <Citation/>
               <PriceSection/>
