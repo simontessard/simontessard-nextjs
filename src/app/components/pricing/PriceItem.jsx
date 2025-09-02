@@ -14,7 +14,7 @@ export default function PriceItem({
     return (
         <div
             className={[
-                'relative overflow-hidden w-full rounded-2xl md:rounded-3xl shadow-xs p-4 md:p-6 flex flex-col justify-center lf:aspect-[6/7]',
+                'relative overflow-hidden w-full rounded-2xl md:rounded-3xl shadow-xs p-4 md:p-5 flex flex-col justify-center lf:aspect-[6/7]',
                 popular ? 'bg-gradient-primary' : 'bg-white border border-gray-200',
             ].join(' ')}
         >
@@ -50,20 +50,20 @@ export default function PriceItem({
                     <AnimText
                         useScrollTrigger
                         tag="h3"
-                        className="text-black text-2xl md:text-3xl font-figtree font-bold mb-1 md:mb-2"
+                        className="text-center text-black text-2xl md:text-3xl font-figtree font-bold mb-1 md:mb-2"
                     >
                         {title}
                     </AnimText>
 
-                    <p className="text-sm md:text-base text-black italic font-light font-figtree mb-4 md:mb-6">
+                    <p className="text-center text-sm md:text-base text-black italic font-light font-figtree mb-4 md:mb-6">
                         « {citation} »
                     </p>
 
-                    <p className="font-chivo font-medium tracking-tighter mb-4 md:mb-6 text-3xl xl:text-4xl 2xl:text-5xl text-black">
+                    <p className="text-center font-chivo font-medium tracking-tighter mb-2 md:mb-4 text-3xl xl:text-4xl 2xl:text-5xl text-black">
                         {price}
                     </p>
 
-                    <p className="text-sm md:text-lg text-black font-light font-figtree mb-6">
+                    <p className="text-center text-sm md:text-lg text-black font-light font-figtree mb-6">
                         {desc}
                     </p>
 
