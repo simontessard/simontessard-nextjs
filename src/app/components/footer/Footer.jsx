@@ -22,7 +22,7 @@ export default function Footer() {
                         <Image
                             width={100}
                             height={100}
-                            className="size-12 md:size-14 bg-theme-primary rounded-lg p-1 mb-4"
+                            className="size-12 md:size-14 bg-blue-primary rounded-lg p-1 mb-4"
                             src="/logo.png"
                             alt="Logo Simon TESSARD"
                         />

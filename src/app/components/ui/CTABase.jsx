@@ -32,7 +32,7 @@ export default function CTABase({
     const variantClasses = {
         black: 'bg-black border-2 border-white/10 text-white',
         white: 'bg-white border-2 border-black/10 text-black',
-        blue: 'bg-theme-primary border-2 border-[#ffffff29] text-white',
+        blue: 'bg-gradient-to-r from-blue-600 to-blue-primary border-2 border-theme-primary text-white',
     };
 
     const baseClasses = [

@@ -41,7 +41,7 @@ export default function PriceItem({
                         </svg>
 
                         {popular && (
-                            <p className="size-fit bg-gradient-to-r from-cyan-600 to-theme-primary text-white font-figtree py-1 md:py-1.5 px-2 md:px-2.5 md:px-3 text-xs md:text-sm rounded-md">
+                            <p className="size-fit bg-gradient-to-r from-blue-600 to-theme-primary text-white font-figtree py-1 md:py-1.5 px-2 md:px-2.5 md:px-3 text-xs md:text-sm rounded-md">
                                 La + populaire
                             </p>
                         )}

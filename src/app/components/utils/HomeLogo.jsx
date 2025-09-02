@@ -23,7 +23,7 @@ export default function HomeLogo() {
             <Image src="/logo.png" alt="Logo Simon TESSARD"
                    aria-label="Retour à l'accueil"
                    width={100} height={100}
-                   className="size-13 md:size-15 bg-theme-primary rounded-md p-1"/>
+                   className="size-13 md:size-15 bg-blue-primary rounded-md p-1"/>
         </Link>
     )
 }

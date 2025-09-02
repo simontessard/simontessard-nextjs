@@ -21,8 +21,9 @@ body {
     --color-white-primary: #f6f3f4;
     --color-grey-primary: #ccbfc4;
     --color-grey-text : #b3b3b3;
-    --color-theme-primary: #3f07e6 ;
+    --color-theme-primary: #3f07e6;
     --color-theme-secondary: #22007a;
+    --color-blue-primary: #0000c1;
 }
 
 @layer components {
