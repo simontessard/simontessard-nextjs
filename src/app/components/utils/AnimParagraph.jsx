@@ -3,13 +3,10 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
-export default function AnimParagraph({
-                                         tag = 'p',
-                                         className = '',
+export default function AnimParagraph({ tag = 'p', className = '',
                                          withScrollTrigger = false,
                                          scrollTriggerOptions = { start: 'top 72%', end: 'bottom 20%' },
-                                         children,
-                                     }) {
+                                         children }) {
     const textRef = useRef(null);
     const Tag = tag; // tag dynamique
 
