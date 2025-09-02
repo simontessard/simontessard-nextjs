@@ -30,9 +30,9 @@ export default function CTABase({
     const tlRef = useRef(null);
 
     const variantClasses = {
-        black: 'bg-black border-4 border-white/10 text-white',
-        white: 'bg-white border-4 border-black/10 text-black',
-        blue: 'bg-theme-primary border-4 border-[#ffffff29] text-white',
+        black: 'bg-black border-2 border-white/10 text-white',
+        white: 'bg-white border-2 border-black/10 text-black',
+        blue: 'bg-theme-primary border-2 border-[#ffffff29] text-white',
     };
 
     const baseClasses = [

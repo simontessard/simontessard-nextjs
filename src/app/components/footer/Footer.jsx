@@ -9,6 +9,7 @@ import {
 import FooterMenu from "@/app/components/footer/FooterMenu";
 import FooterContact from "@/app/components/footer/FooterContact";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
     return (
@@ -17,8 +18,11 @@ export default function Footer() {
 
                 <div className="flex max-md:flex-col justify-between mb-8 md:mb-20">
                     <div className="max-lg:mb-8">
-                        <img
-                            className="size-14 md:size-16 bg-theme-primary rounded-lg p-1 mb-4"
+
+                        <Image
+                            width={100}
+                            height={100}
+                            className="size-12 md:size-14 bg-theme-primary rounded-lg p-1 mb-4"
                             src="/logo.png"
                             alt="Logo Simon TESSARD"
                         />
