@@ -11,7 +11,7 @@ export default function HeroSection() {
     return (
         <section
             id="hero"
-            className="relative bg-white-primary pt-12 md:pt-30 min-h-[100vh]
+            className="relative bg-white-primary pt-12 md:pt-24 min-h-[100vh]
                  flex flex-col items-center justify-center overflow-hidden">
 
             <HeroBackground />
