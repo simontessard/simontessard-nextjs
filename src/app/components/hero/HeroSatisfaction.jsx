@@ -23,8 +23,7 @@ export default function HeroSatisfaction() {
                 stagger: 0.1,
             });
 
-            tl.to(
-                '.js-hero-satisfaction--star',
+            tl.to('.js-hero-satisfaction--star',
                 {
                     scale: 1,
                     opacity: 1,
@@ -34,8 +33,7 @@ export default function HeroSatisfaction() {
                 '<'
             );
 
-            tl.to(
-                '.js-hero-satisfaction--text',
+            tl.to( '.js-hero-satisfaction--text',
                 {
                     y: 0,
                     opacity: 1,

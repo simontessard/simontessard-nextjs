@@ -1,7 +1,6 @@
 'use client';
 
 import { useCallback } from 'react';
-import { gsap } from 'gsap';
 
 export default function FooterLink({ title, href, arrow = false }) {
     const scrollWithNative = useCallback(() => {

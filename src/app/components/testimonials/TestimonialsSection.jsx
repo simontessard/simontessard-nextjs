@@ -1,7 +1,6 @@
 import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
-import CTABase from "@/app/components/ui/CTABase";
 import {AnimatedTestimonials} from "@/app/components/testimonials/TestimonialsList";
 import testimonials from '@/data/testimonials.json';
 

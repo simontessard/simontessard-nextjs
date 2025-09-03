@@ -1,5 +1,3 @@
-'use client';
-
 import pricingData from '@/data/pricing.json';
 import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";

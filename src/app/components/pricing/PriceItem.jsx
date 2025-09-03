@@ -1,16 +1,7 @@
-'use client';
-
 import AnimText from "@/app/components/utils/AnimText";
 import CTABase from "@/app/components/ui/CTABase";
 
-export default function PriceItem({
-                                      title,
-                                      citation,
-                                      price,
-                                      desc,
-                                      list = [],
-                                      popular = false,
-                                  }) {
+export default function PriceItem({ title, citation, price, desc, list = [], popular = false,}) {
     return (
         <div
             className={[

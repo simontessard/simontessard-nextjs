@@ -4,7 +4,6 @@ import CTABase from "@/app/components/ui/CTABase";
 import Uptitle from "@/app/components/utils/Uptitle";
 import HeroSatisfaction from "@/app/components/hero/HeroSatisfaction";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
-import IconStar from "@/app/components/icons/IconStar";
 import HeroStar from "@/app/components/hero/HeroStar";
 
 export default function HeroSection() {
