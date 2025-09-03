@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 body {
     @apply bg-white-primary !overflow-x-hidden scroll-smooth;

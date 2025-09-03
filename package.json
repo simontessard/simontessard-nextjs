@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.3",
-    "@fancyapps/ui": "^6.0.23",
     "@tabler/icons-react": "^3.34.1",
     "@tsparticles/engine": "^3.9.1",
     "@tsparticles/react": "^3.0.0",
