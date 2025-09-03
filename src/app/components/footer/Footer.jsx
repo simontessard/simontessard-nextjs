@@ -37,12 +37,12 @@ export default function Footer() {
                         </AnimText>
 
                         <Link href="mailto:pro@simontessard.fr"
-                              className="md:text-lg font-light text-blue-primary font-figtree tracking-tight transition-colors duration-300 mb-1">
+                              className="md:text-lg font-light bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-primary font-figtree tracking-tight transition-colors duration-300 mb-1">
                             pro@simontessard.fr
                         </Link>
 
                         <Link href="https://www.linkedin.com/in/simon-tessard-138733198/" target="_blank"
-                              className="md:text-lg font-light text-blue-primary font-figtree tracking-tight transition-colors duration-300">
+                              className="md:text-lg font-light bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-primary font-figtree tracking-tight transition-colors duration-300">
                             LinkedIn
                         </Link>
                     </div>
