@@ -36,7 +36,7 @@ export default function TwoColumns() {
 
 function Column({ pros, itemsRef }) {
     return (
-        <ul className="grid grid-cols-1 md:grid-cols-2 w-full gap-4 md:gap-6 mb-4">
+        <ul className="grid grid-cols-1 md:grid-cols-2 w-full gap-5 md:gap-6 mb-4">
             {pros.map((point, idx) => (
                 <li
                     ref={el => itemsRef.current[idx] = el}
