@@ -25,7 +25,7 @@ export default function PriceItem({
                         popular ? 'bg-white' : 'bg-white-primary',
                     ].join(' ')}
                 >
-                    <div className="flex justify-between mb-2 md:mb-3">
+                    <div className="flex justify-between mb-2.5 md:mb-3">
                         {/* Icône */}
                         <svg
                             className="size-6 md:size-7"

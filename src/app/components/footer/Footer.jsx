@@ -16,8 +16,8 @@ export default function Footer() {
         <footer className="bg-white">
             <div className="container pb-5 md:pb-6 pt-16 md:pt-18 xl:pt-20 flex flex-col justify-end lg:justify-between h-full">
 
-                <div className="flex max-md:flex-col justify-between mb-8 md:mb-20">
-                    <div className="max-lg:mb-10">
+                <div className="flex max-md:flex-col justify-between mb-6 md:mb-20">
+                    <div className="flex flex-col max-lg:mb-10">
 
                         <Image
                             width={100}
@@ -36,11 +36,14 @@ export default function Footer() {
                             accessible à des prix mini.
                         </AnimText>
 
-                        <Link
-                            href="mailto:pro@simontessard.fr"
-                            className="md:text-lg font-light text-blue-primary font-figtree tracking-tight transition-colors duration-300"
-                        >
+                        <Link href="mailto:pro@simontessard.fr"
+                              className="md:text-lg font-light text-blue-primary font-figtree tracking-tight transition-colors duration-300 mb-1">
                             pro@simontessard.fr
+                        </Link>
+
+                        <Link href="https://www.linkedin.com/in/simon-tessard-138733198/" target="_blank"
+                              className="md:text-lg font-light text-blue-primary font-figtree tracking-tight transition-colors duration-300">
+                            LinkedIn
                         </Link>
                     </div>
 
@@ -56,10 +59,10 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <hr className="text-black/20 mb-6 md:mb-8" />
+                <hr className="text-black/20 mb-4 md:mb-6" />
 
                 {/* Bottom */}
-                <div className="flex max-md:flex-col-reverse max-lg:gap-5 justify-between">
+                <div className="flex max-md:flex-col-reverse max-lg:gap-4 justify-between">
                     <div className="flex justify-center items-center">
                         <span className="font-figtree tracking-tight text-gray-700 text-xs sm:text-sm md:text-base max-lg:text-center">
                             © 2025 Simon TESSARD. Tous droits réservés.
