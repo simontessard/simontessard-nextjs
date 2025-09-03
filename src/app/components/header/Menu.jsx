@@ -43,7 +43,7 @@ export default function Menu() {
             aria-label="Menu principal"
         >
             <div className="js-menu--content relative translate-y-20
-                      flex flex-col justify-center bg-white-primary
+                      flex flex-col justify-center bg-white
                       h-[75%] w-full rounded-xl p-6">
                 <ul className="flex flex-col items-center gap-4">
                     {navItemsMobile.map((item, index) => (
@@ -52,8 +52,8 @@ export default function Menu() {
                                 href={item.path || '#'}
                                 onClick={(e) => navigateWithNativeScroll(item.path, e)}
                                 className="js-menu--link opacity-0 translate-y-6 rounded-xl
-                           bg-theme-primary py-2.5 px-4.5 inline-block
-                           text-white font-figtree text-xl"
+                           py-2 px-4.5 inline-block
+                           text-black font-figtree text-2xl"
                             >
                                 {item.label}
                             </a>
