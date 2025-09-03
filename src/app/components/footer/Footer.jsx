@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="container pb-5 md:pb-6 pt-16 md:pt-18 xl:pt-20 flex flex-col justify-end lg:justify-between h-full">
 
                 <div className="flex max-md:flex-col justify-between mb-8 md:mb-20">
-                    <div className="max-lg:mb-8">
+                    <div className="max-lg:mb-10">
 
                         <Image
                             width={100}
@@ -38,7 +38,7 @@ export default function Footer() {
 
                         <Link
                             href="mailto:pro@simontessard.fr"
-                            className="max-md:text-sm font-light text-blue-primary font-figtree tracking-tight transition-colors duration-300"
+                            className="md:text-lg font-light text-blue-primary font-figtree tracking-tight transition-colors duration-300"
                         >
                             pro@simontessard.fr
                         </Link>

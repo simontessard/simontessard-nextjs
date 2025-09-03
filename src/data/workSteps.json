@@ -14,18 +14,12 @@
   {
     "id": 2,
     "number": "02",
-    "title": "Préparation sur mesure",
-    "description": "Je transforme vos besoins en un plan de projet structuré : arborescence du site, choix techniques et planning détaillé. Vous disposez ainsi d’une feuille de route claire et transparente."
+    "title": "Conception et développement",
+    "description": "Je transforme vos besoins en un plan de projet : arborescence du site, choix techniques et planning détaillé. Puis je donne vie à vos idées en développant votre projet. Des points réguliers permettent d'ajuster si nécessaire."
   },
   {
     "id": 3,
     "number": "03",
-    "title": "On donne vie à vos idées",
-    "description": "Je développe votre projet. Des points réguliers vous permettent de suivre l'avancement et d'ajuster si nécessaire."
-  },
-  {
-    "id": 4,
-    "number": "04",
     "title": "À vos côtés",
     "description": "Une fois votre projet finalisé et testé, je vous accompagne dans sa mise en ligne. Mon engagement ne s'arrête pas là : je reste disponible pour vous former et assurer la maintenance."
   }
