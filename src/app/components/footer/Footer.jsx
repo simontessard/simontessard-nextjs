@@ -9,7 +9,7 @@ import {
 import FooterMenu from "@/app/components/footer/FooterMenu";
 import FooterContact from "@/app/components/footer/FooterContact";
 import Link from "next/link";
-import Image from "next/image";
+import BackHome from "@/app/components/header/BackHome";
 
 export default function Footer() {
     return (
@@ -19,13 +19,7 @@ export default function Footer() {
                 <div className="flex max-md:flex-col justify-between mb-6 md:mb-20">
                     <div className="flex flex-col max-lg:mb-10">
 
-                        <Image
-                            width={100}
-                            height={100}
-                            className="size-12 md:size-14 bg-gradient-to-r from-blue-600 to-blue-primary rounded-md p-1 mb-4"
-                            src="/logo.png"
-                            alt="Logo Simon TESSARD"
-                        />
+                        <BackHome className="mb-4"/>
 
                         <AnimText
                             withScrollTrigger

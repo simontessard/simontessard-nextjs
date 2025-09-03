@@ -45,7 +45,6 @@ export const metadata = {
     },
     robots: { index: true, follow: true },
     twitter: { card: "summary_large_image", images: ["/og.jpg"] },
-    viewport: "width=device-width, initial-scale=1",
     icons: { icon: "/favicon.ico", apple: "/apple-touch-icon.png" },
 };
 
