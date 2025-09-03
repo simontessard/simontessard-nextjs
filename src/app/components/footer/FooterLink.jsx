@@ -29,7 +29,7 @@ export default function FooterLink({ title, href, arrow = false }) {
     );
 
     return (
-        <li className="group overflow-hidden font-figtree tracking-tight md:text-lg font-light text-gray-700">
+        <li className="group overflow-hidden font-figtree tracking-tight md:text-lg font-light text-gray-800">
             <a
                 href={href}
                 onClick={handleClick}
@@ -48,7 +48,7 @@ export default function FooterLink({ title, href, arrow = false }) {
 
                 {arrow && (
                     <svg
-                        className="shrink-0 size-5 md:size-6 stroke-gray-700"
+                        className="shrink-0 size-5 md:size-6 stroke-gray-800"
                         width="32"
                         height="33"
                         viewBox="0 0 32 33"

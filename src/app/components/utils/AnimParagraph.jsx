@@ -13,7 +13,7 @@ export default function AnimParagraph({ tag = 'p', className = '',
     useEffect(() => {
         if (!textRef.current) return;
 
-        const animConfig = { y: 0, opacity: 1, duration: 0.8, ease: 'circ.out' };
+        const animConfig = { y: 0, opacity: 1, duration: 0.7, ease: 'circ.out' };
 
         if (withScrollTrigger) {
             const tween = gsap.to(textRef.current, {
@@ -28,7 +28,7 @@ export default function AnimParagraph({ tag = 'p', className = '',
                 tween.kill();
             };
         } else {
-            const tween = gsap.to(textRef.current, { ...animConfig, delay: .8 });
+            const tween = gsap.to(textRef.current, { ...animConfig, delay: .7 });
             return () => tween.kill();
         }
     }, [withScrollTrigger, scrollTriggerOptions]);
