@@ -14,9 +14,9 @@ body {
 }
 
 @theme {
-    --font-chivo: 'Chivo', var(--font-sans);
-    --font-figtree: 'Figtree', var(--font-sans);
-    --font-stix: 'STIX Two Text', var(--font-sans);
+    --font-chivo: var(--font-chivo), var(--font-sans);
+    --font-figtree: var(--font-figtree), var(--font-sans);
+    --font-stix: var(--font-stix), var(--font-sans);
     --color-black-primary: #1a1a1a;
     --color-white-primary: #f6f3f4;
     --color-grey-primary: #ccbfc4;

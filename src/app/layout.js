@@ -1,8 +1,6 @@
 import "./globals.css";
 import LenisProvider from "@/app/components/utils/LenisProvider";
-import { Figtree } from "next/font/google";
-import { STIX_Two_Text } from "next/font/google";
-import { Chivo } from "next/font/google";
+import { Figtree, STIX_Two_Text, Chivo } from "next/font/google";
 
 const figtree = Figtree({
     subsets: ["latin"],
