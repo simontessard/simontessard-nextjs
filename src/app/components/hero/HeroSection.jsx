@@ -1,11 +1,11 @@
-'use client';
-
 import HeroBackground from "@/app/components/hero/HeroBackground";
 import AnimText from "@/app/components/utils/AnimText";
 import CTABase from "@/app/components/ui/CTABase";
 import Uptitle from "@/app/components/utils/Uptitle";
 import HeroSatisfaction from "@/app/components/hero/HeroSatisfaction";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
+import IconStar from "@/app/components/icons/IconStar";
+import HeroStar from "@/app/components/hero/HeroStar";
 
 export default function HeroSection() {
     return (
@@ -28,14 +28,15 @@ export default function HeroSection() {
                         leading-[1.05] md:leading-[1] xl:leading-[0.95] 2xl:leading-[0.9] font-medium mb-3 md:mb-5"
                     >
                         Une <span className="css-word-italic"> vitrine </span> web <br /> à la hauteur de <br /> votre{' '}
-                        <span className="css-word-italic">marque.</span>
+                        <span className="css-word-italic relative">marque.
+                           <HeroStar/>
+                        </span>
                     </AnimText>
 
                     <AnimParagraph
                         tag="p"
                         className="font-figtree font-light text-center text-white/95 tracking-tight leading-[1.6]
-                       lg:text-xl mb-6 md:mb-8"
-                    >
+                       lg:text-xl mb-6 md:mb-8">
                         Freelance en création de sites web performants et design, <br className="max-md:hidden"/>
                         réfléchis pour marquer les esprits.
                     </AnimParagraph>
