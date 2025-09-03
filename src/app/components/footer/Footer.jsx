@@ -38,7 +38,7 @@ export default function Footer() {
 
                         <Link
                             href="mailto:pro@simontessard.fr"
-                            className="max-md:text-sm font-light text-black md:hover:text-gray-500 transition-colors duration-300"
+                            className="max-md:text-sm font-light text-blue-primary font-figtree tracking-tight transition-colors duration-300"
                         >
                             pro@simontessard.fr
                         </Link>

@@ -33,13 +33,19 @@ export default function CtaSection() {
                     C'est le moment de surprendre vos visiteurs avec une vitrine repensée.
                 </AnimParagraph>
 
-                <CTABase
-                    withScrollTrigger
-                    variant="white"
-                    to="/contact"
-                    text="Réserver un appel"
-                    customClass="mx-auto"
-                />
+                <div className="flex max-md:flex-col max-md:items-center size-fit gap-4">
+                    <CTABase
+                        variant="white"
+                        to="/contact"
+                        text="Lancer mon projet"
+                    />
+
+                    <CTABase
+                        variant="black"
+                        to="mailto:pro@simontessard.fr"
+                        text="Me contacter par email"
+                    />
+                </div>
             </div>
         </section>
     );
