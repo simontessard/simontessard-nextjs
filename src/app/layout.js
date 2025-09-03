@@ -29,7 +29,7 @@ const siteUrl = "https://www.simontessard.fr";
 export const metadata = {
     metadataBase: new URL(siteUrl),
     title: {
-        default: "Simon Tessard - Création de sites web",
+        default: "Simon Tessard | Création de sites web",
         template: "%s | Simon Tessard",
     },
     description:
@@ -38,7 +38,7 @@ export const metadata = {
     openGraph: {
         type: "website",
         url: siteUrl,
-        title: "Simon Tessard - Création de sites web",
+        title: "Simon Tessard | Création de sites web",
         description: "Freelance spécialisé en développement web, création de sites performants, design et optimisation SEO.",
         images: [{ url: "/og.jpg", width: 1200, height: 630 }],
         locale: "fr_FR",
@@ -51,7 +51,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="fr">
         <body className={`${figtree.variable} ${stix.variable} ${chivo.variable}`}>
         <LenisProvider>
           {children}

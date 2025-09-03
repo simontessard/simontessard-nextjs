@@ -43,7 +43,6 @@ body {
 }
 
 .bg-gradient-primary {
-    @apply bg-theme-primary;
     background: linear-gradient(357deg,rgba(63, 7, 230, 1) 0%, rgba(34, 0, 122, 1) 100%);
 }
 
