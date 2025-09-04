@@ -2,10 +2,7 @@
 import pros from '@/data/pros.json';
 import { useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {useGSAP} from "@gsap/react";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function TwoColumns() {
     const itemsRef = useRef([]);
@@ -21,7 +18,7 @@ export default function TwoColumns() {
             duration: 0.8,
             ease: "power2.out",
             scrollTrigger: {
-                trigger: itemsRef.current[0], // le premier élément comme déclencheur
+                trigger: itemsRef.current[0],
                 start: 'top 80%',
                 end: 'bottom 20%',
             },
@@ -37,18 +34,22 @@ export default function TwoColumns() {
 
 function Column({ pros, itemsRef }) {
     return (
-        <ul className="grid grid-cols-1 md:grid-cols-2 w-full gap-5 md:gap-6 mb-4">
+        <ul className="grid grid-cols-1 md:grid-cols-2 w-full gap-6 mb-4">
             {pros.map((point, idx) => (
                 <li
                     ref={el => itemsRef.current[idx] = el}
                     key={idx}
-                    className="translate-y-4 opacity-0 flex max-md:flex-col gap-3 md:gap-4 p-4 md:p-5 xl:p-6
-                        text-black bg-white w-full rounded-xl"
+                    className="translate-y-4 opacity-0 flex flex-col gap-3 md:gap-4 p-4 md:p-5 xl:p-6
+                        text-white w-full rounded-xl"
                 >
-                    <p className="w-full md:w-1/3 shrink-0 tracking-tight font-medium font-figtree text-lg xl:text-xl">
+                    <span className="font-medium tracking-tight font-chivo text-4xl md:text-6xl xl:text-6xl mb-1 md:mb-3">
+                        {idx + 1 < 10 ? `0${idx + 1}` : idx + 1}
+                    </span>
+                    <p className="w-full uppercase shrink-0 tracking-tight font-figtree
+                    text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
                         {point.title}
                     </p>
-                    <p className="w-full md:w-2/3 font-figtree tracking-tight font-light md:text-lg">
+                    <p className="w-full font-figtree opacity-85 tracking-tight font-light md:text-lg">
                         {point.description}
                     </p>
                 </li>

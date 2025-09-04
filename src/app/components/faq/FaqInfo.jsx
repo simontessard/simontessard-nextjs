@@ -1,9 +1,10 @@
 import AnimText from "@/app/components/utils/AnimText";
+import Link from "next/link";
 
 export default function FaqInfo() {
     return (
-        <div className="max-md:hidden flex gap-4 lg:gap-6 xl:gap-8 shrink-0 bg-white shadow-xs p-4 md:p-5 xl:p-6 rounded-xl h-fit">
-            <div className="w-full">
+        <Link href="/contact" className="max-md:hidden flex gap-4 lg:gap-6 xl:gap-8 shrink-0 bg-white shadow-xs p-4 md:p-5 xl:p-6 rounded-xl h-fit">
+            <div  className="w-full">
                 <AnimText
                     useScrollTrigger
                     tag="h3"
@@ -34,6 +35,6 @@ export default function FaqInfo() {
                     strokeLinejoin="round"
                 />
             </svg>
-        </div>
+        </Link>
     );
 }
