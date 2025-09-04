@@ -1,14 +1,15 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { gsap } from 'gsap';
 import FooterLink from "@/app/components/footer/FooterLink";
+import {useGSAP} from "@gsap/react";
 
 export default function FooterMenu({ links = [], title = 'Menu',
                                      arrow = false, customClass = '' }) {
     const menuRef = useRef(null);
 
-    useEffect(() => {
+    useGSAP(() => {
         const el = menuRef.current;
         if (!el) return;
 
@@ -22,11 +23,6 @@ export default function FooterMenu({ links = [], title = 'Menu',
                 start: 'top 80%',
             },
         });
-
-        return () => {
-            if (tween.scrollTrigger) tween.scrollTrigger.kill();
-            tween.kill();
-        };
     }, []);
 
     return (

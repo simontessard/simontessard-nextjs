@@ -2,10 +2,10 @@
 
 import IconStar from "@/app/components/icons/IconStar";
 import {gsap} from "gsap";
-import {useEffect} from "react";
+import {useGSAP} from "@gsap/react";
 
 export default function HeroStar() {
-    useEffect(() => {
+    useGSAP(() => {
         gsap.to(".hero-star", {
             opacity: 1,
             scale: 1,

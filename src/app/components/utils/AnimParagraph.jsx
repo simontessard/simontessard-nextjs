@@ -5,10 +5,9 @@ import { gsap } from 'gsap';
 
 export default function AnimParagraph({ tag = 'p', className = '',
                                          withScrollTrigger = false,
-                                         scrollTriggerOptions = { start: 'top 72%', end: 'bottom 20%' },
-                                         children }) {
+                                         scrollTriggerOptions = { start: 'top 72%', end: 'bottom 20%' }, children }) {
     const textRef = useRef(null);
-    const Tag = tag; // tag dynamique
+    const Tag = tag;
 
     useEffect(() => {
         if (!textRef.current) return;

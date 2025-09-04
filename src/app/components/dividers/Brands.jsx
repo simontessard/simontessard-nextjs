@@ -1,9 +1,10 @@
 'use client';
 
-import { useEffect, useMemo, useRef } from 'react';
+import { useMemo, useRef } from 'react';
 import { gsap } from 'gsap';
 import projects from '@/data/projects.json';
 import Image from "next/image";
+import {useGSAP} from "@gsap/react";
 
 export default function BrandList() {
     const containerRef = useRef(null);
@@ -15,12 +16,11 @@ export default function BrandList() {
         []
     );
 
-    useEffect(() => {
+    useGSAP(() => {
         const container = containerRef.current;
         const track = trackRef.current;
         if (!container || !track) return;
 
-        const ctx = gsap.context(() => {
             gsap.to('.js-brand--item', {
                 opacity: 1,
                 duration: 1,
@@ -40,9 +40,6 @@ export default function BrandList() {
                     scrub: 1,
                 },
             });
-        }, container);
-
-        return () => ctx.revert();
     }, []);
 
     return (

@@ -1,11 +1,12 @@
 "use client";
-import {useEffect, useRef} from "react";
+import {useRef} from "react";
 import {gsap} from "gsap";
+import {useGSAP} from "@gsap/react";
 
 export default function LegalsContent() {
     const contentRef = useRef(null);
 
-    useEffect(() => {
+    useGSAP(() => {
         gsap.to(contentRef.current, {
             opacity: 1,
             delay: 1,

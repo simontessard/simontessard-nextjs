@@ -1,13 +1,14 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { gsap } from 'gsap';
 import workSteps from '@/data/workSteps.json';
+import {useGSAP} from "@gsap/react";
 
 export default function ProcessList() {
     const cardRefs = useRef([]);
 
-    useEffect(() => {
+    useGSAP(() => {
         const mm = gsap.matchMedia();
 
         mm.add('(min-width: 768px)', () => {
@@ -41,8 +42,6 @@ export default function ProcessList() {
                 });
             });
         });
-
-        return () => mm.revert();
     }, []);
 
     return (

@@ -2,13 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {useEffect, useRef} from "react";
+import { useRef} from "react";
 import {gsap} from "gsap";
+import {useGSAP} from "@gsap/react";
 
 export default function HomeLogo() {
     const logoRef = useRef(null);
 
-    useEffect(() => {
+    useGSAP(() => {
         gsap.to(logoRef.current, {
             opacity: 1,
             scale: 1,

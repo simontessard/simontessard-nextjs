@@ -1,14 +1,15 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { gsap } from 'gsap';
+import {useGSAP} from "@gsap/react";
 
 export default function NumberCard({ stat, index }) {
     const cardRef = useRef(null);
     const labelRef = useRef(null);
     const valueRef = useRef(null);
 
-    useEffect(() => {
+    useGSAP(() => {
         const card = cardRef.current;
         const label = labelRef.current;
         const valueEl = valueRef.current;
@@ -62,8 +63,6 @@ export default function NumberCard({ stat, index }) {
                 }
             );
         }
-
-        return () => tl.kill();
     }, [stat, index]);
 
     return (

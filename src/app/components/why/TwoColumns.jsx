@@ -1,15 +1,16 @@
 "use client";
 import pros from '@/data/pros.json';
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {useGSAP} from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function TwoColumns() {
     const itemsRef = useRef([]);
 
-    useEffect(() => {
+    useGSAP(() => {
         if (!itemsRef.current) return;
 
         gsap.to(itemsRef.current, {
