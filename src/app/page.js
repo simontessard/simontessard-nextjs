@@ -25,9 +25,9 @@ export default function Home() {
               <CountUpSection/>
               <ProjectsSection/>
               <WhySection/>
-              <ProcessSection/>
-              <Citation/>
               <PriceSection/>
+              <Citation/>
+              <ProcessSection/>
               <BrandList/>
               <TestimonialsSection/>
               <FAQSection/>
