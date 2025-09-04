@@ -42,9 +42,7 @@ function Column({ pros, itemsRef }) {
                     className="translate-y-4 opacity-0 flex flex-col gap-3 md:gap-4 p-4 md:p-5 xl:p-6
                         text-white w-full rounded-xl"
                 >
-                    <span className="font-medium tracking-tight font-chivo text-4xl md:text-6xl xl:text-6xl mb-1 md:mb-3">
-                        {idx + 1 < 10 ? `0${idx + 1}` : idx + 1}
-                    </span>
+                    
                     <p className="w-full uppercase shrink-0 tracking-tight font-figtree
                     text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
                         {point.title}
