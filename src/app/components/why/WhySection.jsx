@@ -27,8 +27,8 @@ export default function WhySection() {
                 tag="p"
                 className="css-subtitle-section container text-white md:max-w-3xl mb-14 2xl:mb-24"
             >
-                Regardons ensemble les avantages concrets à
-                <br className="max-md:hidden"/> travailler avec moi plutôt qu'avec une agence.
+                Voici quelques avantages concrets à collaborer avec moi
+                <br className="max-md:hidden"/> plutôt qu’avec une agence.
             </AnimParagraph>
 
             <TwoColumns/>
