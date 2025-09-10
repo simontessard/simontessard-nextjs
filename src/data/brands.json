@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Training Thérapie Pro",
+    "logo": "/projects/logo-tt-pro.png",
+    "url": "https://pros.training-therapie.fr/"
+  },
+  {
+    "title": "Festival du Film de Demain",
+    "logo": "/projects/logo-ffd.webp",
+    "url": "https://filmdedemain.fr"
+  },
+  {
+    "title": "Simon TESSARD",
+    "logo": "/logo.png",
+    "url": "https://simontessard.fr"
+  },
+  {
+    "title": "Training Thérapie",
+    "logo": "/projects/logo-tt.png",
+    "url": "https://www.training-therapie.fr/"
+  },
+  {
+    "title": "Iniva Hôtel",
+    "logo": "/projects/logo-iniva.png",
+    "url": "https://inivatourism.com/"
+  },
+  {
+    "title": "Maxime Le Bec",
+    "logo": "/projects/logo-maxime.png",
+    "url": "https://maximelebec.fr"
+  },
+  {
+    "title": "Festival Ciné Citoyen",
+    "logo": "/projects/logo-fcc.png",
+    "url": "https://festival-cinecitoyen.ouest-france.fr/"
+  }
+]

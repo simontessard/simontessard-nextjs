@@ -44,7 +44,7 @@ function Column({ pros, itemsRef }) {
                 >
                     
                     <p className="w-full uppercase shrink-0 tracking-tight font-figtree
-                    text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
+                    text-lg md:text-xl xl:text-2xl">
                         {point.title}
                     </p>
                     <p className="w-full font-figtree opacity-85 tracking-tight font-light md:text-lg">

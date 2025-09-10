@@ -2,7 +2,7 @@
 
 import { useMemo, useRef } from 'react';
 import { gsap } from 'gsap';
-import projects from '@/data/projects.json';
+import brands from '@/data/brands.json';
 import Image from "next/image";
 import {useGSAP} from "@gsap/react";
 
@@ -12,7 +12,7 @@ export default function BrandList() {
 
     // Duplique les items pour une bande plus longue
     const duplicatedProjects = useMemo(
-        () => [...projects, ...projects],
+        () => [...brands, ...brands],
         []
     );
 

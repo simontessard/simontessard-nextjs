@@ -17,7 +17,7 @@ export default function CompareImageContainer() {
     }, []);
 
     return (
-        <div className="compare-image--container opacity-0 p-2 md:p-3 border border-neutral-800 rounded-2xl bg-neutral-900 mb-8 xl:mb-10 2xl:mb-12">
+        <div className="compare-image--container opacity-0 p-1.5 md:p-2.5 border border-neutral-800 rounded-2xl bg-neutral-900 mb-8 xl:mb-10 2xl:mb-12">
             <Compare
                 firstImage="/compare/before-fdd.jpg"
                 secondImage="/compare/after-fdd.jpg"
