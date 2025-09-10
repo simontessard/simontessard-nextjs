@@ -23,6 +23,7 @@ export default function BrandList() {
 
             gsap.to('.js-brand--item', {
                 opacity: 1,
+                scale: 1,
                 duration: 1,
                 stagger: 0.1,
                 scrollTrigger: {
@@ -49,12 +50,12 @@ export default function BrandList() {
         >
             <ul
                 ref={trackRef}
-                className="flex flex-nowrap gap-3.5 md:gap-6 xl:gap-8 2xl:gap-12 will-change-transform"
+                className="flex flex-nowrap gap-4 md:gap-6 xl:gap-12 2xl:gap-14 will-change-transform"
             >
                 {duplicatedProjects.map((brand, index) => (
                     <li
                         key={`${brand.title || 'brand'}-${index}`}
-                        className="js-brand--item opacity-0 shrink-0 group relative flex items-center justify-center p-4 md:p-6 2xl:p-7"
+                        className="js-brand--item opacity-0 scale-75 shrink-0 group relative flex items-center justify-center p-4 md:p-6 2xl:p-7"
                     >
                         {brand.logo ? (
                             <Image
@@ -62,7 +63,7 @@ export default function BrandList() {
                                 height={200}
                                 src={brand.logo}
                                 alt={`${brand.title ?? 'Brand'} logo`}
-                                className="size-14 md:size-18 xl:size-20 object-contain rounded-lg"
+                                className="size-12 md:size-16 xl:size-18 object-contain rounded-lg"
                             />
                         ) : null}
 
