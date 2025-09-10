@@ -2,6 +2,7 @@ import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";
 import ProcessList from "@/app/components/process/ProcessList";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
+import TimelineDemo from "@/app/components/process/TimelineDemo";
 
 export default function ProcessSection() {
     return (
@@ -29,7 +30,7 @@ export default function ProcessSection() {
                     à y mettre passion, envie et savoir-faire.
                 </AnimParagraph>
 
-                <ProcessList />
+                <TimelineDemo/>
             </div>
         </section>
     );
