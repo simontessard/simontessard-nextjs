@@ -35,7 +35,7 @@ export default function PriceItem({ title, citation, price, desc, list = [], pop
 
                         {/* Icône éclair */}
                         {!popular && (
-                            <img src="/icons8-éclair-64.png" alt="" className="size-8 rotate-12"/>
+                            <img src="/flash.png" alt="" className="size-8 rotate-12"/>
                         )}
 
                         {popular && (
