@@ -7,7 +7,7 @@ export default function TimelineDemo() {
         {
             title: "Appel découverte",
             content: (
-                <div className="pb-12 md:pb-20">
+                <div>
                     <p className="mb-8 font-light text-sm md:text-base lg:text-xl leading-[1.6] opacity-90">
                         Un premier échange pour faire connaissance et comprendre vos besoins de manière globale. Cet appel permet d’identifier vos attentes principales, et de vous proposer une offre commerciale adaptée.
                     </p>
@@ -34,7 +34,7 @@ export default function TimelineDemo() {
         {
             title: "Exploration approfondie",
             content: (
-                <div className="pb-12 md:pb-20">
+                <div>
                     <p className="mb-6 md:mb-8 font-light text-sm md:text-base lg:text-xl leading-[1.6] opacity-90">
                         Je prends le temps de comprendre vos besoins lors d'un entretien plus approfondi. Nous explorons ensemble vos objectifs et vos attentes pour définir la meilleure approche possible par rapport à vos contraintes.
                     </p>
@@ -51,7 +51,7 @@ export default function TimelineDemo() {
         {
             title: "Conception et développement",
             content: (
-                <div className="pb-12 md:pb-20">
+                <div>
                     <p className="mb-6 md:mb-8 font-light text-sm md:text-base lg:text-xl leading-[1.6] opacity-90">
                         Je transforme vos besoins en un plan de projet : arborescence du site, choix techniques et planning détaillé.
                         Puis je donne vie à vos idées en développant votre projet.
