@@ -43,7 +43,7 @@ body {
 }
 
 .bg-gradient-primary {
-    background: linear-gradient(357deg,rgba(63, 7, 230, 1) 0%, rgba(34, 0, 122, 1) 100%);
+    @apply bg-gradient-to-r from-blue-700 to-blue-primary;
 }
 
 .css-title-section {

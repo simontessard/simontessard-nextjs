@@ -14,7 +14,7 @@ import BackHome from "@/app/components/header/BackHome";
 export default function Footer() {
     return (
         <footer className="bg-white">
-            <div className="container pb-5 md:pb-6 pt-16 md:pt-18 xl:pt-20 flex flex-col justify-end lg:justify-between h-full">
+            <div className="container pb-5 pt-16 md:pt-18 xl:pt-20 flex flex-col justify-end lg:justify-between h-full">
 
                 <div className="flex max-md:flex-col justify-between mb-6 md:mb-20">
                     <div className="flex flex-col max-lg:mb-10">
@@ -74,8 +74,8 @@ export default function Footer() {
                             ))}
                         </ul>
                     </div>
-
                 </div>
+
             </div>
         </footer>
     );

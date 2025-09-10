@@ -19,7 +19,7 @@ export default function FaqInfo() {
             </div>
 
             <svg
-                className="shrink-0 size-10 p-2 rounded-full bg-black-primary stroke-white"
+                className="shrink-0 size-10 p-2 rounded-full bg-gradient-primary stroke-white"
                 width="32"
                 height="33"
                 viewBox="0 0 32 33"
