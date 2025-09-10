@@ -7,20 +7,20 @@ export default function TimelineDemo() {
         {
             title: "Appel découverte",
             content: (
-                <div>
-                    <p className="mb-8 font-light lg:text-xl leading-[1.6] opacity-90">
+                <div className="pb-12 md:pb-20">
+                    <p className="mb-8 font-light text-sm md:text-base lg:text-xl leading-[1.6] opacity-90">
                         Un premier échange pour faire connaissance et comprendre vos besoins de manière globale. Cet appel permet d’identifier vos attentes principales, et de vous proposer une offre commerciale adaptée.
                     </p>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
                         <Image
-                            src="/MEL03051.jpg"
+                            src="/MEL03064.jpg"
                             alt="startup template"
                             width={400}
                             height={400}
                             className="h-50 md:h-60 xl:h-70 w-full rounded-lg object-cover"
                         />
                         <Image
-                            src="/MEL03064.jpg"
+                            src="/MEL03051.jpg"
                             alt="startup template"
                             width={400}
                             height={400}
@@ -34,8 +34,8 @@ export default function TimelineDemo() {
         {
             title: "Exploration approfondie",
             content: (
-                <div>
-                    <p className="mb-6 md:mb-8 font-light lg:text-xl leading-[1.6] opacity-90">
+                <div className="pb-12 md:pb-20">
+                    <p className="mb-6 md:mb-8 font-light text-sm md:text-base lg:text-xl leading-[1.6] opacity-90">
                         Je prends le temps de comprendre vos besoins lors d'un entretien plus approfondi. Nous explorons ensemble vos objectifs et vos attentes pour définir la meilleure approche possible par rapport à vos contraintes.
                     </p>
                     <Image
@@ -51,8 +51,8 @@ export default function TimelineDemo() {
         {
             title: "Conception et développement",
             content: (
-                <div>
-                    <p className="mb-6 md:mb-8 font-light lg:text-xl leading-[1.6] opacity-90">
+                <div className="pb-12 md:pb-20">
+                    <p className="mb-6 md:mb-8 font-light text-sm md:text-base lg:text-xl leading-[1.6] opacity-90">
                         Je transforme vos besoins en un plan de projet : arborescence du site, choix techniques et planning détaillé.
                         Puis je donne vie à vos idées en développant votre projet.
                         Des points réguliers permettent d'ajuster si nécessaire.
@@ -71,7 +71,7 @@ export default function TimelineDemo() {
             title: "À vos côtés",
             content: (
                 <div>
-                    <p className="mb-6 md:mb-8 font-light lg:text-xl leading-[1.6] opacity-90">
+                    <p className="mb-6 md:mb-8 font-light text-sm md:text-base lg:text-xl leading-[1.6] opacity-90">
                         Une fois votre projet finalisé et testé, je vous accompagne dans sa mise en ligne.
                         Mon engagement ne s'arrête pas là : je reste disponible pour vous former et assurer la maintenance.
                     </p>
