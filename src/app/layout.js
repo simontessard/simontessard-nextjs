@@ -1,6 +1,7 @@
 import "./globals.css";
 import LenisProvider from "@/app/components/utils/LenisProvider";
 import { Figtree, STIX_Two_Text, Chivo } from "next/font/google";
+import {Analytics} from "@vercel/analytics/next";
 
 const figtree = Figtree({
     subsets: ["latin"],
@@ -52,9 +53,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
         <body className={`${figtree.variable} ${stix.variable} ${chivo.variable}`}>
-        <LenisProvider>
-          {children}
-        </LenisProvider>
+            <LenisProvider>
+                {children}
+            </LenisProvider>
+            <Analytics />
       </body>
     </html>
   );
