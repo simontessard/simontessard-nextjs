@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import {cn} from "@/lib/util";
 import { IconDotsVertical } from "@tabler/icons-react";
 import {SparklesCore} from "@/app/components/compare/Sparkles";
+import Image from "next/image";
 
 export const Compare = ({
                             firstImage = "",
@@ -177,7 +178,9 @@ export const Compare = ({
                                 clipPath: `inset(0 ${100 - sliderXPercent}% 0 0)`,
                             }}
                             transition={{ duration: 0 }}>
-                            <img
+                            <Image
+                                width={1600}
+                                height={1600}
                                 alt="first image"
                                 src={firstImage}
                                 className={cn(
