@@ -85,7 +85,7 @@ export default function PriceItem({ title, citation, price, desc, list = [], pop
                         >
                             <div
                                 className={[
-                                    'shrink-0 p-1 md:p-1.5 rounded-sm md:rounded-lg size-fit mr-2.5 md:mr-3.5',
+                                    'shrink-0 p-1 md:p-1.5 rounded-sm md:rounded-md size-fit mr-2.5 md:mr-3.5',
                                     popular ? 'bg-white' : 'bg-black',
                                 ].join(' ')}
                             >
