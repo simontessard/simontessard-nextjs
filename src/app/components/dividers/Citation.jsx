@@ -28,7 +28,7 @@ export default function Citation() {
                     withScrollTrigger
                     variant="white"
                     to="/contact"
-                    text="Lancer mon projet"/>
+                    text="Réserver un appel"/>
             </div>
 
 

@@ -38,7 +38,7 @@ export default function ProjectsSection() {
                 withScrollTrigger
                 variant="blue"
                 to="/contact"
-                text="Lancer mon projet"
+                text="Réserver un appel"
                 customClass="mx-auto"
             />
 

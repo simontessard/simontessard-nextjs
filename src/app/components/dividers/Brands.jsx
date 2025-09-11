@@ -55,7 +55,7 @@ export default function BrandList() {
                 {duplicatedProjects.map((brand, index) => (
                     <li
                         key={`${brand.title || 'brand'}-${index}`}
-                        className="js-brand--item opacity-0 scale-85 shrink-0 group relative flex items-center justify-center p-4 md:p-6 2xl:p-7"
+                        className="js-brand--item opacity-0 scale-90 shrink-0 group relative flex items-center justify-center p-4 md:p-6 2xl:p-7"
                     >
                         {brand.logo ? (
                             <Image

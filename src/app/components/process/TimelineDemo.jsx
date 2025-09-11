@@ -43,7 +43,7 @@ export default function TimelineDemo() {
                         alt="startup template"
                         width={1200}
                         height={1000}
-                        className="h-50 md:h-70 2xl:h-96 w-full rounded-lg object-cover"
+                        className="h-50 md:h-70 xl:h-80 w-full xl:w-2/3 rounded-lg object-cover"
                     />
                 </div>
             ),

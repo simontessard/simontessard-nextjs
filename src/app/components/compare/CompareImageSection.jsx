@@ -37,7 +37,7 @@ export default function CompareImageSection() {
                     withScrollTrigger
                     variant="blue"
                     to="/contact"
-                    text="Lancer mon projet"
+                    text="Réserver un appel"
                     customClass="mx-auto"
                 />
             </div>

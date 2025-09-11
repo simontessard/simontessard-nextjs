@@ -31,6 +31,7 @@ export default function CTABase({
 
     const variantClasses = {
         black: 'bg-black border-2 border-white/10 text-white',
+        blackborder: 'bg-transparent border-2 border-white text-white',
         white: 'bg-white border-2 border-black/10 text-black',
         blue: 'bg-gradient-to-r from-blue-600 to-blue-primary border-2 border-theme-primary text-white',
     };

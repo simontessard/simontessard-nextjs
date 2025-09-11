@@ -34,15 +34,15 @@ export default function CtaSection() {
 
                 <div className="flex max-md:flex-col max-md:items-center size-fit gap-4">
                     <CTABase
-                        variant="white"
-                        to="/contact"
-                        text="Lancer mon projet"
+                        variant="blackborder"
+                        to="mailto:pro@simontessard.fr"
+                        text="Contact par email"
                     />
 
                     <CTABase
-                        variant="black"
-                        to="mailto:pro@simontessard.fr"
-                        text="Me contacter par email"
+                        variant="white"
+                        to="/contact"
+                        text="Réserver un appel"
                     />
                 </div>
             </div>
