@@ -1,5 +1,5 @@
 import AnimText from "@/app/components/utils/AnimText";
-import HomeLogo from "@/app/components/utils/HomeLogo";
+import HomeLogo from "@/app/components/ui/HomeLogo";
 import LegalsContent from "@/app/legals/LegalsContent";
 
 export const metadata = {

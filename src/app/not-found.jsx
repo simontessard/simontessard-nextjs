@@ -2,7 +2,7 @@
 import AnimText from "@/app/components/utils/AnimText";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
 import CTABase from "@/app/components/ui/CTABase";
-import HomeLogo from "@/app/components/utils/HomeLogo";
+import HomeLogo from "@/app/components/ui/HomeLogo";
 
 export default function Custom404 () {
     return (

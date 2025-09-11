@@ -1,8 +1,8 @@
 import AnimText from "@/app/components/utils/AnimText";
 import Uptitle from "@/app/components/utils/Uptitle";
 import Calendar from "@/app/contact/Calendar";
-import HomeLogo from "@/app/components/utils/HomeLogo";
-import Link from "next/link";
+import HomeLogo from "@/app/components/ui/HomeLogo";
+import Annotation from "@/app/contact/Annotation";
 
 export default function ContactSection() {
 
@@ -24,12 +24,7 @@ export default function ContactSection() {
 
             <Calendar/>
 
-            <p className="mt-6 md:mt-8 text-center font-figtree text-white">
-                Sinon vous pouvez aussi me contacter par email : {" "}
-                <Link href="mailto:pro@simontessard.fr" className="underline underline-offset-2">
-                    pro@simontessard.fr
-                </Link>
-            </p>
+            <Annotation/>
         </section>
     )
 }
