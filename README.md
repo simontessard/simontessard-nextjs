@@ -1,8 +1,16 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## TO-DO List
-- [ ] Fusionnez l'étape 2 et 3 du process
-- [ ] Ajoutez une étoile dans le Héro
+- [x] Fusionnez l'étape 2 et 3 du process
+- [x] Ajoutez une étoile dans le Héro
+- [ ] Ajoutez liste de technos :
+- GSAP
+- Wordpress
+- NextJS
+- React
+- Vercel
+- Framer Motion
+- TailwindCSS
 
 ## Getting Started
 
