@@ -2,6 +2,8 @@ import AnimText from "@/app/components/utils/AnimText";
 import Uptitle from "@/app/components/utils/Uptitle";
 import Calendar from "@/app/contact/Calendar";
 import HomeLogo from "@/app/components/utils/HomeLogo";
+import Link from "next/link";
+import BackButton from "@/app/contact/BackButton";
 
 export default function ContactSection() {
 
@@ -20,6 +22,8 @@ export default function ContactSection() {
             </AnimText>
 
             <Calendar/>
+
+            <BackButton/>
         </section>
     )
 }
