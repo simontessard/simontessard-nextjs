@@ -28,9 +28,7 @@ export default function Header() {
                 end: 99999,
                 onUpdate: (self) => {
                     self.direction === -1 ? animHeader.reverse() : animHeader.play();
-                },
-                // onEnter: () => el.classList.add('css-backdrop-filter', 'lg:bg-black/40'),
-                // onLeave: () => el.classList.remove('css-backdrop-filter', 'lg:bg-black/40'),
+                }
         });
 
         return () => {

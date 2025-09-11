@@ -1,7 +1,7 @@
 import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";
 import CTABase from "@/app/components/ui/CTABase";
-import AboutCarousel from "@/app/components/about/AboutCarousel";
+import AboutImage from "@/app/components/about/AboutImage";
 
 export default function AboutSection() {
     return (
@@ -12,7 +12,7 @@ export default function AboutSection() {
             <div className="container">
                 <div className="flex max-lg:flex-col-reverse gap-8 md:gap-10 lg:gap-14 xl:gap-20 2xl:gap-24">
 
-                    <AboutCarousel/>
+                    <AboutImage/>
 
                     <div className="flex flex-col justify-between min-h-max lg:py-1 w-full lg:w-1/2 lg:aspect-square rounded-xl">
                         <div>
@@ -29,7 +29,7 @@ export default function AboutSection() {
                             </AnimText>
                         </div>
 
-                        <div className="flex flex-col gap-6 lg:gap-8 max-md:mb-6">
+                        <div className="flex flex-col gap-6 lg:gap-8 max-lg:mb-6">
                             <AnimText
                                 useScrollTrigger
                                 tag="p"
