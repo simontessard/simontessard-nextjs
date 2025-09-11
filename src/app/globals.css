@@ -57,3 +57,7 @@ body {
 .css-word-italic {
     @apply font-stix tracking-tight font-light italic;
 }
+
+.css-text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-primary;
+}
