@@ -6,8 +6,8 @@ import "swiper/css/effect-fade"
 
 export default function AboutCarousel() {
     const slides = [
-        { src: "/simon.jpg", alt: "Portrait de Simon" },
-        { src: "/main.jpg", alt: "Main sur un clavier d'ordinateur" },
+        { src: "/about/simon.jpg", alt: "Portrait de Simon" },
+        { src: "/about/main.jpg", alt: "Main sur un clavier d'ordinateur" },
     ]
 
     return (

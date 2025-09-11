@@ -13,14 +13,14 @@ export default function TimelineDemo() {
                     </p>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
                         <Image
-                            src="/MEL03064.jpg"
+                            src="/about/clavier-souris.jpg"
                             alt="startup template"
                             width={400}
                             height={400}
                             className="h-50 md:h-60 xl:h-70 w-full rounded-lg object-cover"
                         />
                         <Image
-                            src="/MEL03051.jpg"
+                            src="/about/screen-teasing.jpg"
                             alt="startup template"
                             width={400}
                             height={400}
@@ -39,7 +39,7 @@ export default function TimelineDemo() {
                         Je prends le temps de comprendre vos besoins lors d'un entretien plus approfondi. Nous explorons ensemble vos objectifs et vos attentes pour définir la meilleure approche possible par rapport à vos contraintes.
                     </p>
                     <Image
-                        src="/main.jpg"
+                        src="/about/main.jpg"
                         alt="startup template"
                         width={1200}
                         height={1000}
@@ -58,7 +58,7 @@ export default function TimelineDemo() {
                         Des points réguliers permettent d'ajuster si nécessaire.
                     </p>
                     <Image
-                        src="/clavier.jpg"
+                        src="/about/clavier.jpg"
                         alt="startup template"
                         width={1200}
                         height={1000}
@@ -76,7 +76,7 @@ export default function TimelineDemo() {
                         Mon engagement ne s'arrête pas là : je reste disponible pour vous former et assurer la maintenance.
                     </p>
                     <Image
-                        src="/simon.jpg"
+                        src="/about/simon.jpg"
                         alt="startup template"
                         width={500}
                         height={800}
