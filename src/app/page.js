@@ -4,7 +4,7 @@ import Citation from "@/app/components/dividers/Citation";
 import ProcessSection from "@/app/components/process/ProcessSection";
 import PriceSection from "@/app/components/pricing/PriceSection";
 import TestimonialsSection from "@/app/components/testimonials/TestimonialsSection";
-import BrandList from "@/app/components/dividers/Brands";
+import BrandList from "@/app/components/dividers/BrandsList";
 import FAQSection from "@/app/components/faq/FaqSection";
 import CtaSection from "@/app/components/cta/CtaSection";
 import ProjectsSection from "@/app/components/projects/ProjectsSection";
@@ -13,6 +13,8 @@ import CountUpSection from "@/app/components/dividers/CountUpSection";
 import Header from "@/app/components/header/Header";
 import Footer from "@/app/components/footer/Footer";
 import WhySection from "@/app/components/why/WhySection";
+import brands from '@/data/brands.json';
+import technos from '@/data/technos.json';
 
 export default function Home() {
   return (
@@ -28,8 +30,9 @@ export default function Home() {
               <PriceSection/>
               <Citation/>
               <ProcessSection/>
-              <BrandList/>
+              <BrandList brands={brands}/>
               <TestimonialsSection/>
+              <BrandList brands={technos} direction="right"/>
               <FAQSection/>
               <CtaSection/>
           </main>

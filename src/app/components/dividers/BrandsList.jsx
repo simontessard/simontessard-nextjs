@@ -2,18 +2,17 @@
 
 import { useMemo, useRef } from 'react';
 import { gsap } from 'gsap';
-import brands from '@/data/brands.json';
 import Image from "next/image";
-import {useGSAP} from "@gsap/react";
+import { useGSAP } from "@gsap/react";
 
-export default function BrandList() {
+export default function BrandsList({ brands = [], direction = "left" }) {
     const containerRef = useRef(null);
     const trackRef = useRef(null);
 
     // Duplique les items pour une bande plus longue
     const duplicatedProjects = useMemo(
         () => [...brands, ...brands],
-        []
+        [brands]
     );
 
     useGSAP(() => {
@@ -21,27 +20,27 @@ export default function BrandList() {
         const track = trackRef.current;
         if (!container || !track) return;
 
-            gsap.to('.js-brand--item', {
-                opacity: 1,
-                scale: 1,
-                duration: 1,
-                stagger: 0.1,
-                scrollTrigger: {
-                    trigger: container,
-                    start: 'top 85%',
-                },
-            });
+        gsap.to('.js-brand--item', {
+            opacity: 1,
+            scale: 1,
+            duration: 1,
+            stagger: 0.1,
+            scrollTrigger: {
+                trigger: container,
+                start: 'top 85%',
+            },
+        });
 
-            gsap.to(track, {
-                x: -200,
-                ease: 'none',
-                scrollTrigger: {
-                    trigger: container,
-                    start: 'top 85%',
-                    scrub: 1,
-                },
-            });
-    }, []);
+        gsap.to(track, {
+            x: direction === "left" ? -200 : 200,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: container,
+                start: 'top 85%',
+                scrub: 1,
+            },
+        });
+    }, [direction]);
 
     return (
         <div

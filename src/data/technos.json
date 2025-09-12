@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Wordpress",
+    "logo": "/technos/logo-wp.png"
+  },
+  {
+    "title": "NextJS",
+    "logo": "/technos/logo-nextjs.png"
+  },
+  {
+    "title": "React",
+    "logo": "/technos/logo-react.png"
+  },
+  {
+    "title": "TailwindCSS",
+    "logo": "/technos/logo-tailwind.png"
+  },
+  {
+    "title": "GSAP",
+    "logo": "/technos/logo-gsap.png"
+  },
+  {
+    "title": "Webflow",
+    "logo": "/technos/logo-webflow.png"
+  }
+]
