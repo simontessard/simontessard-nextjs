@@ -22,5 +22,9 @@
   {
     "title": "Webflow",
     "logo": "/technos/logo-webflow.png"
+  },
+  {
+    "title": "Javascript",
+    "logo": "/technos/logo-js.png"
   }
 ]

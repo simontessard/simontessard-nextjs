@@ -20,6 +20,32 @@ export default function BrandsList({ brands = [], direction = "left" }) {
         const track = trackRef.current;
         if (!container || !track) return;
 
+        const mm = gsap.matchMedia();
+
+        mm.add("(max-width: 768px)", () => {
+            gsap.to(track, {
+                x: direction === "left" ? -100 : 100,
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: container,
+                    start: 'top 85%',
+                    scrub: 1,
+                },
+            });
+        });
+
+        mm.add("(min-width: 768px)", () => {
+            gsap.to(track, {
+                x: direction === "left" ? -200 : 200,
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: container,
+                    start: 'top 85%',
+                    scrub: 1,
+                },
+            });
+        });
+
         gsap.to('.js-brand--item', {
             opacity: 1,
             scale: 1,
@@ -28,16 +54,6 @@ export default function BrandsList({ brands = [], direction = "left" }) {
             scrollTrigger: {
                 trigger: container,
                 start: 'top 85%',
-            },
-        });
-
-        gsap.to(track, {
-            x: direction === "left" ? -200 : 200,
-            ease: 'none',
-            scrollTrigger: {
-                trigger: container,
-                start: 'top 85%',
-                scrub: 1,
             },
         });
     }, [direction]);
@@ -58,8 +74,8 @@ export default function BrandsList({ brands = [], direction = "left" }) {
                     >
                         {brand.logo ? (
                             <Image
-                                width={200}
-                                height={200}
+                                width={150}
+                                height={150}
                                 src={brand.logo}
                                 alt={`${brand.title ?? 'Brand'} logo`}
                                 className="size-12 md:size-16 xl:size-18 object-contain rounded-lg"
