@@ -12,6 +12,10 @@
     "logo": "/technos/logo-react.png"
   },
   {
+    "title": "ThreeJS",
+    "logo": "/technos/logo-threejs.png"
+  },
+  {
     "title": "TailwindCSS",
     "logo": "/technos/logo-tailwind.png"
   },

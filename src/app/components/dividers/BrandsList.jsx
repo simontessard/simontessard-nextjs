@@ -36,7 +36,7 @@ export default function BrandsList({ brands = [], direction = "left" }) {
 
         mm.add("(min-width: 768px)", () => {
             gsap.to(track, {
-                x: direction === "left" ? -200 : 200,
+                x: direction === "left" ? -150 : 150,
                 ease: 'none',
                 scrollTrigger: {
                     trigger: container,
