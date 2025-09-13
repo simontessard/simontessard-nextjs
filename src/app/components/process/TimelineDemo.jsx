@@ -1,4 +1,3 @@
-import React from "react";
 import {Timeline} from "@/app/components/process/Timeline";
 import Image from "next/image";
 
@@ -14,14 +13,14 @@ export default function TimelineDemo() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
                         <Image
                             src="/about/clavier-souris.jpg"
-                            alt="startup template"
+                            alt="Main gauche sur le clavier et main droite sur une souris"
                             width={400}
                             height={400}
                             className="h-50 md:h-60 xl:h-70 w-full rounded-lg object-cover"
                         />
                         <Image
                             src="/about/screen-teasing.jpg"
-                            alt="startup template"
+                            alt="Main avec ombre qui cache un écran d'ordinateur"
                             width={400}
                             height={400}
                             className="h-50 md:h-60 xl:h-70 w-full rounded-lg object-cover"
@@ -40,7 +39,7 @@ export default function TimelineDemo() {
                     </p>
                     <Image
                         src="/about/main.jpg"
-                        alt="startup template"
+                        alt="Un poste de bureau avec la main sur une souris d'ordinateur"
                         width={1200}
                         height={1000}
                         className="h-50 md:h-70 xl:h-80 w-full xl:w-2/3 rounded-lg object-cover"
@@ -59,7 +58,7 @@ export default function TimelineDemo() {
                     </p>
                     <Image
                         src="/about/clavier.jpg"
-                        alt="startup template"
+                        alt="2 mains posées sur un clavier"
                         width={1200}
                         height={1000}
                         className="h-60 md:h-80 xl:h-96 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
@@ -77,7 +76,7 @@ export default function TimelineDemo() {
                     </p>
                     <Image
                         src="/about/simon.jpg"
-                        alt="startup template"
+                        alt="Portrait Simon TESSARD"
                         width={500}
                         height={800}
                         className="aspect-square size-40 md:size-70 rounded-lg object-cover"
