@@ -50,7 +50,7 @@ export default function BrandsList({ brands = [], direction = "left" }) {
             opacity: 1,
             scale: 1,
             duration: 1,
-            stagger: 0.1,
+            stagger: 0.05,
             scrollTrigger: {
                 trigger: container,
                 start: 'top 85%',
