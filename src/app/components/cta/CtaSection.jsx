@@ -37,12 +37,14 @@ export default function CtaSection() {
                         variant="blackborder"
                         to="mailto:pro@simontessard.fr"
                         text="Contact par email"
+                        withScrollTrigger={true}
                     />
 
                     <CTABase
                         variant="white"
                         to="/contact"
                         text="Réserver un appel"
+                        withScrollTrigger={true}
                     />
                 </div>
             </div>
