@@ -13,13 +13,13 @@ const avantData = {
             items: [
                 "Pas d'identité claire",
                 "Pas aux standards de 2025",
-                "Ne suscite pas confiance",
+                "Peu de valeur perçue",
             ],
         },
         {
             title: "Résultats",
             items: [
-                "Peu de valeur perçue",
+                "Ne suscite pas confiance",
                 "Moins de conversion",
                 "Expérience non mémorable",
             ],
@@ -44,7 +44,7 @@ const apresData = {
             items: [
                 "Capte l’attention",
                 "Meilleure conversion",
-                "Marque renforcée",
+                "Image de marque renforcée",
             ],
         },
     ],
