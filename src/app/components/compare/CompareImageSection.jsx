@@ -32,14 +32,6 @@ export default function CompareImageSection() {
                 </AnimParagraph>
 
                 <CompareImageContainer/>
-
-                <CTABase
-                    withScrollTrigger
-                    variant="blue"
-                    to="/contact"
-                    text="Réserver un appel"
-                    customClass="mx-auto"
-                />
             </div>
 
         </section>
