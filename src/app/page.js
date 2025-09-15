@@ -17,7 +17,7 @@ import brands from '@/data/brands.json';
 import technos from '@/data/technos.json';
 
 export const metadata = {
-    title: "Simon Tessard",
+    title: "Simon Tessard | Création de sites web",
     description: "Freelance en création de sites web performants et design.",
     alternates: {
         canonical: "https://simontessard.fr/",

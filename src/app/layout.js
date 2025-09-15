@@ -12,13 +12,13 @@ export const metadata = {
         template: "%s | Simon Tessard",
     },
     description:
-        "Freelance spécialisé en développement web, création de sites performants, design et optimisation SEO.",
+        "Freelance spécialisé en développement web, création de sites performants, design et sur-mesure.",
     alternates: { canonical: "/" },
     openGraph: {
         type: "website",
         url: siteUrl,
         title: "Simon Tessard | Création de sites web",
-        description: "Freelance spécialisé en développement web, création de sites performants, design et optimisation SEO.",
+        description: "Freelance spécialisé en développement web, création de sites performants, design et sur-mesure.",
         images: [{ url: "/logo_rs.png", width: 600, height: 600 }],
         locale: "fr_FR",
     },
