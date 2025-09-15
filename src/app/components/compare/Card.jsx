@@ -25,10 +25,11 @@ export default function Card({ data }) {
     return (
         <div ref={cardRef} className={`opacity-0 flex flex-col py-5 px-6 md:px-7 bg-white rounded-xl border shadow-md w-full ${
             data.special ? "border-blue-primary/30 md:translate-x-12" : "border-gray-200 md:-translate-x-12" }`}>
-            <p className={`font-figtree font-medium tracking-tight text-center text-xl mb-3 md:mb-4 ${
+            <p className={`font-figtree font-medium tracking-tight text-center text-xl xl:text-2xl mb-2 ${
                         data.special ? "css-text-gradient" : "" }`}>
                 {data.title}
             </p>
+            <hr className="text-black/10 mb-3 md:mb-4"/>
             {data.sections.map((section, idx) => (
                 <InfoSection key={idx} title={section.title} items={section.items} special={data.special} />
             ))}
