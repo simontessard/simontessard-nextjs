@@ -2,7 +2,8 @@ import CTABase from "@/app/components/ui/CTABase";
 
 export default function Card({ data }) {
     return (
-        <div className="flex flex-col py-5 px-6 md:px-7 bg-white rounded-xl shadow-md w-full">
+        <div className={`flex flex-col py-5 px-6 md:px-7 bg-white rounded-xl border shadow-md w-full ${
+            data.special ? "border-blue-primary/30" : "border-gray-200" }`}>
             <p className={`font-figtree font-medium tracking-tight text-center text-lg md:text-xl mb-3 md:mb-4 ${
                         data.special ? "css-text-gradient" : "" }`}>
                 {data.title}

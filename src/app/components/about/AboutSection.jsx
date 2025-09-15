@@ -50,7 +50,7 @@ export default function AboutSection() {
                                 tag="p"
                                 className="font-figtree tracking-tight font-light md:text-lg xl:text-xl"
                             >
-                                En tant que freelance, je vous accompagne avec flexibilité et réactivité pour livrer des sites uniques, adaptés à vos objectifs et à votre image.
+                                En tant que freelance, je vous accompagne pour livrer des sites uniques, adaptés à vos objectifs et à votre image.
                             </AnimText>
 
                         </div>
