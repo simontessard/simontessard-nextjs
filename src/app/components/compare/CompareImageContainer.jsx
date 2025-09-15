@@ -69,14 +69,14 @@ export default function CompareImageContainer() {
             <Card data={avantData} />
 
             {/* Avant/Après central */}
-            <div className="compare-image--container xl:col-span-2 opacity-0 p-1 md:p-1.5 border border-neutral-800 rounded-xl bg-gradient-primary shadow-lg">
+            <div className="compare-image--container xl:col-span-2 opacity-0 p-1 border border-neutral-800 rounded-xl bg-gradient-primary shadow-lg">
                 <Compare
                     firstImage="/compare/before-fdd.jpg"
                     secondImage="/compare/after-fdd.jpg"
                     firstImageClassName="object-cover object-left-top"
                     secondImageClassname="object-cover object-left-top"
                     className="aspect-[16/9] size-full"
-                    slideMode="drag"
+                    autoplay={true}
                 />
             </div>
 

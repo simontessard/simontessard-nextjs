@@ -1,6 +1,5 @@
 import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";
-import CTABase from "@/app/components/ui/CTABase";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
 import CompareImageContainer from "@/app/components/compare/CompareImageContainer";
 
