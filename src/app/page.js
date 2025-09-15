@@ -16,6 +16,14 @@ import WhySection from "@/app/components/why/WhySection";
 import brands from '@/data/brands.json';
 import technos from '@/data/technos.json';
 
+export const metadata = {
+    title: "Simon Tessard",
+    description: "Freelance en création de sites web performants et design.",
+    alternates: {
+        canonical: "https://simontessard.fr/",
+    },
+};
+
 export default function Home() {
   return (
       <>
