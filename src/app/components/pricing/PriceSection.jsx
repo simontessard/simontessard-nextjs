@@ -17,7 +17,7 @@ export default function PriceSection() {
                     tag="h2"
                     className="css-title-section text-black mb-4 md:mb-5 xl:mb-6"
                 >
-                    Une mission : <span className="css-word-italic">convertir.</span>
+                    Une mission : <span className="css-word-italic text-blue-primary/90">convertir.</span>
                 </AnimText>
 
                 <AnimParagraph

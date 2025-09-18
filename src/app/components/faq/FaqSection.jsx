@@ -16,7 +16,7 @@ export default function FAQSection() {
                     tag="h2"
                     className="css-title-section text-black mb-6 md:mb-12"
                 >
-                    Questions <span className="css-word-italic">fréquentes.</span>
+                    Questions <span className="css-word-italic text-blue-primary/90">fréquentes.</span>
                 </AnimText>
 
                 <hr className="text-black-primary/15 mb-6 md:mb-8" />

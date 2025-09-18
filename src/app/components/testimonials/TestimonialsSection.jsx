@@ -19,7 +19,7 @@ export default function TestimonialsSection() {
                 tag="h2"
                 className="container css-title-section mb-4 md:mb-5 xl:mb-6"
             >
-                Des clients <span className="css-word-italic">satisfaits.</span>
+                Des clients <span className="css-word-italic text-blue-primary/90">satisfaits.</span>
             </AnimText>
 
             <AnimParagraph

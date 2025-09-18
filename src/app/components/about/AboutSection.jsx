@@ -25,7 +25,7 @@ export default function AboutSection() {
                                 tag="h2"
                                 className="css-title-section !text-start text-black-primary mb-6 md:mb-4"
                             >
-                                À <span className="font-stix italic">propos.</span>
+                                À <span className="css-word-italic text-blue-primary/90">propos.</span>
                             </AnimText>
                         </div>
 
