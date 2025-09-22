@@ -27,6 +27,7 @@ export default function HeroSatisfaction() {
                 {
                     scale: 1,
                     opacity: 1,
+                    stagger: 0.08,
                     duration: 1,
                     ease: 'power2.out',
                 },
@@ -50,37 +51,46 @@ export default function HeroSatisfaction() {
     return (
         <div
             ref={containerRef}
-            className="js-hero-satisfaction relative flex gap-2 md:gap-2.5 items-center"
+            className="js-hero-satisfaction relative flex gap-2.5 items-center"
         >
-            <div className="relative w-24 flex">
+            <div className="relative w-24 lg:w-27 flex">
                 <Image
                     width={100}
                     height={100}
                     src="/placeholders/max1.jpg"
                     alt="Maxime Le bec, client satisfait"
-                    className="js-hero-satisfaction--bull scale-60 opacity-0 shrink-0 object-cover rounded-full size-10"
+                    className="js-hero-satisfaction--bull scale-60 opacity-0 shrink-0 object-cover rounded-full size-10 lg:size-11"
                 />
                 <Image
                     width={100}
                     height={100}
                     src="/placeholders/photographer.jpg"
                     alt="Jonathan Lecompte, client satisfait"
-                    className="js-hero-satisfaction--bull scale-60 opacity-0 -translate-x-10 shrink-0 rounded-full object-cover size-10"
+                    className="js-hero-satisfaction--bull scale-60 opacity-0 -translate-x-10 shrink-0 rounded-full object-cover size-10 lg:size-11"
                 />
                 <div className="js-hero-satisfaction--bull scale-60 opacity-0 -translate-x-20 shrink-0 font-figtree text-xs flex items-center justify-center rounded-full
-                     size-10 text-black bg-white"
+                     size-10 lg:size-11 text-black bg-white"
                 >
                     +10
                 </div>
             </div>
 
-            <IconStar className="js-hero-satisfaction--star scale-50 opacity-0 size-3 md:size-4" />
+            <div className="flex flex-col gap-1.5 md:gap-2">
+                <div className="flex gap-1">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                        <IconStar
+                            key={i}
+                            className="js-hero-satisfaction--star scale-50 opacity-0 size-3 md:size-3.5" />
+                    ))}
+                </div>
 
-            <div className="overflow-hidden">
-                <p className="js-hero-satisfaction--text translate-y-full text-xs md:text-sm font-figtree text-white">
-                    100% clients satisfaits
-                </p>
+                <div className="overflow-hidden">
+                    <p className="js-hero-satisfaction--text translate-y-full text-xs md:text-sm md:leading-4 font-figtree text-white">
+                        100% satisfaction
+                    </p>
+                </div>
             </div>
+
         </div>
     );
 }
