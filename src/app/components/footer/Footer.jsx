@@ -1,14 +1,8 @@
 import AnimText from "@/app/components/utils/AnimText";
-
-import {
-    contactLinks,
-    navigationLinks1,
-    navigationLinks2,
-    navigationSecondaryLinks,
-} from '@/data/navigation';
+import Link from "next/link";
+import { contactLinks, navigationLinks1, navigationLinks2, navigationSecondaryLinks } from '@/data/navigation';
 import FooterMenu from "@/app/components/footer/FooterMenu";
 import FooterContact from "@/app/components/footer/FooterContact";
-import Link from "next/link";
 import BackHome from "@/app/components/header/BackHome";
 
 export default function Footer() {
