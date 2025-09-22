@@ -147,7 +147,7 @@ export const AnimatedTestimonials = ({
                             ))}
                         </motion.p>
                     </motion.div>
-                    <div className="flex gap-2.5 pt-6 md:pt-0">
+                    <div className="flex max-md:justify-center gap-2.5 pt-6 md:pt-0">
                         <button
                             aria-label="Témoignage précédent"
                             onClick={handlePrev}
