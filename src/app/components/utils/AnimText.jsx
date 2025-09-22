@@ -47,7 +47,7 @@ export default function AnimText({ tag = 'h1', className = '', useScrollTrigger 
             y: 0,
             opacity: 1,
             stagger: 0.03,
-            duration: 0.5,
+            duration: 0.7,
             ease: 'circ.out',
         };
 
