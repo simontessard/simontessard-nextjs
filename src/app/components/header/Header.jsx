@@ -44,7 +44,7 @@ export default function Header() {
                    flex items-center w-full py-1 transition-colors duration-500 px-4"
             >
                 <div className="container bg-white shadow-md size-fit max-lg:flex max-lg:justify-between
-                py-1 px-2 md:px-3 items-center rounded-xl lg:grid lg:grid-cols-5 w-full">
+                py-1 px-2 md:px-2.5 items-center rounded-xl lg:grid lg:grid-cols-5 w-full">
                     <BackHome />
                     <Nav />
                     <CTABase
