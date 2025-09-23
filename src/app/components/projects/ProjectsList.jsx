@@ -66,7 +66,7 @@ export const Card = ({i, title, description, src, url, progress, range, targetSc
                             </p>
                         )}
 
-                        <CTABase to={url} external={true} variant="black" text="Voir le projet"/>
+                        <CTABase to={url} external={true} variant="black" text="Voir le site"/>
                     </div>
 
                     {src && (
