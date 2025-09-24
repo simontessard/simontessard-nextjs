@@ -6,7 +6,7 @@ import CompareImageContainer from "@/app/components/compare/CompareImageContaine
 export default function CompareImageSection() {
     return (
         <section id="compare"
-            className="section-white bg-white-secondary py-16 md:py-18 xl:py-22 2xl:py-26">
+            className="section-white bg-white-secondary py-16 md:py-18 xl:py-22 2xl:py-24">
 
             <div className="container">
                 <Uptitle className="text-black" withScrollTrigger>Avant / Après</Uptitle>

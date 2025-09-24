@@ -6,7 +6,7 @@ import PriceItem from "@/app/components/pricing/PriceItem";
 
 export default function PriceSection() {
     return (
-        <section id="price" className="section-white py-16 md:py-18 xl:py-22 2xl:py-26">
+        <section id="price" className="section-white py-16 md:py-18 xl:py-22 2xl:py-24">
             <div className="container">
                 <Uptitle withScrollTrigger className="text-black">
                     Les offres

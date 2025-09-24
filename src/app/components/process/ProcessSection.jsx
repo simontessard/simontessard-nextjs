@@ -6,7 +6,7 @@ import TimelineDemo from "@/app/components/process/TimelineDemo";
 
 export default function ProcessSection() {
     return (
-        <section id="process" className="section-white bg-white py-16 md:py-18 xl:py-22 2xl:py-26">
+        <section id="process" className="section-white bg-white py-16 md:py-18 xl:py-22 2xl:py-24">
             <div className="container">
                 <Uptitle withScrollTrigger>
                     Processus

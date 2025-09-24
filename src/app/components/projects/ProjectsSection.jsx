@@ -8,7 +8,7 @@ export default function ProjectsSection() {
     return (
         <section
             id="work"
-            className="section-white flex flex-col bg-white-primary py-16 md:py-18 xl:py-22 2xl:py-26"
+            className="section-white flex flex-col bg-white-primary py-16 md:py-18 xl:py-22 2xl:py-24"
         >
             <Uptitle className="text-black"
                      withScrollTrigger>Portfolio</Uptitle>

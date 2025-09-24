@@ -5,7 +5,7 @@ import FaqInfo from "@/app/components/faq/FaqInfo";
 
 export default function FAQSection() {
     return (
-        <section id="faq" className="section-white bg-white-primary py-16 md:py-18 xl:py-22 2xl:py-26">
+        <section id="faq" className="section-white bg-white-primary py-16 md:py-18 xl:py-22 2xl:py-24">
             <div className="container">
                 <Uptitle withScrollTrigger>
                     FAQ
@@ -21,7 +21,7 @@ export default function FAQSection() {
 
                 <hr className="text-black-primary/15 mb-6 md:mb-8" />
 
-                <div className="flex max-md:flex-col-reverse gap-6 md:gap-10 xl:gap-14 justify-between">
+                <div className="relative flex max-md:flex-col-reverse gap-6 md:gap-10 xl:gap-14 justify-between">
                     <FaqInfo />
                     <FaqList />
                 </div>

@@ -8,7 +8,7 @@ export default function TestimonialsSection() {
     return (
         <section
             id="testimonials"
-            className="section-white bg-white py-16 md:py-18 xl:py-22 2xl:py-26 overflow-hidden"
+            className="section-white bg-white py-16 md:py-18 xl:py-22 2xl:py-24 overflow-hidden"
         >
             <Uptitle withScrollTrigger>
                 Les témoignages

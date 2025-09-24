@@ -7,7 +7,7 @@ export default function AboutSection() {
     return (
         <section
             id="about"
-            className="section-white bg-white pt-14 py-16 md:py-18 xl:py-22 2xl:py-26"
+            className="section-white bg-white pt-14 py-16 md:py-18 xl:py-22 2xl:py-24"
         >
             <div className="container">
                 <div className="flex max-lg:flex-col-reverse gap-8 md:gap-10 lg:gap-14 xl:gap-20 2xl:gap-24">
