@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function WhySection() {
     return (
         <section id="why"
-            className="relative bg-gradient-primary py-14 md:py-16 xl:py-22 2xl:py-24">
+            className="relative bg-gradient-primary overflow-hidden py-14 md:py-16 xl:py-22 2xl:py-24">
 
             <Image width={1000} height={1000} src="/logo.png" alt="Logo Simon TESSARD"
                    className="absolute top-10 md:top-0 left-0 right-0 bottom-0 m-auto size-200 md:size-250 xl:size-325 opacity-3 md:opacity-2.5 object-contain"/>

@@ -33,8 +33,8 @@ export const Timeline = ({
                     <div key={index} className={`flex justify-start md:gap-10 ${
                         index === data.length - 1 ? "" : "pb-8 md:pb-20"}`} >
                         <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-md md:w-full">
-                            <div className="size-10 absolute left-3 md:left-3 rounded-full bg-gradient-primary flex items-center justify-center">
-                                <div className="size-4 rounded-full bg-white border border-black p-2" />
+                            <div className="size-6 md:size-8 absolute left-3 md:left-3 rounded-full bg-gradient-primary flex items-center justify-center">
+                                <div className="size-4 rounded-full bg-white border border-black p-1 md:p-1.5" />
                             </div>
                             <h3 className="hidden md:block text-xl md:pl-20 md:text-4xl font-bold">
                                 {item.title}
@@ -51,13 +51,13 @@ export const Timeline = ({
                     </div>
                 ))}
                 <div style={{ height: height + "px"}}
-                    className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] ">
+                    className="absolute left-5.75 md:left-6.75 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-700 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] ">
                     <motion.div
                         style={{
                             height: heightTransform,
                             opacity: opacityTransform,
                         }}
-                        className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-blue-600 via-blue-primary to-transparent from-[0%] via-[10%] rounded-full" />
+                        className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-blue-600 via-blue-primary to-transparent from-[0%] via-[10%] rounded-full" />
                 </div>
             </div>
         </div>

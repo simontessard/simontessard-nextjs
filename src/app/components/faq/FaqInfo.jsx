@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function FaqInfo() {
     return (
-        <Link href="/contact" className="sticky top-12 max-md:hidden flex gap-4 lg:gap-6 xl:gap-8 shrink-0 bg-white shadow-xs p-4 md:p-5 xl:p-6 rounded-xl h-fit">
+        <Link href="/contact" className="sticky top-12 max-md:hidden flex gap-4 lg:gap-6 xl:gap-8 shrink-0 bg-white shadow-xs p-4 md:p-5 xl:p-6 rounded-xl h-fit mb-6">
             <div className="w-full">
                 <AnimText
                     useScrollTrigger
