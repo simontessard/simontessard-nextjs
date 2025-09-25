@@ -1,4 +1,4 @@
-import {Timeline} from "@/app/components/process/Timeline";
+import {Timeline} from "@/app/process/Timeline";
 import Image from "next/image";
 
 export default function TimelineDemo() {

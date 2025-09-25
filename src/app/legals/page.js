@@ -15,7 +15,7 @@ export default function Page() {
             <HomeLogo/>
 
             <AnimText tag="h1" className="css-title-section mb-6 md:mb-8 xl:mb-10">
-                Mentions <span className="css-word-italic">légales.</span>
+                Mentions <span className="css-word-italic text-blue-primary/90">légales.</span>
             </AnimText>
 
             <LegalsContent/>

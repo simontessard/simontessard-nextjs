@@ -22,7 +22,7 @@ export default function Page() {
             </Uptitle>
 
             <AnimText tag="h1" className="css-title-section mb-4 md:mb-5 xl:mb-6">
-                Réalisations <span className="css-word-italic">récentes.</span>
+                Réalisations <span className="css-word-italic text-blue-primary/90">récentes.</span>
             </AnimText>
 
             <AnimParagraph

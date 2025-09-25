@@ -1,7 +1,6 @@
 import HeroSection from "@/app/components/hero/HeroSection";
 import AboutSection from "@/app/components/about/AboutSection";
 import Citation from "@/app/components/dividers/Citation";
-import ProcessSection from "@/app/components/process/ProcessSection";
 import TestimonialsSection from "@/app/components/testimonials/TestimonialsSection";
 import BrandList from "@/app/components/dividers/BrandsList";
 import FAQSection from "@/app/components/faq/FaqSection";
@@ -30,12 +29,11 @@ export default function Home() {
           <main>
               <HeroSection/>
               <CompareImageSection/>
+              <Citation/>
               <AboutSection/>
               <CountUpSection/>
               <ProjectsSection/>
               <WhySection/>
-              <ProcessSection/>
-              <Citation/>
               <TestimonialsSection/>
               <BrandList brands={technos} direction="right"/>
               <FAQSection/>

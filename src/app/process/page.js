@@ -1,13 +1,25 @@
-import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";
-import ProcessList from "@/app/components/process/ProcessList";
+import HomeLogo from "@/app/components/ui/HomeLogo";
+import ProjectsList from "@/app/realisations/ProjectsList";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
-import TimelineDemo from "@/app/components/process/TimelineDemo";
+import Uptitle from "@/app/components/utils/Uptitle";
+import CTABase from "@/app/components/ui/CTABase";
+import TimelineDemo from "@/app/process/TimelineDemo";
 
-export default function ProcessSection() {
+export const metadata = {
+    title: "Processus",
+    description: "",
+}
+
+export default function Page() {
     return (
-        <section id="process" className="section-white bg-white py-16 md:py-18 xl:py-22 2xl:py-24">
+        <main className="flex flex-col items-center bg-white text-black
+        pt-10 md:pt-14 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
+
             <div className="container">
+
+                <HomeLogo/>
+
                 <Uptitle withScrollTrigger>
                     Processus
                 </Uptitle>
@@ -32,6 +44,7 @@ export default function ProcessSection() {
 
                 <TimelineDemo/>
             </div>
-        </section>
+
+        </main>
     );
-}
+};

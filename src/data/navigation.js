@@ -3,7 +3,7 @@ export const navItems = [
     { path: "#about", label: "À propos" },
     { path: "/realisations", label: "Réalisations" },
     { path: "/offres", label: "Offres" },
-    { path: "#process", label: "Processus" },
+    { path: "/process", label: "Processus" },
     { path: "#faq", label: "FAQ" }
 ];
 
@@ -23,7 +23,6 @@ export const navigationLinks1 = [
     { title: "À propos", href: "#about" },
     { title: "Réalisations", href: "#work" },
     { title: "Pourquoi ?", href: "#why" },
-    { title: "Processus", href: "#process" },
 ];
 
 export const navigationLinks2 = [
