@@ -2,7 +2,7 @@
 export const navItems = [
     { path: "#about", label: "À propos" },
     { path: "/realisations", label: "Réalisations" },
-    { path: "#price", label: "Offres" },
+    { path: "/offres", label: "Offres" },
     { path: "#process", label: "Processus" },
     { path: "#faq", label: "FAQ" }
 ];
@@ -10,7 +10,6 @@ export const navItems = [
 export const navItemsMobile = [
     { path: "#about", label: "À propos" },
     { path: "#work", label: "Réalisations" },
-    { path: "#price", label: "Offres" },
     { path: "#process", label: "Processus" },
     { path: "#faq", label: "FAQ" }
 ];
@@ -28,7 +27,6 @@ export const navigationLinks1 = [
 ];
 
 export const navigationLinks2 = [
-    { title: "Offres", href: "#price" },
     { title: "Témoignages", href: "#testimonials" },
     { title: "FAQ", href: "#faq" }
 ];

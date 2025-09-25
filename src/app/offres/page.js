@@ -1,30 +1,34 @@
-import pricingData from '@/data/pricing.json';
-import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";
+import HomeLogo from "@/app/components/ui/HomeLogo";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
-import PriceItem from "@/app/components/pricing/PriceItem";
+import Uptitle from "@/app/components/utils/Uptitle";
+import pricingData from "@/data/pricing.json";
+import PriceItem from "@/app/offres/PriceItem";
 
-export default function PriceSection() {
+export const metadata = {
+    title: "Offres",
+    description: "",
+}
+
+export default function Page() {
     return (
-        <section id="price" className="section-white py-16 md:py-18 xl:py-22 2xl:py-24">
+        <main className="flex flex-col items-center bg-white text-black
+        pt-10 md:pt-14 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
+
             <div className="container">
-                <Uptitle withScrollTrigger className="text-black">
+                <HomeLogo/>
+
+                <Uptitle className="text-black">
                     Les offres
                 </Uptitle>
 
-                <AnimText
-                    useScrollTrigger
-                    tag="h2"
-                    className="css-title-section text-black mb-4 md:mb-5 xl:mb-6"
-                >
+                <AnimText tag="h2"
+                    className="css-title-section text-black mb-4 md:mb-5 xl:mb-6">
                     Une mission : <span className="css-word-italic text-blue-primary/90">convertir.</span>
                 </AnimText>
 
-                <AnimParagraph
-                    withScrollTrigger
-                    tag="p"
-                    className="css-subtitle-section text-black md:max-w-3xl mb-14 2xl:mb-24"
-                >
+                <AnimParagraph tag="p"
+                    className="css-subtitle-section text-black md:max-w-3xl mb-14 2xl:mb-24">
                     Choisissez l&apos;offre qui vous convient le mieux. <br className="max-md:hidden" />
                 </AnimParagraph>
 
@@ -47,6 +51,6 @@ export default function PriceSection() {
                     si vous faites évoluer vers un Site Complet par la suite.
                 </p>
             </div>
-        </section>
+        </main>
     );
-}
+};
