@@ -1,7 +1,7 @@
 // data/navigation.js
 export const navItems = [
     { path: "#about", label: "À propos" },
-    { path: "#work", label: "Réalisations" },
+    { path: "/realisations", label: "Réalisations" },
     { path: "#price", label: "Offres" },
     { path: "#process", label: "Processus" },
     { path: "#faq", label: "FAQ" }

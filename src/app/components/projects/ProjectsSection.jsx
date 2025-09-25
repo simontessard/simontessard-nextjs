@@ -10,8 +10,9 @@ export default function ProjectsSection() {
             id="work"
             className="section-white flex flex-col bg-white-primary py-16 md:py-18 xl:py-22 2xl:py-24"
         >
-            <Uptitle className="text-black"
-                     withScrollTrigger>Portfolio</Uptitle>
+            <Uptitle className="text-black" withScrollTrigger>
+                Extrait du Portfolio
+            </Uptitle>
 
             <AnimText
                 useScrollTrigger
@@ -37,8 +38,8 @@ export default function ProjectsSection() {
             <CTABase
                 withScrollTrigger
                 variant="blue"
-                to="/contact"
-                text="Réserver un appel"
+                to="/realisations"
+                text="Voir tous les projets"
                 customClass="mx-auto"
             />
 
