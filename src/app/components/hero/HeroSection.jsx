@@ -42,12 +42,6 @@ export default function HeroSection() {
 
                     <div className="flex max-md:flex-col max-md:items-center size-fit gap-4 mb-8 md:mb-10">
                         <CTABase
-                            variant="blackborder"
-                            to="mailto:pro@simontessard.fr"
-                            text="Contact par email"
-                        />
-
-                        <CTABase
                             variant="white"
                             to="/contact"
                             text="Réserver un appel"
