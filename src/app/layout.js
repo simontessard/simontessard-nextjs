@@ -12,7 +12,7 @@ export const metadata = {
         template: "%s | Simon Tessard",
     },
     description:
-        "Freelance spécialisé en développement web, création de sites performants, design et sur-mesure.",
+        "Développeur web freelance, expert en création de sites performants, design moderne et SEO pour maximiser votre visibilité en ligne.",
     alternates: { canonical: "/" },
     openGraph: {
         type: "website",
