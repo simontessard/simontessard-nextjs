@@ -30,7 +30,9 @@ export default function ProjectsList() {
                                     <h3 className="text-xl md:text-2xl xl:text-3xl font-semibold mb-3 md:mb-3.5">
                                         {project.title}
                                     </h3>
-                                    <p className="text-white max-md:text-sm">{project.description}</p>
+                                    <p className="text-white text-sm md:text-base">
+                                        {project.description}
+                                    </p>
                                 </div>
                             </a>
                         </article>

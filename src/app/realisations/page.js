@@ -1,6 +1,7 @@
 import AnimText from "@/app/components/utils/AnimText";
 import HomeLogo from "@/app/components/ui/HomeLogo";
 import ProjectsList from "@/app/realisations/ProjectsList";
+import AnimParagraph from "@/app/components/utils/AnimParagraph";
 
 export const metadata = {
     title: "Réalisations",
@@ -14,9 +15,16 @@ export default function Page() {
 
             <HomeLogo/>
 
-            <AnimText tag="h1" className="css-title-section mb-6 md:mb-8 xl:mb-10">
+            <AnimText tag="h1" className="css-title-section mb-4 md:mb-5 xl:mb-6">
                 Réalisations <span className="css-word-italic">récentes.</span>
             </AnimText>
+
+            <AnimParagraph
+                tag="p"
+                className="css-subtitle-section container text-white md:max-w-3xl mb-6 md:mb-8 xl:mb-10"
+            >
+                Chaque projet est différent, découvrez mes travaux ci dessous.
+            </AnimParagraph>
 
             <ProjectsList/>
         </main>

@@ -31,14 +31,14 @@ export default function Nav() {
                             onClick={(e) => scrollTo(e, item.path)}
                             className="group flex relative text-black py-[1.15rem] font-figtree px-4 size-fit"
                         >
-              <span className="relative inline-block overflow-hidden size-fit mx-auto">
-                <span className="inline-block md:group-hover:-translate-y-full transition-transform duration-700 ease-in-out">
-                  {item.label}
-                </span>
-                <span className="absolute left-0 bottom-0 translate-y-full md:group-hover:translate-y-0 transition-transform duration-700 ease-in-out inline-block size-fit">
-                  {item.label}
-                </span>
-              </span>
+                           <span className="relative inline-block overflow-hidden size-fit mx-auto">
+                               <span className="inline-block md:group-hover:-translate-y-full transition-transform duration-700 ease-in-out">
+                                    {item.label}
+                               </span>
+                                <span className="absolute left-0 bottom-0 translate-y-full md:group-hover:translate-y-0 transition-transform duration-700 ease-in-out inline-block size-fit">
+                                    {item.label}
+                                </span>
+                            </span>
                         </a>
                     </li>
                 ))}

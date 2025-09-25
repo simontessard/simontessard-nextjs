@@ -2,7 +2,7 @@
   {
     "title": "Training Thérapie Pro",
     "description": "Site e-commerce pour des kinésithérapeutes, mettant en avant l'entreprise et son savoir-faire, avec catalogue de produits, panier et paiement en ligne.",
-    "image": "/projects/project-tt.jpg",
+    "image": "/projects/project-tt-pro.jpg",
     "logo": "/brands/logo-tt-pro.png",
     "url": "https://pros.training-therapie.fr/"
   },
@@ -34,5 +34,12 @@
     "image": "/projects/project-cc.jpg",
     "logo": "/brands/logo-fcc.png",
     "url": "https://festival-cinecitoyen.ouest-france.fr/"
+  },
+  {
+    "title": "Training Thérapie",
+    "description": "Site vitrine pour des kinésithérapeutes, mettant en avant l'entreprise et son savoir-faire.",
+    "image": "/projects/project-tt.jpg",
+    "logo": "/brands/logo-tt.png",
+    "url": "https://training-therapie.fr/"
   }
 ]
