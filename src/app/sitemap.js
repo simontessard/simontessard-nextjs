@@ -7,6 +7,12 @@ export default function sitemap() {
             priority: 1,
         },
         {
+            url: 'https://simontessard.fr/realisations',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
+        {
             url: 'https://simontessard.fr/contact',
             lastModified: new Date(),
             changeFrequency: 'monthly',
