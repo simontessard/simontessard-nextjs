@@ -4,7 +4,6 @@ export const navItems = [
     { path: "/realisations", label: "Réalisations" },
     { path: "/offres", label: "Offres" },
     { path: "/process", label: "Processus" },
-    { path: "#faq", label: "FAQ" }
 ];
 
 export const navItemsMobile = [
