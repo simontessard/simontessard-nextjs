@@ -51,26 +51,25 @@ export default function HeroSatisfaction() {
     return (
         <div
             ref={containerRef}
-            className="js-hero-satisfaction relative flex gap-2.5 items-center"
+            className="js-hero-satisfaction relative flex gap-2.5 xl:gap-3 items-center"
         >
-            <div className="relative w-24 lg:w-27 flex">
+            <div className="relative w-24 lg:w-27 xl:w-30 flex">
                 <Image
                     width={100}
                     height={100}
                     src="/placeholders/max1.jpg"
                     alt="Maxime Le bec, client satisfait"
-                    className="js-hero-satisfaction--bull scale-60 opacity-0 shrink-0 object-cover rounded-full size-10 lg:size-11"
+                    className="js-hero-satisfaction--bull scale-60 opacity-0 shrink-0 object-cover rounded-full size-10 lg:size-11 xl:size-12"
                 />
                 <Image
                     width={100}
                     height={100}
                     src="/placeholders/photographer.jpg"
                     alt="Jonathan Lecompte, client satisfait"
-                    className="js-hero-satisfaction--bull scale-60 opacity-0 -translate-x-10 shrink-0 rounded-full object-cover size-10 lg:size-11"
+                    className="js-hero-satisfaction--bull scale-60 opacity-0 -translate-x-10 shrink-0 rounded-full object-cover size-10 lg:size-11 xl:size-12"
                 />
                 <div className="js-hero-satisfaction--bull scale-60 opacity-0 -translate-x-20 shrink-0 font-figtree text-xs flex items-center justify-center rounded-full
-                     size-10 lg:size-11 text-black bg-white"
-                >
+                     size-10 lg:size-11 xl:size-12 text-black bg-white">
                     +10
                 </div>
             </div>
@@ -80,7 +79,7 @@ export default function HeroSatisfaction() {
                     {Array.from({ length: 5 }).map((_, i) => (
                         <IconStar
                             key={i}
-                            className="js-hero-satisfaction--star scale-50 opacity-0 size-3 md:size-3.5" />
+                            className="js-hero-satisfaction--star scale-50 opacity-0 size-3 md:size-3.5 xl:size-4" />
                     ))}
                 </div>
 
