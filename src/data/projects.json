@@ -27,7 +27,6 @@
     "logo": "/brands/logo-maxime.png",
     "url": "https://maximelebec.fr"
   },
-
   {
     "title": "Festival Ciné Citoyen",
     "description": "Site vitrine pour un festival de cinéma à Vannes, présentant les films, le programme, les partenaires, les actualités et des informations pratiques.",
@@ -41,5 +40,12 @@
     "image": "/projects/project-tt.jpg",
     "logo": "/brands/logo-tt.png",
     "url": "https://training-therapie.fr/"
+  },
+  {
+    "title": "Melvin Hamon",
+    "description": "Un site vitrine pour un graphiste du sport freelance, avec un portfolio de projets. Ses collaborations sont mises en avant, on peut aussi prendre RDV.",
+    "image": "/projects/mockup-melvin.jpg",
+    "logo": "/brands/logo-maxime.png",
+    "url": "https://melvinhamon.fr"
   }
 ]
