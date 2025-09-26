@@ -1,8 +1,8 @@
 "use client";
-import { Compare } from "@/app/components/compare/Compare";
+import { Compare } from "@/app/components/home/compare/Compare";
 import { useEffect } from "react";
 import { gsap } from "gsap";
-import Card from "@/app/components/compare/Card";
+import Card from "@/app/components/home/compare/Card";
 
 const avantData = {
     title: "Avant",

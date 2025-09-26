@@ -1,16 +1,16 @@
-import HeroSection from "@/app/components/hero/HeroSection";
-import AboutSection from "@/app/components/about/AboutSection";
+import HeroSection from "@/app/components/home/hero/HeroSection";
+import AboutSection from "@/app/components/home/about/AboutSection";
 import Citation from "@/app/components/dividers/Citation";
-import TestimonialsSection from "@/app/components/testimonials/TestimonialsSection";
+import TestimonialsSection from "@/app/components/home/testimonials/TestimonialsSection";
 import BrandList from "@/app/components/dividers/BrandsList";
 import FAQSection from "@/app/components/faq/FaqSection";
-import CtaSection from "@/app/components/cta/CtaSection";
-import ProjectsSection from "@/app/components/projects/ProjectsSection";
-import CompareImageSection from "@/app/components/compare/CompareImageSection";
+import CtaSection from "@/app/components/footer/cta/CtaSection";
+import ProjectsSection from "@/app/components/home/projects/ProjectsSection";
+import CompareImageSection from "@/app/components/home/compare/CompareImageSection";
 import CountUpSection from "@/app/components/dividers/CountUpSection";
 import Header from "@/app/components/header/Header";
 import Footer from "@/app/components/footer/Footer";
-import WhySection from "@/app/components/why/WhySection";
+import WhySection from "@/app/components/home/why/WhySection";
 import technos from '@/data/technos.json';
 
 export const metadata = {

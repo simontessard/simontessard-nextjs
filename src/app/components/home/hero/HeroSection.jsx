@@ -1,10 +1,10 @@
-import HeroBackground from "@/app/components/hero/HeroBackground";
+import HeroBackground from "@/app/components/home/hero/HeroBackground";
 import AnimText from "@/app/components/utils/AnimText";
 import CTABase from "@/app/components/ui/CTABase";
 import Uptitle from "@/app/components/utils/Uptitle";
-import HeroSatisfaction from "@/app/components/hero/HeroSatisfaction";
+import HeroSatisfaction from "@/app/components/home/hero/HeroSatisfaction";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
-import HeroStar from "@/app/components/hero/HeroStar";
+import HeroStar from "@/app/components/home/hero/HeroStar";
 
 export default function HeroSection() {
     return (

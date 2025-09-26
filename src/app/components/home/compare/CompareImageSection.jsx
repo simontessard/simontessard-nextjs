@@ -1,7 +1,7 @@
 import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
-import CompareImageContainer from "@/app/components/compare/CompareImageContainer";
+import CompareImageContainer from "@/app/components/home/compare/CompareImageContainer";
 
 export default function CompareImageSection() {
     return (

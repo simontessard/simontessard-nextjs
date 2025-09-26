@@ -4,7 +4,7 @@ import { contactLinks, navigationLinks1, navigationLinks2, navigationSecondaryLi
 import FooterMenu from "@/app/components/footer/FooterMenu";
 import FooterContact from "@/app/components/footer/FooterContact";
 import BackHome from "@/app/components/header/BackHome";
-import CtaSection from "@/app/components/cta/CtaSection";
+import CtaSection from "@/app/components/footer/cta/CtaSection";
 
 export default function Footer() {
     return (

@@ -1,7 +1,7 @@
 import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";
 import CTABase from "@/app/components/ui/CTABase";
-import ProjectsList from "@/app/components/projects/ProjectsList";
+import ProjectsList from "@/app/components/home/projects/ProjectsList";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
 
 export default function ProjectsSection() {

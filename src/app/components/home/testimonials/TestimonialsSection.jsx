@@ -1,7 +1,7 @@
 import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
-import {AnimatedTestimonials} from "@/app/components/testimonials/TestimonialsList";
+import {AnimatedTestimonials} from "@/app/components/home/testimonials/TestimonialsList";
 import testimonials from '@/data/testimonials.json';
 
 export default function TestimonialsSection() {

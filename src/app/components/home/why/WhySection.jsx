@@ -1,7 +1,7 @@
 import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";
 import AnimParagraph from "@/app/components/utils/AnimParagraph";
-import TwoColumns from "@/app/components/why/TwoColumns";
+import TwoColumns from "@/app/components/home/why/TwoColumns";
 import CTABase from "@/app/components/ui/CTABase";
 import Image from "next/image";
 

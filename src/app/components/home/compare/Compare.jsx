@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import {cn} from "@/lib/util";
 import { IconDotsVertical } from "@tabler/icons-react";
-import {SparklesCore} from "@/app/components/compare/Sparkles";
+import {SparklesCore} from "@/app/components/home/compare/Sparkles";
 import Image from "next/image";
 
 export const Compare = ({

@@ -1,7 +1,7 @@
 import Uptitle from "@/app/components/utils/Uptitle";
 import AnimText from "@/app/components/utils/AnimText";
 import CTABase from "@/app/components/ui/CTABase";
-import AboutImage from "@/app/components/about/AboutImage";
+import AboutImage from "@/app/components/home/about/AboutImage";
 
 export default function AboutSection() {
     return (
