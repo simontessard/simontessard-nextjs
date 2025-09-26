@@ -24,7 +24,6 @@ export const metadata = {
 export default function Home() {
   return (
       <>
-          <Header/>
           <main>
               <HeroSection/>
               <CompareImageSection/>

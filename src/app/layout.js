@@ -3,6 +3,7 @@ import LenisProvider from "@/app/common/utils/LenisProvider";
 import { Analytics } from "@vercel/analytics/next";
 import { chivo, figtree, stix } from "@/app/fonts/fonts";
 import Footer from "@/app/footer/Footer";
+import Header from "@/app/header/Header";
 
 const siteUrl = "https://www.simontessard.fr";
 
@@ -33,7 +34,8 @@ export default function RootLayout({ children }) {
     <html lang="fr">
         <body className={`${figtree.variable} ${stix.variable} ${chivo.variable}`}>
             <LenisProvider>
-                {children}
+                <Header/>
+                    {children}
                 <Footer/>
             </LenisProvider>
             <Analytics />

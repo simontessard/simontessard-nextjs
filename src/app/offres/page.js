@@ -13,10 +13,9 @@ export const metadata = {
 export default function Page() {
     return (
         <main className="flex flex-col items-center bg-white-primary text-black
-        pt-10 md:pt-14 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
+        pt-24 md:pt-28 lg:pt-32 xl:pt-36 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
 
             <div className="container">
-                <HomeLogo/>
 
                 <Uptitle className="text-black">
                     Les offres
