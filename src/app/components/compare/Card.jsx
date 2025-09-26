@@ -23,7 +23,7 @@ export default function Card({ data }) {
     })
 
     return (
-        <div ref={cardRef} className={`opacity-0 flex flex-col py-5 px-6 md:px-7 bg-white rounded-xl border shadow-md w-full ${
+        <div ref={cardRef} className={`opacity-0 flex flex-col py-5 px-6 md:px-7 bg-white-primary/40 rounded-xl border shadow-md w-full ${
             data.special ? "border-blue-primary/30 md:translate-x-12" : "border-gray-200 md:-translate-x-12" }`}>
             <p className={`font-figtree font-medium tracking-tight text-center text-xl xl:text-2xl mb-2 ${
                         data.special ? "css-text-gradient" : "" }`}>

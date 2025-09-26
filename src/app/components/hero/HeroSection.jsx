@@ -9,10 +9,10 @@ import HeroStar from "@/app/components/hero/HeroStar";
 export default function HeroSection() {
     return (
         <section id="hero" className="flex flex-col min-h-[100vh] bg-white max-h-[100vh] pb-4 px-4 md:pb-5 md:px-5">
-            <div className="relative block h-16 md:h-21 w-full">
+            <div className="relative block h-16 md:h-21.5 w-full">
             </div>
 
-            <div className="relative bg-blue-200 grow size-full pt-12 md:pt-24 rounded-xl md:rounded-2xl
+            <div className="relative bg-blue-primary grow size-full rounded-xl md:rounded-2xl
                  flex flex-col items-center justify-center overflow-hidden">
 
                 <HeroBackground />
@@ -42,15 +42,16 @@ export default function HeroSection() {
                             conçus sur-mesure et réfléchis pour marquer les esprits.
                         </AnimParagraph>
 
-                        <div className="flex max-md:flex-col max-md:items-center size-fit gap-4 mb-8 md:mb-10">
+                        <div className="flex max-md:flex-col max-md:items-center size-fit gap-6 md:gap-5 mb-8 md:mb-10">
                             <CTABase
                                 variant="white"
                                 to="/contact"
                                 text="Réserver un appel"
                             />
+
+                            <HeroSatisfaction/>
                         </div>
 
-                        <HeroSatisfaction/>
                     </div>
                 </div>
             </div>
