@@ -38,7 +38,7 @@ export default function TimelineDemo() {
                         Je prends le temps de comprendre vos besoins lors d'un entretien plus approfondi. Nous explorons ensemble vos objectifs et vos attentes pour définir la meilleure approche possible par rapport à vos contraintes.
                     </p>
                     <Image
-                        src="/about/main.jpg"
+                        src="/about/main_2.jpg"
                         alt="Un poste de bureau avec la main sur une souris d'ordinateur"
                         width={1200}
                         height={1000}
