@@ -8,9 +8,7 @@ export default function ContactSection() {
 
     return (
         <section className="bg-white-primary flex flex-col items-center min-h-screen
-        pt-10 md:pt-14 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
-
-            <HomeLogo/>
+        pt-24 md:pt-28 lg:pt-32 xl:pt-36 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
 
             <Uptitle className="text-black">
                 Réserver un appel de 30 minutes
