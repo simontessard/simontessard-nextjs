@@ -117,7 +117,7 @@ export const AnimatedTestimonials = ({
                         <h3 className="font-figtree text-2xl font-bold text-black">
                             {testimonials[active].name}
                         </h3>
-                        <p className="font-figtree text-sm text-gray-500">
+                        <p className="font-figtree text-sm text-gray-600">
                             {testimonials[active].designation}
                         </p>
                         <motion.p className="font-figtree tracking-tight italic mt-6 md:mt-8 md:text-lg text-gray-600">

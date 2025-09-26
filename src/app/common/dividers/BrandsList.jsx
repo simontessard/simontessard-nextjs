@@ -20,32 +20,6 @@ export default function BrandsList({ brands = [], direction = "left" }) {
         const track = trackRef.current;
         if (!container || !track) return;
 
-        const mm = gsap.matchMedia();
-
-        mm.add("(max-width: 768px)", () => {
-            gsap.to(track, {
-                x: direction === "left" ? -100 : 100,
-                ease: 'none',
-                scrollTrigger: {
-                    trigger: container,
-                    start: 'top 85%',
-                    scrub: 1,
-                },
-            });
-        });
-
-        mm.add("(min-width: 768px)", () => {
-            gsap.to(track, {
-                x: direction === "left" ? -150 : 150,
-                ease: 'none',
-                scrollTrigger: {
-                    trigger: container,
-                    start: 'top 85%',
-                    scrub: 1,
-                },
-            });
-        });
-
         gsap.to('.js-brand--item', {
             opacity: 1,
             scale: 1,

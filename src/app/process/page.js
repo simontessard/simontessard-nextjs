@@ -5,6 +5,7 @@ import AnimParagraph from "@/app/common/utils/AnimParagraph";
 import Uptitle from "@/app/common/utils/Uptitle";
 import CTABase from "@/app/common/ui/CTABase";
 import TimelineDemo from "@/app/process/TimelineDemo";
+import FAQSection from "@/app/common/faq/FaqSection";
 
 export const metadata = {
     title: "Processus",
@@ -41,6 +42,8 @@ export default function Page() {
                 </AnimParagraph>
 
                 <TimelineDemo/>
+
+                <FAQSection/>
             </div>
 
         </main>
