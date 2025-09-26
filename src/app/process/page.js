@@ -1,9 +1,9 @@
-import AnimText from "@/app/components/utils/AnimText";
-import HomeLogo from "@/app/components/ui/HomeLogo";
+import AnimText from "@/app/common/utils/AnimText";
+import HomeLogo from "@/app/common/ui/HomeLogo";
 import ProjectsList from "@/app/realisations/ProjectsList";
-import AnimParagraph from "@/app/components/utils/AnimParagraph";
-import Uptitle from "@/app/components/utils/Uptitle";
-import CTABase from "@/app/components/ui/CTABase";
+import AnimParagraph from "@/app/common/utils/AnimParagraph";
+import Uptitle from "@/app/common/utils/Uptitle";
+import CTABase from "@/app/common/ui/CTABase";
 import TimelineDemo from "@/app/process/TimelineDemo";
 
 export const metadata = {

@@ -1,7 +1,7 @@
-import AnimText from "@/app/components/utils/AnimText";
-import HomeLogo from "@/app/components/ui/HomeLogo";
-import AnimParagraph from "@/app/components/utils/AnimParagraph";
-import Uptitle from "@/app/components/utils/Uptitle";
+import AnimText from "@/app/common/utils/AnimText";
+import HomeLogo from "@/app/common/ui/HomeLogo";
+import AnimParagraph from "@/app/common/utils/AnimParagraph";
+import Uptitle from "@/app/common/utils/Uptitle";
 import pricingData from "@/data/pricing.json";
 import PriceItem from "@/app/offres/PriceItem";
 

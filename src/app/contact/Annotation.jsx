@@ -17,7 +17,7 @@ export default function Annotation() {
     })
 
     return (
-        <p ref={textRef} className="opacity-0 mt-6 md:mt-8 text-center font-figtree text-white">
+        <p ref={textRef} className="opacity-0 mt-6 md:mt-8 text-center font-figtree text-black">
             Sinon vous pouvez aussi me contacter par email : {" "}
             <Link href="mailto:pro@simontessard.fr" className="underline underline-offset-2">
                 pro@simontessard.fr

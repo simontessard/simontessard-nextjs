@@ -1,8 +1,8 @@
 // app/not-found.jsx
-import AnimText from "@/app/components/utils/AnimText";
-import AnimParagraph from "@/app/components/utils/AnimParagraph";
-import CTABase from "@/app/components/ui/CTABase";
-import HomeLogo from "@/app/components/ui/HomeLogo";
+import AnimText from "@/app/common/utils/AnimText";
+import AnimParagraph from "@/app/common/utils/AnimParagraph";
+import CTABase from "@/app/common/ui/CTABase";
+import HomeLogo from "@/app/common/ui/HomeLogo";
 
 export default function Custom404 () {
     return (

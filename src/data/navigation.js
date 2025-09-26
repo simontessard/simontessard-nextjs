@@ -1,6 +1,6 @@
 // data/navigation.js
 export const navItems = [
-    { path: "#about", label: "À propos" },
+    { path: "/a-propos", label: "À propos" },
     { path: "/realisations", label: "Réalisations" },
     { path: "/offres", label: "Offres" },
     { path: "/process", label: "Processus" },
@@ -19,6 +19,7 @@ export const contactLinks = [
 
 export const navigationLinks1 = [
     { title: "Accueil", href: "/" },
+    { title: "À propos", href: "/a-propos" },
     { title: "Réalisations", href: "/realisations" },
     { title: "Offres", href: "/offres" },
     { title: "Processus", href: "/process" },

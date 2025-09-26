@@ -1,13 +1,13 @@
-import AnimText from "@/app/components/utils/AnimText";
-import Uptitle from "@/app/components/utils/Uptitle";
+import AnimText from "@/app/common/utils/AnimText";
+import Uptitle from "@/app/common/utils/Uptitle";
 import Calendar from "@/app/contact/Calendar";
-import HomeLogo from "@/app/components/ui/HomeLogo";
+import HomeLogo from "@/app/common/ui/HomeLogo";
 import Annotation from "@/app/contact/Annotation";
 
 export default function ContactSection() {
 
     return (
-        <section className="bg-white flex flex-col items-center min-h-screen
+        <section className="bg-white-primary flex flex-col items-center min-h-screen
         pt-10 md:pt-14 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
 
             <HomeLogo/>

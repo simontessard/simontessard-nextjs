@@ -1,8 +1,8 @@
 import "./globals.css";
-import LenisProvider from "@/app/components/utils/LenisProvider";
+import LenisProvider from "@/app/common/utils/LenisProvider";
 import { Analytics } from "@vercel/analytics/next";
 import { chivo, figtree, stix } from "@/app/fonts/fonts";
-import Footer from "@/app/components/footer/Footer";
+import Footer from "@/app/footer/Footer";
 
 const siteUrl = "https://www.simontessard.fr";
 

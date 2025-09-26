@@ -23,7 +23,7 @@ export default function Calendar() {
         <div ref={refCal} className="opacity-0 w-full">
             <Cal namespace="30min"
                  calLink="simon-tessard-3biacz/30min"
-                 className="bg-white"
+                 className="bg-white-primary"
                  style={{width:"100%",height:"100%",overflow:"scroll"}}
                  config={{"layout":"month_view"}}
             />

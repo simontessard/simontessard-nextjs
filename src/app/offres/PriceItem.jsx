@@ -1,5 +1,5 @@
-import AnimText from "@/app/components/utils/AnimText";
-import CTABase from "@/app/components/ui/CTABase";
+import AnimText from "@/app/common/utils/AnimText";
+import CTABase from "@/app/common/ui/CTABase";
 
 export default function PriceItem({ title, citation, price, desc, list = [], popular = false,}) {
     return (
