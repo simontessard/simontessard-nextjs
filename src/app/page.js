@@ -11,7 +11,6 @@ import CountUpSection from "@/app/components/dividers/CountUpSection";
 import Header from "@/app/components/header/Header";
 import Footer from "@/app/components/footer/Footer";
 import WhySection from "@/app/components/why/WhySection";
-import brands from '@/data/brands.json';
 import technos from '@/data/technos.json';
 
 export const metadata = {
@@ -37,9 +36,7 @@ export default function Home() {
               <TestimonialsSection/>
               <BrandList brands={technos} direction="right"/>
               <FAQSection/>
-              <CtaSection/>
           </main>
-          <Footer/>
       </>
   );
 }

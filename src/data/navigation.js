@@ -18,10 +18,10 @@ export const contactLinks = [
 ];
 
 export const navigationLinks1 = [
-    { title: "Transformation", href: "#compare" },
-    { title: "À propos", href: "#about" },
-    { title: "Réalisations", href: "#work" },
-    { title: "Pourquoi ?", href: "#why" },
+    { title: "Accueil", href: "/" },
+    { title: "Réalisations", href: "/realisations" },
+    { title: "Offres", href: "/offres" },
+    { title: "Processus", href: "/process" },
 ];
 
 export const navigationLinks2 = [
@@ -30,6 +30,7 @@ export const navigationLinks2 = [
 ];
 
 export const navigationSecondaryLinks = [
+    { title: "Melvin Hamon", href: "https://www.melvinhamon.fr/" },
     { title: "Training Thérapie", href: "https://www.training-therapie.fr/" },
     { title: "Training Thérapie Pro", href: "https://pros.training-therapie.fr/" },
     { title: "Festival Ciné Citoyen", href: "https://festival-cinecitoyen.ouest-france.fr/" },

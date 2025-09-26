@@ -26,9 +26,28 @@ export default function ProjectsList() {
                                 </figure>
 
                                 <div>
-                                    <h3 className="text-xl md:text-2xl xl:text-3xl font-semibold mb-3 md:mb-3.5">
-                                        {project.title}
-                                    </h3>
+                                    <div className="flex justify-between">
+                                        <h3 className="text-xl md:text-2xl xl:text-3xl font-semibold mb-3 md:mb-3.5">
+                                            {project.title}
+                                        </h3>
+                                        <svg
+                                            className="shrink-0 size-8 md:size-10 stroke-black"
+                                            width="32"
+                                            height="33"
+                                            viewBox="0 0 32 33"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true"
+                                            focusable="false"
+                                        >
+                                            <path
+                                                d="M9.3335 23.1668L22.6668 9.8335M22.6668 9.8335H12.0002M22.6668 9.8335V20.5002"
+                                                strokeWidth="2"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
                                     <p className="text-sm md:text-base">
                                         {project.description}
                                     </p>

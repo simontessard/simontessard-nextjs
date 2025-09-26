@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function Page() {
     return (
-        <main className="flex flex-col items-center bg-white text-black
+        <main className="flex flex-col items-center bg-white-primary text-black
         pt-10 md:pt-14 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
 
             <div className="container">

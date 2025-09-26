@@ -1,37 +1,12 @@
 'use client';
 
-import { useCallback } from 'react';
+import Link from "next/link";
 
 export default function FooterLink({ title, href, arrow = false }) {
-    const scrollWithNative = useCallback(() => {
-        if (href?.startsWith('#')) {
-            const target = document.querySelector(href);
-            if (target) {
-                const rect = target.getBoundingClientRect();
-                const absoluteY = window.scrollY + rect.top;
-                window.scrollTo({
-                    top: absoluteY,
-                    behavior: 'smooth',
-                });
-            }
-        }
-    }, [href]);
-
-    const handleClick = useCallback(
-        (e) => {
-            if (!arrow) {
-                e.preventDefault();
-                scrollWithNative();
-            }
-        },
-        [arrow, scrollWithNative]
-    );
-
     return (
         <li className="group overflow-hidden font-figtree tracking-tight md:text-lg font-light text-gray-800">
-            <a
+            <Link
                 href={href}
-                onClick={handleClick}
                 target={arrow ? '_blank' : undefined}
                 rel={arrow ? 'noopener noreferrer' : undefined}
                 className="relative flex gap-1 md:gap-1.5 items-center size-fit"
@@ -64,7 +39,7 @@ export default function FooterLink({ title, href, arrow = false }) {
                         />
                     </svg>
                 )}
-            </a>
+            </Link>
         </li>
     );
 }
