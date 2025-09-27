@@ -1,17 +1,18 @@
-'use client';
+"use client";
 
 import { useRef } from 'react';
 import { gsap } from 'gsap';
 import FooterLink from "@/app/footer/FooterLink";
 import {useGSAP} from "@gsap/react";
+import {usePathname} from "next/navigation";
 
 export default function FooterMenu({ links = [], title = 'Menu',
                                      arrow = false, customClass = '' }) {
     const menuRef = useRef(null);
+    const pathname = usePathname();
 
     useGSAP(() => {
         const el = menuRef.current;
-        if (!el) return;
 
         const tween = gsap.to(el, {
             opacity: 1,
@@ -20,15 +21,18 @@ export default function FooterMenu({ links = [], title = 'Menu',
             ease: 'power2.out',
             scrollTrigger: {
                 trigger: el,
-                start: 'top 80%',
+                start: 'top 70%',
             },
         });
-    }, []);
+
+        return () => {
+            tween.kill();
+        };
+    }, { dependencies: [pathname], revertOnUpdate: true });
 
     return (
         <div ref={menuRef}
-             className={[
-                'opacity-0 translate-y-6 flex flex-col gap-1 md:gap-2 xl:gap-2.5', customClass].join(' ')}
+             className={[ 'opacity-0 translate-y-6 flex flex-col gap-1 md:gap-2 xl:gap-2.5', customClass].join(' ')}
         >
             <p className="font-figtree text-black tracking-tight md:text-lg mb-0.5 md:mb-1">
                 {title}

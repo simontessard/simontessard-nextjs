@@ -40,12 +40,7 @@ export default function Footer() {
 
                         <div className="grid grid-cols-2 lg:flex max-lg:justify-between gap-y-10 gap-4 md:gap-18 xl:gap-20 2xl:gap-24 max-md:mb-4">
                             <FooterMenu title="Présentation" links={navigationLinks1} />
-                            <FooterMenu
-                                title="Projets récents"
-                                links={navigationSecondaryLinks}
-                                customClass="col-span-2"
-                                arrow
-                            />
+                            <FooterMenu title="Projets récents" links={navigationSecondaryLinks} customClass="col-span-2" arrow />
                         </div>
                     </div>
 
