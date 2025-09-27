@@ -1,7 +1,7 @@
 "use client";
 
 import { useScroll, useTransform, motion } from "motion/react";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const Timeline = ({
                              data
@@ -30,7 +30,8 @@ export const Timeline = ({
             ref={containerRef}>
             <div ref={ref} className="relative pb-20">
                 {data.map((item, index) => (
-                    <div key={index} className={`flex justify-start md:gap-10 ${
+                    <div key={item.index ?? item.title} //
+                         className={`flex justify-start md:gap-10 ${
                         index === data.length - 1 ? "" : "pb-8 md:pb-20"}`} >
                         <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-md md:w-full">
                             <div className="size-6 md:size-8 absolute left-3 md:left-3 rounded-full bg-gradient-primary flex items-center justify-center">

@@ -4,9 +4,10 @@ import Image from "next/image";
 export default function TimelineDemo() {
     const data = [
         {
+            index : 1,
             title: "Appel découverte",
             content: (
-                <div>
+                <div key="content-1">
                     <p className="mb-8 font-light text-sm md:text-base lg:text-xl leading-[1.6] opacity-90">
                         Un premier échange pour faire connaissance et comprendre vos besoins de manière globale. Cet appel permet d’identifier vos attentes principales, et de vous proposer une offre commerciale adaptée.
                     </p>
@@ -31,9 +32,10 @@ export default function TimelineDemo() {
             ),
         },
         {
+            index : 2,
             title: "Exploration approfondie",
             content: (
-                <div>
+                <div key="content-2">
                     <p className="mb-6 md:mb-8 font-light text-sm md:text-base lg:text-xl leading-[1.6] opacity-90">
                         Je prends le temps de comprendre vos besoins lors d'un entretien plus approfondi. Nous explorons ensemble vos objectifs et vos attentes pour définir la meilleure approche possible par rapport à vos contraintes.
                     </p>
@@ -48,9 +50,10 @@ export default function TimelineDemo() {
             ),
         },
         {
+            index : 3,
             title: "Conception et développement",
             content: (
-                <div>
+                <div key="content-3">
                     <p className="mb-6 md:mb-8 font-light text-sm md:text-base lg:text-xl leading-[1.6] opacity-90">
                         Je transforme vos besoins en un plan de projet : arborescence du site, choix techniques et planning détaillé.
                         Puis je donne vie à vos idées en développant votre projet.
@@ -67,9 +70,10 @@ export default function TimelineDemo() {
             ),
         },
         {
+            index : 4,
             title: "À vos côtés",
             content: (
-                <div>
+                <div key="content-4">
                     <p className="mb-6 md:mb-8 font-light text-sm md:text-base lg:text-xl leading-[1.6] opacity-90">
                         Une fois votre projet finalisé et testé, je vous accompagne dans sa mise en ligne.
                         Mon engagement ne s'arrête pas là : je reste disponible pour vous former et assurer la maintenance.
