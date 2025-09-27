@@ -17,23 +17,23 @@ export default function ProjectCard({ project }) {
     })
 
     return (
-        <article ref={cardRef} className="group opacity-0">
+        <article ref={cardRef} className="group opacity-0 bg-white rounded-xl">
             <a
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
             >
-                <figure className="relative aspect-[4/3] rounded-xl w-full mb-4 overflow-hidden">
+                <figure className="relative aspect-[4/3] rounded-t-xl w-full overflow-hidden">
                     <Image
                         src={project.image}
                         alt={project.title}
                         fill
-                        className="object-cover md:group-hover:scale-105 transition-transform duration-500 rounded-xl"
+                        className="object-cover md:group-hover:scale-105 transition-transform duration-500"
                     />
                 </figure>
 
-                <div>
+                <div className="px-5 md:px-6 pt-5 md:pt-6 pb-4">
                     <div className="flex justify-between">
                         <h3 className="text-2xl xl:text-3xl font-semibold mb-3 md:mb-3.5">
                             {project.title}
@@ -56,8 +56,11 @@ export default function ProjectCard({ project }) {
                             />
                         </svg>
                     </div>
-                    <p className="text-sm md:text-base">
+                    <p className="text-sm md:text-base mb-4 md:mb-6">
                         {project.description}
+                    </p>
+                    <p className="size-fit ml-auto font-chivo tracking-tighter text-sm md:text-base">
+                        {project.date}
                     </p>
                 </div>
             </a>
