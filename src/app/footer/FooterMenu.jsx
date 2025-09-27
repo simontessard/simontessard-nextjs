@@ -29,14 +29,13 @@ export default function FooterMenu({ links = [], title = 'Menu',
             opacity: 1,
             y: 0,
             duration: 0.6,
-            stagger: 0.1,
             ease: 'power2.out',
         });
         tween.to(footerLinks, {
             opacity: 1,
             y: 0,
-            duration: 0.6,
-            stagger: 0.1,
+            duration: 0.5,
+            stagger: 0.07,
             ease: 'power2.out',
         });
 

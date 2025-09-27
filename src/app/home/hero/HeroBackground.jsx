@@ -10,9 +10,14 @@ export default function HeroBackground() {
     useEffect(() => {
         if (!imgRef.current) return;
 
+        const apparition = gsap.to(imgRef.current, {
+            scale: 1.1,
+            duration: 1,
+            ease: "power1.out"
+        });
+
         const tween = gsap.to(imgRef.current, {
             yPercent: 10,
-            duration: 1,
             ease: 'power2.out',
             scrollTrigger: {
                 trigger: imgRef.current,
@@ -29,16 +34,13 @@ export default function HeroBackground() {
     }, []);
 
     return (
-        <>
-            <div className="absolute z-50 top-0 left-0 size-full bg-black/5 pointer-events-none" />
-            <Image
+         <Image
                 ref={imgRef}
                 src="/background_epic.png"
                 alt="Fonds bleu avec des formes abstraites"
                 fill
-                className="absolute top-0 left-0 scale-110 size-full object-cover rounded-b-2xl"
+                className="absolute top-0 left-0 scale-75 size-full object-cover rounded-xl md:rounded-2xl xl:rounded-3xl"
                 priority
-            />
-        </>
+         />
     );
 }
