@@ -35,7 +35,7 @@ export default function ProjectCard({ project }) {
 
                 <div>
                     <div className="flex justify-between">
-                        <h3 className="text-xl md:text-2xl xl:text-3xl font-semibold mb-3 md:mb-3.5">
+                        <h3 className="text-2xl xl:text-3xl font-semibold mb-3 md:mb-3.5">
                             {project.title}
                         </h3>
                         <svg
@@ -56,7 +56,9 @@ export default function ProjectCard({ project }) {
                             />
                         </svg>
                     </div>
-                    <p className="text-sm md:text-base">{project.description}</p>
+                    <p className="text-sm md:text-base">
+                        {project.description}
+                    </p>
                 </div>
             </a>
         </article>
