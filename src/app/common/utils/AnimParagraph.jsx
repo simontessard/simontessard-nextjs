@@ -1,24 +1,20 @@
 'use client';
 
-import React, { useMemo, useRef } from 'react';
+import { useMemo, useRef } from 'react';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-export default function AnimParagraph({
-                                          tag = 'p',
-                                          className = '',
-                                          withScrollTrigger = false,
-                                          scrollTriggerOptions = { start: 'top 72%', end: 'bottom 20%' },
-                                          children,
-                                      }) {
+export default function AnimParagraph({ tag = 'p', className = '',
+                                        withScrollTrigger = false, scrollTriggerOptions = { start: 'top 72%', end: 'bottom 20%' },
+                                        children }) {
     const elRef = useRef(null);
     const Tag = tag;
 
     const animConfig = useMemo(
-        () => ({ y: 0, opacity: 1, duration: 0.6, ease: 'circ.out' }),
+        () => ({ y: 0, opacity: 1, duration: 0.5, ease: 'circ.out' }),
         []
     );
 
@@ -36,7 +32,7 @@ export default function AnimParagraph({
                 return;
             }
 
-            gsap.set(el, { opacity: 0, y: 32 });
+            gsap.set(el, { opacity: 0, y: 24 });
 
             if (withScrollTrigger) {
                 gsap.to(el, {
@@ -49,7 +45,7 @@ export default function AnimParagraph({
                     },
                 });
             } else {
-                gsap.to(el, { ...animConfig, delay: 0.7 });
+                gsap.to(el, { ...animConfig, delay: 0.6 });
             }
         },
         { scope: elRef, dependencies: [withScrollTrigger, animConfig, scrollTriggerOptions] }
