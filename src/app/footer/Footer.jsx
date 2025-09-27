@@ -5,12 +5,13 @@ import FooterMenu from "@/app/footer/FooterMenu";
 import FooterContact from "@/app/footer/FooterContact";
 import BackHome from "@/app/header/BackHome";
 import CtaSection from "@/app/footer/cta/CtaSection";
+import FooterDivider from "@/app/footer/FooterDivider";
 
 export default function Footer() {
     return (
         <>
             <CtaSection/>
-            <footer className="bg-white">
+            <footer className="js-footer bg-white">
                 <div className="container pb-5 pt-16 md:pt-18 xl:pt-20 flex flex-col justify-end lg:justify-between h-full">
 
                     <div className="flex max-md:flex-col justify-between mb-6 md:mb-20">
@@ -21,8 +22,7 @@ export default function Footer() {
                             <AnimText
                                 withScrollTrigger
                                 tag="p"
-                                className="font-figtree font-light md:text-lg text-black mb-4 md:mb-6"
-                            >
+                                className="font-figtree font-light md:text-lg text-black mb-4 md:mb-6">
                                 Toute l&apos;expertise d&apos;une agence <br />
                                 accessible à des prix mini.
                             </AnimText>
@@ -44,9 +44,8 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <hr className="text-black/20 mb-4 md:mb-6" />
+                    <FooterDivider />
 
-                    {/* Bottom */}
                     <div className="flex max-md:flex-col-reverse max-lg:gap-4 justify-between">
                         <div className="flex justify-center items-center">
                             <span className="font-figtree tracking-tight text-gray-700 text-xs sm:text-sm md:text-base max-lg:text-center">
