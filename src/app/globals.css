@@ -47,7 +47,7 @@ body {
 }
 
 .css-title-section {
-    @apply text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl text-center font-figtree tracking-tight font-medium;
+    @apply text-4xl md:text-5xl xl:text-6xl text-center font-figtree tracking-tight font-medium;
 }
 
 .css-subtitle-section {
