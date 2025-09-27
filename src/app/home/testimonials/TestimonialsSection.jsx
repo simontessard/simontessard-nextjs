@@ -6,12 +6,11 @@ import testimonials from '@/data/testimonials.json';
 
 export default function TestimonialsSection() {
     return (
-        <section
-            id="testimonials"
+        <section id="testimonials"
             className="section-white bg-white-primary py-16 md:py-18 xl:py-22 2xl:py-24 overflow-hidden"
         >
             <Uptitle withScrollTrigger>
-                Les témoignages
+                Témoignages
             </Uptitle>
 
             <AnimText

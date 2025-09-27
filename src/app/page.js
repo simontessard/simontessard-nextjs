@@ -4,12 +4,9 @@ import Citation from "@/app/common/dividers/Citation";
 import TestimonialsSection from "@/app/home/testimonials/TestimonialsSection";
 import BrandList from "@/app/common/dividers/BrandsList";
 import FAQSection from "@/app/common/faq/FaqSection";
-import CtaSection from "@/app/footer/cta/CtaSection";
 import ProjectsSection from "@/app/home/projects/ProjectsSection";
 import CompareImageSection from "@/app/home/compare/CompareImageSection";
 import CountUpSection from "@/app/common/dividers/CountUpSection";
-import Header from "@/app/header/Header";
-import Footer from "@/app/footer/Footer";
 import WhySection from "@/app/home/why/WhySection";
 import technos from '@/data/technos.json';
 
