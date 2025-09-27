@@ -8,8 +8,8 @@ import HeroStar from "@/app/home/hero/HeroStar";
 
 export default function HeroSection() {
     return (
-        <section id="hero" className="flex flex-col min-h-[100vh] bg-white-primary max-h-[100vh] pb-4 px-4 md:pb-5 md:px-5">
-            <div className="relative block h-16 md:h-21.5 w-full">
+        <section id="hero" className="flex flex-col min-h-[100vh] bg-white-primary max-h-[100vh] pb-3 sm:pb-4 px-3 sm:px-4 md:pb-5 md:px-5">
+            <div className="relative block h-17 md:h-21.5 w-full">
             </div>
 
             <div className="relative bg-blue-primary grow size-full rounded-xl md:rounded-2xl

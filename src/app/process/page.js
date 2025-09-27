@@ -15,7 +15,7 @@ export const metadata = {
 export default function Page() {
     return (
         <main className="flex flex-col items-center bg-white-primary text-black
-        pt-24 md:pt-28 lg:pt-32 xl:pt-36 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
+        pt-26 md:pt-28 lg:pt-32 xl:pt-36 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
 
             <div className="container">
 
@@ -42,9 +42,9 @@ export default function Page() {
                 </AnimParagraph>
 
                 <TimelineDemo/>
-
-                <FAQSection/>
             </div>
+
+            <FAQSection/>
 
         </main>
     );
