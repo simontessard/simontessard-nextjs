@@ -16,13 +16,12 @@ export default function Page() {
 
             <div className="container">
 
-                <Uptitle withScrollTrigger>
+                <Uptitle>
                     Processus
                 </Uptitle>
 
                 <AnimText
-                    useScrollTrigger
-                    tag="h2"
+                    tag="h1"
                     className="css-title-section text-black-primary mb-4 md:mb-5 xl:mb-6"
                 >
                     « Trust the <span className="css-word-italic text-blue-primary/90">process.</span> »
