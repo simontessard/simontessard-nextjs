@@ -13,21 +13,12 @@ export const navItemsMobile = [
     { path: "/process", label: "Processus" },
 ];
 
-export const contactLinks = [
-    { title: "Mentions légales", href: "/legals" }
-];
-
 export const navigationLinks1 = [
     { title: "Accueil", href: "/" },
     { title: "À propos", href: "/a-propos" },
     { title: "Réalisations", href: "/realisations" },
     { title: "Offres", href: "/offres" },
     { title: "Processus", href: "/process" },
-];
-
-export const navigationLinks2 = [
-    { title: "Témoignages", href: "#testimonials" },
-    { title: "FAQ", href: "#faq" }
 ];
 
 export const navigationSecondaryLinks = [
@@ -38,4 +29,8 @@ export const navigationSecondaryLinks = [
     { title: "Festival Film de Demain", href: "https://filmdedemain.fr" },
     { title: "Maxime Le Bec", href: "https://maximelebec.fr" },
     { title: "Iniva Hôtel", href: "https://inivatourism.com/" }
+];
+
+export const contactLinks = [
+    { title: "Mentions légales", href: "/legals" }
 ];

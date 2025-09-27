@@ -1,6 +1,6 @@
 import AnimText from "@/app/common/utils/AnimText";
 import Link from "next/link";
-import { contactLinks, navigationLinks1, navigationLinks2, navigationSecondaryLinks } from '@/data/navigation';
+import { contactLinks, navigationLinks1, navigationSecondaryLinks } from '@/data/navigation';
 import FooterMenu from "@/app/footer/FooterMenu";
 import FooterContact from "@/app/footer/FooterContact";
 import BackHome from "@/app/header/BackHome";
