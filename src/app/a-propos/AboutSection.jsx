@@ -15,13 +15,12 @@ export default function AboutSection() {
 
                     <div className="flex flex-col justify-between min-h-max lg:py-1 w-full lg:w-1/2 lg:aspect-square rounded-xl">
                         <div>
-                            <Uptitle withScrollTrigger className="mb-4 md:mb-5 xl:mb-6 text-start">
+                            <Uptitle className="mb-4 md:mb-5 xl:mb-6 text-start">
                                 Qui suis-je ?
                             </Uptitle>
 
                             <AnimText
-                                useScrollTrigger
-                                tag="h2"
+                                tag="h1"
                                 className="css-title-section !text-start text-black-primary mb-6 md:mb-4"
                             >
                                 À <span className="css-word-italic text-blue-primary/90">propos.</span>
@@ -30,7 +29,6 @@ export default function AboutSection() {
 
                         <div className="flex flex-col gap-6 lg:gap-8 max-lg:mb-6">
                             <AnimText
-                                useScrollTrigger
                                 tag="p"
                                 className="font-figtree tracking-tight font-light md:text-lg xl:text-xl"
                             >
@@ -38,14 +36,12 @@ export default function AboutSection() {
                                 pensés pour que vos visiteurs deviennent vos clients.
                             </AnimText>
                             <AnimText
-                                useScrollTrigger
                                 tag="p"
                                 className="font-figtree tracking-tight font-light md:text-lg xl:text-xl"
                             >
                                 Chaque interaction devient une expérience : j’anime vos idées pour transformer un simple site en une vitrine digitale mémorable.
                             </AnimText>
                             <AnimText
-                                useScrollTrigger
                                 tag="p"
                                 className="font-figtree tracking-tight font-light md:text-lg xl:text-xl"
                             >
@@ -55,10 +51,9 @@ export default function AboutSection() {
                         </div>
 
                         <CTABase
-                            withScrollTrigger
-                            variant="black"
-                            to="/a-propos"
-                            text="En savoir plus"
+                            variant="blue"
+                            to="/contact"
+                            text="Réserver un appel"
                         />
                     </div>
                 </div>

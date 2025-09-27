@@ -1,6 +1,6 @@
 import TestimonialsSection from "@/app/home/testimonials/TestimonialsSection";
 import BrandList from "@/app/common/dividers/BrandsList";
-import AboutSection from "@/app/home/about/AboutSection";
+import AboutSection from "@/app/a-propos/AboutSection";
 import FAQSection from "@/app/common/faq/FaqSection";
 import brands from '@/data/brands.json';
 import ImageGallery from "@/app/a-propos/ImageGallery";
