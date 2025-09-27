@@ -7,10 +7,10 @@ export const navItems = [
 ];
 
 export const navItemsMobile = [
-    { path: "#about", label: "À propos" },
-    { path: "#work", label: "Réalisations" },
-    { path: "#process", label: "Processus" },
-    { path: "#faq", label: "FAQ" }
+    { path: "/a-propos", label: "À propos" },
+    { path: "/realisations", label: "Réalisations" },
+    { path: "/offres", label: "Offres" },
+    { path: "/process", label: "Processus" },
 ];
 
 export const contactLinks = [

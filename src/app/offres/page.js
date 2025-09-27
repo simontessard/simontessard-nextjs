@@ -7,7 +7,7 @@ import FAQSection from "@/app/common/faq/FaqSection";
 
 export const metadata = {
     title: "Offres",
-    description: "",
+    description: "Découvrez mes offres de création de sites web : One Page, Site Complet. Des solutions adaptées à vos besoins pour booster votre présence en ligne.",
 }
 
 export default function Page() {
