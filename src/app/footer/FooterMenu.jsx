@@ -13,11 +13,15 @@ export default function FooterMenu({ links = [], title = 'Menu',
 
     useGSAP(() => {
         const el = menuRef.current;
+        const footerLinks = el.querySelectorAll('.js-footer-link');
 
-        const tween = gsap.to(el, {
+        if (footerLinks.length === 0) return;
+
+        const tween = gsap.to(footerLinks, {
             opacity: 1,
             y: 0,
             duration: 0.6,
+            stagger: 0.1,
             ease: 'power2.out',
             scrollTrigger: {
                 trigger: el,
@@ -32,7 +36,7 @@ export default function FooterMenu({ links = [], title = 'Menu',
 
     return (
         <div ref={menuRef}
-             className={[ 'opacity-0 translate-y-6 flex flex-col gap-1 md:gap-2 xl:gap-2.5', customClass].join(' ')}
+             className={[ 'flex flex-col gap-1 md:gap-2 xl:gap-2.5', customClass].join(' ')}
         >
             <p className="font-figtree text-black tracking-tight md:text-lg mb-0.5 md:mb-1">
                 {title}

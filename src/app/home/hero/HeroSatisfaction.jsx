@@ -68,10 +68,13 @@ export default function HeroSatisfaction() {
                     alt="Jonathan Lecompte, client satisfait"
                     className="js-hero-satisfaction--bull scale-60 opacity-0 -translate-x-10 shrink-0 rounded-full object-cover size-10 lg:size-11 xl:size-12"
                 />
-                <div className="js-hero-satisfaction--bull scale-60 opacity-0 -translate-x-20 shrink-0 font-figtree text-xs flex items-center justify-center rounded-full
-                     size-10 lg:size-11 xl:size-12 text-black bg-white">
-                    +10
-                </div>
+                <Image
+                    width={100}
+                    height={100}
+                    src="/placeholders/melvin.jpeg"
+                    alt="Jonathan Lecompte, client satisfait"
+                    className="js-hero-satisfaction--bull scale-60 opacity-0 -translate-x-20 shrink-0 rounded-full object-cover size-10 lg:size-11 xl:size-12"
+                />
             </div>
 
             <div className="flex flex-col gap-1.5 md:gap-2">

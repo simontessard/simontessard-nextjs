@@ -49,9 +49,9 @@ export default function Footer() {
                     {/* Bottom */}
                     <div className="flex max-md:flex-col-reverse max-lg:gap-4 justify-between">
                         <div className="flex justify-center items-center">
-                        <span className="font-figtree tracking-tight text-gray-700 text-xs sm:text-sm md:text-base max-lg:text-center">
-                            © 2025 Simon TESSARD. Tous droits réservés.
-                        </span>
+                            <span className="font-figtree tracking-tight text-gray-700 text-xs sm:text-sm md:text-base max-lg:text-center">
+                                © 2025 Simon TESSARD. Tous droits réservés.
+                            </span>
                         </div>
 
                         <div className="flex justify-center md:justify-end items-center gap-5 md:gap-6 lg:gap-8">

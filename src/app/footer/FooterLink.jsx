@@ -4,21 +4,21 @@ import Link from "next/link";
 
 export default function FooterLink({ title, href, arrow = false }) {
     return (
-        <li className="group overflow-hidden font-figtree tracking-tight md:text-lg font-light text-gray-800">
+        <li className="js-footer-link opacity-0 translate-y-4 group overflow-hidden font-figtree tracking-tight md:text-lg font-light text-gray-800">
             <Link
                 href={href}
                 target={arrow ? '_blank' : undefined}
                 rel={arrow ? 'noopener noreferrer' : undefined}
                 className="relative flex gap-1 md:gap-1.5 items-center size-fit"
             >
-        <span className="relative inline-block overflow-hidden size-fit">
-          <span className="inline-block md:group-hover:-translate-y-full transition-transform duration-700 ease-in-out">
-            {title}
-          </span>
-          <span className="absolute left-0 bottom-0 translate-y-full md:group-hover:translate-y-0 transition-transform duration-700 ease-in-out inline-block size-fit">
-            {title}
-          </span>
-        </span>
+                <span className="relative inline-block overflow-hidden size-fit">
+                    <span className="inline-block md:group-hover:-translate-y-full transition-transform duration-700 ease-in-out">
+                        {title}
+                    </span>
+                    <span className="absolute left-0 bottom-0 translate-y-full md:group-hover:translate-y-0 transition-transform duration-700 ease-in-out inline-block size-fit">
+                        {title}
+                    </span>
+                </span>
 
                 {arrow && (
                     <svg

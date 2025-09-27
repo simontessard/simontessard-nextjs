@@ -15,6 +15,7 @@ export default function CtaSection() {
         <section id="cta" className="bg-gradient-primary section-white container md:rounded-t-xl">
             <div className="js-cursor-cta--hover relative flex flex-col items-center justify-center shadow-sm overflow-hidden
              py-12 md:py-16 px-6 md:px-8 xl:px-30 2xl:px-40 rounded-t-xl md:rounded-t-2xl text-center text-white size-full">
+
                 <Uptitle className="text-white" withScrollTrigger>
                     Prêt à démarrer ?
                 </Uptitle>
