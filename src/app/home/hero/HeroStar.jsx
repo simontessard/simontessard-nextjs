@@ -10,7 +10,7 @@ export default function HeroStar() {
             opacity: 1,
             scale: 1,
             delay: 1.2,
-            duration: .8,
+            duration: .6,
             ease: "power2.out",
         })
     });

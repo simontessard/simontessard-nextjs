@@ -16,7 +16,7 @@ export default function Header() {
         const el = headerRef.current;
         if (!el) return;
 
-        gsap.to(el, { y: 0, delay: .8, duration: 0.6, ease: 'circ.out' });
+        gsap.to(el, { y: 0, delay: .7, duration: 0.65, ease: 'circ.out' });
 
         const animHeader = gsap.timeline({ paused: true });
 

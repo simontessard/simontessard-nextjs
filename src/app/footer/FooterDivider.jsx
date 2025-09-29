@@ -3,9 +3,11 @@
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import {useRef} from "react";
+import {usePathname} from "next/navigation";
 
 export default function FooterDivider() {
     const dividerRef = useRef(null);
+    const pathname = usePathname();
 
     useGSAP(()=> {
         gsap.to(dividerRef.current, {
@@ -18,7 +20,7 @@ export default function FooterDivider() {
             },
         })
 
-    })
+    }, { dependencies: [pathname], revertOnUpdate: true })
 
     return (
         <hr ref={dividerRef} className="md:w-0 text-black/20 mb-4 md:mb-6" />
