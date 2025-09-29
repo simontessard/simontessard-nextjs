@@ -11,8 +11,9 @@ export default function HeroBackground() {
         if (!imgRef.current) return;
 
         const apparition = gsap.to(imgRef.current, {
+            opacity: 1,
             scale: 1.1,
-            duration: 1,
+            duration: .8,
             ease: "power1.out"
         });
 
@@ -39,7 +40,7 @@ export default function HeroBackground() {
                 src="/background_epic.png"
                 alt="Fonds bleu avec des formes abstraites"
                 fill
-                className="absolute top-0 left-0 scale-75 size-full object-cover rounded-xl md:rounded-2xl xl:rounded-3xl"
+                className="absolute top-0 left-0 scale-90 md:scale-50 opacity-0 size-full object-cover rounded-xl md:rounded-2xl xl:rounded-3xl"
                 priority
          />
     );

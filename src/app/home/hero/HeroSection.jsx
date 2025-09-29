@@ -26,7 +26,7 @@ export default function HeroSection() {
                         <AnimText
                             tag="h1"
                             className="text-white text-center font-figtree tracking-tighter text-5xl md:text-6xl xl:text-7xl 2xl:text-[5.5rem]
-                        leading-[1] md:leading-[1] xl:leading-[0.95] 2xl:leading-[0.9] font-medium mb-3 md:mb-5"
+                            leading-[1] md:leading-[1] xl:leading-[0.95] 2xl:leading-[0.9] font-medium mb-3 md:mb-5"
                         >
                             Une <span className="css-word-italic"> vitrine </span> web <br /> à la hauteur de <br /> votre{' '}
                             <span className="css-word-italic relative">marque.
