@@ -63,9 +63,19 @@ export default function ProjectCard({ project }) {
                     <p className="text-sm md:text-base mb-4 md:mb-6">
                         {project.description}
                     </p>
-                    <p className="size-fit ml-auto font-chivo tracking-tighter text-sm md:text-base">
-                        {project.date}
-                    </p>
+                    <div className="flex justify-between items-end">
+                        <div className="flex flex-wrap gap-2">
+                            {project.tags?.map((tag, index) => (
+                                <span key={index} className="px-3 py-1 bg-blue-700 font-figtree text-white
+                                    text-xs md:text-sm rounded-full font-medium">
+                                {tag}
+                            </span>
+                            ))}
+                        </div>
+                        <p className="size-fit ml-auto font-chivo tracking-tighter text-sm md:text-base">
+                            {project.date}
+                        </p>
+                    </div>
                 </div>
             </a>
         </article>
