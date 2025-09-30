@@ -19,7 +19,6 @@ export default function FooterSocial({ href, children, external = false }) {
                 start: 'top 50%',
             },
         })
-
     }, { dependencies: [pathname], revertOnUpdate: true })
 
     return (

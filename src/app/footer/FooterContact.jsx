@@ -26,7 +26,9 @@ export default function FooterContact({ title, href }) {
 
     return (
         <li className="overflow-hidden">
-            <Link ref={isRef} href={href} className="inline-block md:translate-x-full text-xs md:text-sm font-light text-gray-700 underline-offset-4 underline transition-colors duration-300">
+            <Link ref={isRef} href={href}
+                  className="inline-block md:translate-x-full text-xs md:text-sm font-light text-gray-700 md:hover:text-blue-primary
+                  underline-offset-4 underline transition-colors duration-300">
                 {title}
             </Link>
         </li>

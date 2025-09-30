@@ -7,17 +7,21 @@ import {gsap} from "gsap";
 export default function ProjectCard({ project }) {
     const cardRef = useRef(null);
 
-    useGSAP(()=> {
+    useGSAP(() => {
         gsap.to(cardRef.current, {
             opacity: 1,
-            delay: .6,
-            duration: .6,
-            ease: "power3.inOut"
-        })
-    })
+            scale: 1,
+            duration: 0.6,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: cardRef.current,
+                start: "top 80%",
+            }
+        });
+    });
 
     return (
-        <article ref={cardRef} className="group opacity-0 bg-white rounded-xl">
+        <article ref={cardRef} className="group opacity-0 scale-90 bg-white rounded-xl">
             <a
                 href={project.url}
                 target="_blank"

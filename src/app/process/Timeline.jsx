@@ -37,7 +37,7 @@ export const Timeline = ({
                             <div className="size-6 md:size-8 absolute left-3 md:left-3 rounded-full bg-gradient-primary flex items-center justify-center">
                                 <div className="size-4 rounded-full bg-white border border-black p-1 md:p-1.5" />
                             </div>
-                            <h3 className="hidden md:block text-xl md:pl-20 md:text-4xl font-bold">
+                            <h3 className="hidden md:block text-xl md:pl-20 md:text-4xl font-figtree font-semibold">
                                 {item.title}
                             </h3>
                         </div>
