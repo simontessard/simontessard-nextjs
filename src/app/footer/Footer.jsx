@@ -18,7 +18,7 @@ export default function Footer() {
                     <div className="flex max-md:flex-col justify-between mb-6 md:mb-20">
                         <div className="flex flex-col max-lg:mb-10">
 
-                            <BackHome className="mb-4"/>
+                            <BackHome header={false} className="mb-4"/>
 
                             <AnimText
                                 withScrollTrigger
