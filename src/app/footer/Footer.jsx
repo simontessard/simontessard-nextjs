@@ -1,12 +1,12 @@
 import AnimText from "@/app/common/utils/AnimText";
-import Link from "next/link";
-import { contactLinks, navigationLinks1, navigationSecondaryLinks } from '@/data/navigation';
 import FooterMenu from "@/app/footer/FooterMenu";
 import FooterContact from "@/app/footer/FooterContact";
 import BackHome from "@/app/header/BackHome";
 import CtaSection from "@/app/footer/cta/CtaSection";
 import FooterDivider from "@/app/footer/FooterDivider";
 import FooterCopyright from "@/app/footer/FooterCopyright";
+import { contactLinks, navigationLinks1, navigationSecondaryLinks } from '@/data/navigation';
+import FooterSocial from "@/app/footer/FooterSocial";
 
 export default function Footer() {
     return (
@@ -28,15 +28,15 @@ export default function Footer() {
                                 accessible à des prix mini.
                             </AnimText>
 
-                            <Link href="mailto:pro@simontessard.fr"
-                                  className="md:text-lg font-light css-text-gradient font-figtree tracking-tight transition-colors duration-300 mb-1">
-                                pro@simontessard.fr
-                            </Link>
+                            <div className="flex flex-col gap-1">
+                                <FooterSocial href="mailto:pro@simontessard.fr">
+                                    pro@simontessard.fr
+                                </FooterSocial>
 
-                            <Link href="https://www.linkedin.com/in/simon-tessard-138733198/" target="_blank"
-                                  className="md:text-lg font-light css-text-gradient font-figtree tracking-tight transition-colors duration-300">
-                                LinkedIn
-                            </Link>
+                                <FooterSocial href="https://www.linkedin.com/in/simon-tessard-138733198/" external>
+                                    LinkedIn
+                                </FooterSocial>
+                            </div>
                         </div>
 
                         <div className="grid grid-cols-2 lg:flex max-lg:justify-between gap-y-10 gap-4 md:gap-18 xl:gap-20 2xl:gap-24 max-md:mb-4">
