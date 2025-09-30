@@ -23,6 +23,7 @@ export default function ProjectsList() {
                                 url={project?.url}
                                 src={project?.image}
                                 title={project?.title}
+                                tags={project?.tags}
                                 date={project?.date}
                                 progress={scrollYProgress}
                                 range={[i * 0.25, 1]}
@@ -35,7 +36,7 @@ export default function ProjectsList() {
             </div>
     );
 }
-export const Card = ({i, title, date, src, url, progress, range, targetScale}) => {
+export const Card = ({i, title, date, tags, src, url, progress, range, targetScale}) => {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
         target: container,
@@ -60,9 +61,17 @@ export const Card = ({i, title, date, src, url, progress, range, targetScale}) =
                                 {date}
                             </p>
                             <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl text-black tracking-tight font-figtree font-bold
-                            md:max-w-sm mb-3 md:mb-6">
+                            md:max-w-sm mb-3 md:mb-4">
                                 {title}
                             </h3>
+                            <div className="flex flex-wrap gap-2">
+                                {tags?.map((tag, index) => (
+                                    <span key={index} className="px-3 py-1 bg-blue-700 font-figtree text-white
+                                    text-xs md:text-sm rounded-full font-medium">
+                                {tag}
+                            </span>
+                                ))}
+                            </div>
                         </div>
                         <CTABase to={url} external={true} variant="black" text="Voir le site"/>
                     </div>
