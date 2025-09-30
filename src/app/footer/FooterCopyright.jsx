@@ -4,9 +4,8 @@ import { gsap } from "gsap";
 import {useGSAP} from "@gsap/react";
 import {useRef} from "react";
 import {usePathname} from "next/navigation";
-import Link from 'next/link';
 
-export default function FooterContact({ title, href }) {
+export default function FooterCopyright() {
     const isRef = useRef(null);
     const pathname = usePathname();
 
@@ -23,12 +22,11 @@ export default function FooterContact({ title, href }) {
         })
 
     }, { dependencies: [pathname], revertOnUpdate: true })
-
     return (
-        <li className="overflow-hidden">
-            <Link ref={isRef} href={href} className="inline-block md:translate-x-full text-xs md:text-sm font-light text-gray-700 underline-offset-4 underline transition-colors duration-300">
-                {title}
-            </Link>
-        </li>
-    );
+        <p className="inline-block overflow-hidden font-figtree tracking-tight text-gray-700 text-xs sm:text-sm md:text-base max-lg:text-center">
+            <span ref={isRef} className="inline-block md:-translate-x-full">
+                © 2025 Simon TESSARD. Tous droits réservés.
+            </span>
+        </p>
+    )
 }

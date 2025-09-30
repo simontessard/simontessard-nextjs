@@ -6,6 +6,7 @@ import FooterContact from "@/app/footer/FooterContact";
 import BackHome from "@/app/header/BackHome";
 import CtaSection from "@/app/footer/cta/CtaSection";
 import FooterDivider from "@/app/footer/FooterDivider";
+import FooterCopyright from "@/app/footer/FooterCopyright";
 
 export default function Footer() {
     return (
@@ -47,11 +48,7 @@ export default function Footer() {
                     <FooterDivider />
 
                     <div className="flex max-md:flex-col-reverse max-lg:gap-4 justify-between">
-                        <div className="flex justify-center items-center">
-                            <span className="font-figtree tracking-tight text-gray-700 text-xs sm:text-sm md:text-base max-lg:text-center">
-                                © 2025 Simon TESSARD. Tous droits réservés.
-                            </span>
-                        </div>
+                        <FooterCopyright/>
 
                         <div className="flex justify-center md:justify-end items-center gap-5 md:gap-6 lg:gap-8">
                             <ul className="flex gap-3 md:gap-5 2xl:gap-6">

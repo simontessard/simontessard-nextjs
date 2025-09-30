@@ -37,7 +37,7 @@ export default function FooterMenu({ links = [], title = 'Menu',
             duration: 0.5,
             stagger: 0.07,
             ease: 'power2.out',
-        });
+        }, "-=.3");
 
         return () => {
             tween.kill();
