@@ -17,7 +17,7 @@ body {
     --font-figtree: var(--font-figtree), var(--font-sans);
     --font-stix: var(--font-stix), var(--font-sans);
     --color-black-primary: #1a1a1a;
-    --color-white-primary: #f6f3f4;
+    --color-white-primary: #faf8f9;
     --color-grey-primary: #ccbfc4;
     --color-grey-text : #b3b3b3;
     --color-theme-primary: #3f07e6;

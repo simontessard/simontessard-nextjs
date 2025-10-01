@@ -41,7 +41,7 @@ export default function Header() {
         <>
             <header ref={headerRef}
                 className="js-header fixed left-0 top-0 z-101 -translate-y-[150%] pointer-events-none
-                   flex items-center w-full py-1.5 md:py-3 bg-white-primary transition-colors duration-500"
+                flex items-center w-full py-2 md:py-4 bg-white-primary transition-colors duration-500"
             >
                 <div className="container">
                     <div className="size-fit max-lg:flex max-lg:justify-between py-1 items-center lg:grid lg:grid-cols-5 w-full">
