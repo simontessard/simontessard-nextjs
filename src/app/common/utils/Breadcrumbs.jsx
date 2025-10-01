@@ -16,7 +16,6 @@ export default function Breadcrumbs({ items }) {
             breadcrumbItems,{
                 opacity: 1,
                 y: 0,
-                scale: 1,
                 duration: 0.8,
                 stagger: 0.08,
                 delay: .8,
@@ -29,14 +28,14 @@ export default function Breadcrumbs({ items }) {
         <nav
             ref={containerRef}
             aria-label="Breadcrumb"
-            className="ml-5 sm:ml-6 md:ml-7 mb-6 md:mb-8"
+            className="ml-5 sm:ml-6 md:ml-7 mb-8 md:mb-10"
         >
-            <ol className="flex items-center gap-2 font-figtree text-xs md:text-sm text-black">
+            <ol className="flex items-center gap-1 sm:gap-1.5 md:gap-2 font-figtree text-xs md:text-sm text-black">
                 {items.map((item, index) => {
                     const isLast = index === items.length - 1;
 
                     return (
-                        <li key={index} className="opacity-0 scale-95 translate-y-4 flex items-center gap-1.5 md:gap-2">
+                        <li key={index} className="opacity-0 translate-y-4 flex items-center gap-1 sm:gap-1.5 md:gap-2">
                             {!isLast ? (
                                 <>
                                     <Link

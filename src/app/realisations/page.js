@@ -16,8 +16,8 @@ export default function Page() {
                         { label: "Accueil", href: "/" },
                         { label: "Réalisations", href: "/realisations" }
                     ]}
-                    uptitle="Portfolio"
-                    title={<>Réalisations <span className="css-word-italic text-blue-primary/90">récentes.</span></>}
+                    uptitle="Réalisations"
+                    title={<>Projets <span className="css-word-italic text-blue-primary/90">récents.</span></>}
                     subtitle="Chaque projet est différent, découvrez mes travaux ci dessous."
                 />
 
