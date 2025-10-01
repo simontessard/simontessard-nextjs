@@ -1,6 +1,8 @@
 import TimelineDemo from "@/app/process/TimelineDemo";
 import FAQSection from "@/app/common/faq/FaqSection";
 import PageHeader from "@/app/common/utils/PageHeader";
+import technos from "@/data/technos.json";
+import BrandList from "@/app/common/dividers/BrandsList";
 
 export const metadata = {
     title: "Processus",
@@ -25,6 +27,8 @@ export default function Page() {
             <div className="container">
                 <TimelineDemo/>
             </div>
+
+            <BrandList brands={technos} direction="right"/>
 
             <FAQSection/>
         </main>

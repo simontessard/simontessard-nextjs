@@ -69,7 +69,7 @@ export default function CompareImageContainer() {
             <Card data={avantData} />
 
             {/* Avant/Après central */}
-            <div className="compare-image--container xl:col-span-2 opacity-0 p-1 border border-neutral-800 rounded-xl bg-gradient-primary shadow-lg">
+            <div className="compare-image--container xl:col-span-2 opacity-0 p-0.5 border border-neutral-800 rounded-2xl bg-gradient-primary shadow-lg">
                 <Compare
                     firstImage="/compare/before-fdd.jpg"
                     secondImage="/compare/after-fdd.jpg"
