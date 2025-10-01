@@ -1,15 +1,42 @@
 // app/common/components/Breadcrumbs.jsx
+"use client";
+
 import Link from "next/link";
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 export default function Breadcrumbs({ items }) {
+    const containerRef = useRef(null);
+
+    useGSAP(() => {
+        const breadcrumbItems = containerRef.current.querySelectorAll('li');
+
+        gsap.to(
+            breadcrumbItems,{
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                duration: 0.8,
+                stagger: 0.08,
+                delay: .8,
+                ease: "back.out(1.7)",
+            }
+        );
+    }, { scope: containerRef });
+
     return (
-        <nav aria-label="Breadcrumb" className="ml-5 sm:ml-6 md:ml-7 mb-6 md:mb-8">
+        <nav
+            ref={containerRef}
+            aria-label="Breadcrumb"
+            className="ml-5 sm:ml-6 md:ml-7 mb-6 md:mb-8"
+        >
             <ol className="flex items-center gap-2 font-figtree text-xs md:text-sm text-black">
                 {items.map((item, index) => {
                     const isLast = index === items.length - 1;
 
                     return (
-                        <li key={index} className="flex items-center gap-1.5 md:gap-2">
+                        <li key={index} className="opacity-0 scale-95 translate-y-4 flex items-center gap-1.5 md:gap-2">
                             {!isLast ? (
                                 <>
                                     <Link

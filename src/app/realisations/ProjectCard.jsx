@@ -21,7 +21,7 @@ export default function ProjectCard({ project }) {
     });
 
     return (
-        <article ref={cardRef} className="group opacity-0 scale-90 bg-white rounded-xl">
+        <article ref={cardRef} className="group opacity-0 scale-90 bg-white shadow-xs rounded-xl">
             <a
                 href={project.url}
                 target="_blank"

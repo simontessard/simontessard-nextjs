@@ -17,6 +17,10 @@ export default function Page() {
         pt-20 md:pt-22 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
 
             <PageHeader
+                breadcrumbs={[
+                    { label: "Accueil", href: "/" },
+                    { label: "À propos", href: "/a-propos" },
+                ]}
                 uptitle="Qui suis-je ?"
                 title={<>À <span className="css-word-italic text-blue-primary/90">propos.</span> </>}
                 subtitle={<> Développeur web, je crée des expériences digitales uniques <br/> en alliant expertise technique et sens du détail. </>}
