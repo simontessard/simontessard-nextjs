@@ -2,9 +2,9 @@ import TestimonialsSection from "@/app/home/testimonials/TestimonialsSection";
 import BrandList from "@/app/common/dividers/BrandsList";
 import AboutSection from "@/app/a-propos/AboutSection";
 import FAQSection from "@/app/common/faq/FaqSection";
-import brands from '@/data/brands.json';
 import ImageGallery from "@/app/a-propos/ImageGallery";
 import PageHeader from "@/app/common/utils/PageHeader";
+import brands from '@/data/brands.json';
 
 export const metadata = {
     title: "À propos",
@@ -14,11 +14,12 @@ export const metadata = {
 export default function Page() {
     return (
         <main className="flex flex-col items-center bg-white-primary text-black
-        pt-24 md:pt-26 lg:pt-28 xl:pt-30 2xl:pt-32 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
+        pt-20 md:pt-22 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
 
             <PageHeader
                 uptitle="Qui suis-je ?"
-                title={<>À <span className="css-word-italic text-blue-primary/90">propos.</span></>}
+                title={<>À <span className="css-word-italic text-blue-primary/90">propos.</span> </>}
+                subtitle={<> Développeur web, je crée des expériences digitales uniques <br/> en alliant expertise technique et sens du détail. </>}
             />
 
             <AboutSection/>
