@@ -1,8 +1,6 @@
-import AnimText from "@/app/common/utils/AnimText";
-import AnimParagraph from "@/app/common/utils/AnimParagraph";
-import Uptitle from "@/app/common/utils/Uptitle";
 import TimelineDemo from "@/app/process/TimelineDemo";
 import FAQSection from "@/app/common/faq/FaqSection";
+import PageHeader from "@/app/common/utils/PageHeader";
 
 export const metadata = {
     title: "Processus",
@@ -14,29 +12,14 @@ export default function Page() {
         <main className="flex flex-col items-center bg-white-primary text-black
         pt-26 md:pt-28 lg:pt-32 xl:pt-36 2xl:pt-40 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
 
+            <PageHeader
+                uptitle="Processus"
+                title={<>« Trust the <span className="css-word-italic text-blue-primary/90">process.</span></>}
+                subtitle={<>Toutes les bonnes choses sont accomplies par ceux qui sont prêts
+                            <br/> à y mettre passion, envie et savoir-faire.</>}
+            />
+
             <div className="container">
-
-                <Uptitle>
-                    Processus
-                </Uptitle>
-
-                <AnimText
-                    tag="h1"
-                    className="css-title-section text-black-primary mb-4 md:mb-5 xl:mb-6"
-                >
-                    « Trust the <span className="css-word-italic text-blue-primary/90">process.</span> »
-                </AnimText>
-
-                <AnimParagraph
-                    withScrollTrigger
-                    tag="p"
-                    className="css-subtitle-section text-black-primary md:max-w-3xl mb-14 2xl:mb-28"
-                >
-                    Toutes les bonnes choses sont accomplies par ceux qui sont prêts
-                    <br/>
-                    à y mettre passion, envie et savoir-faire.
-                </AnimParagraph>
-
                 <TimelineDemo/>
             </div>
 
