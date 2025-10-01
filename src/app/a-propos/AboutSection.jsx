@@ -1,11 +1,10 @@
 import AboutImage from "@/app/home/about/AboutImage";
-import Uptitle from "@/app/common/utils/Uptitle";
 import AnimText from "@/app/common/utils/AnimText";
 import CTABase from "@/app/common/ui/CTABase";
 
 export default function AboutSection() {
     return (
-        <section className="section-white bg-white-primary pt-14 py-16 md:py-18 xl:py-22 2xl:py-24">
+        <section className="section-white bg-white-primary pb-14 pb-16 md:pb-18 xl:pb-22 2xl:pb-24">
 
             <div className="container">
 
@@ -14,19 +13,6 @@ export default function AboutSection() {
                     <AboutImage/>
 
                     <div className="flex flex-col justify-between min-h-max lg:py-1 w-full lg:w-1/2 lg:aspect-square rounded-xl">
-                        <div>
-                            <Uptitle className="mb-4 md:mb-5 xl:mb-6 text-start">
-                                Qui suis-je ?
-                            </Uptitle>
-
-                            <AnimText
-                                tag="h1"
-                                className="css-title-section !text-start text-black-primary mb-6 md:mb-4"
-                            >
-                                À <span className="css-word-italic text-blue-primary/90">propos.</span>
-                            </AnimText>
-                        </div>
-
                         <div className="flex flex-col gap-6 lg:gap-8 max-lg:mb-6">
                             <AnimText
                                 tag="p"
