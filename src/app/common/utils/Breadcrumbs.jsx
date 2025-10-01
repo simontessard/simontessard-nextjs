@@ -28,7 +28,7 @@ export default function Breadcrumbs({ items }) {
         <nav
             ref={containerRef}
             aria-label="Breadcrumb"
-            className="ml-5 sm:ml-6 md:ml-7 mb-8 md:mb-10"
+            className="mt-2 md:mt-3 mb-2.5 md:mb-3"
         >
             <ol className="flex items-center gap-1 sm:gap-1.5 md:gap-2 font-figtree text-xs md:text-sm text-black">
                 {items.map((item, index) => {
