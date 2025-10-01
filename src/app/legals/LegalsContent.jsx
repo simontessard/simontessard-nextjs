@@ -16,7 +16,7 @@ export default function LegalsContent() {
     }, []);
 
     return (
-        <section ref={contentRef} className="container opacity-0 text-black font-figtree tracking-tight">
+        <section ref={contentRef} className="container opacity-0 text-black font-figtree tracking-tight pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
 
             <p className="max-md:text-sm">
                 Conformément à la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, nous
