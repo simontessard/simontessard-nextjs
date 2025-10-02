@@ -23,7 +23,7 @@ export default function Page() {
                 subtitle={<>Choisissez l&apos;offre qui vous convient le mieux. <br className="max-md:hidden" /> </>}
             />
 
-            <div className="container">
+            <div className="container pb-10 md:pb-14 xl:pb-20">
 
                 <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-y-12 gap-x-8 mb-6 md:mb-8">
                     {pricingData.map((item, index) => (
@@ -44,8 +44,6 @@ export default function Page() {
                     si vous faites évoluer vers un Site Complet par la suite.
                 </p>
             </div>
-
-            <FAQSection/>
         </main>
     );
 };

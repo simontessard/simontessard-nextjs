@@ -28,7 +28,7 @@ export default function Page() {
                 <TimelineDemo/>
             </div>
 
-            <BrandList brands={technos} direction="right"/>
+            <BrandList brands={technos} title="Technologies utilisées" />
 
             <FAQSection/>
         </main>

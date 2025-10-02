@@ -48,12 +48,12 @@ export default function Breadcrumbs({ items }) {
                 aria-label="Breadcrumb"
                 className="mt-2 md:mt-3 mb-2.5 md:mb-3"
             >
-                <ol className="flex items-center gap-1 sm:gap-1.5 md:gap-2 font-figtree text-xs md:text-sm text-black">
+                <ol className="flex items-center gap-1 md:gap-1.5 font-figtree text-xs md:text-sm text-black">
                     {items.map((item, index) => {
                         const isLast = index === items.length - 1;
 
                         return (
-                            <li key={index} className="opacity-0 translate-y-4 flex items-center gap-1 sm:gap-1.5 md:gap-2">
+                            <li key={index} className="opacity-0 translate-y-4 flex items-center gap-1 md:gap-1.5">
                                 {!isLast ? (
                                     <>
                                         <Link
