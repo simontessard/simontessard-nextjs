@@ -4,8 +4,9 @@ import { useGSAP } from "@gsap/react";
 import { useRef } from 'react';
 import { gsap } from 'gsap';
 import Image from "next/image";
+import Uptitle from "@/app/common/utils/Uptitle";
 
-export default function BrandsList({ brands = [] }) {
+export default function BrandsList({ brands = [], title = "" }) {
     const containerRef = useRef(null);
 
     useGSAP(() => {
@@ -28,6 +29,14 @@ export default function BrandsList({ brands = [] }) {
         <div ref={containerRef}
             className="js-brand--list py-8 xl:py-14 bg-gradient-primary relative overflow-hidden w-full"
         >
+            {title && (
+                <Uptitle
+                    withScrollTrigger={true}
+                    className="text-white mb-8 md:mb-10 xl:mb-12">
+                    {title}
+                </Uptitle>
+            )}
+
             <ul
                 className="grid grid-cols-3 md:grid-cols-4 container mx-auto gap-6 xl:gap-12 2xl:gap-14 will-change-transform"
             >
