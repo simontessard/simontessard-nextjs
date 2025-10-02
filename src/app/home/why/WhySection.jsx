@@ -29,8 +29,7 @@ export default function WhySection() {
             <AnimParagraph
                 withScrollTrigger
                 tag="p"
-                className="css-subtitle-section container text-white md:max-w-3xl mb-14 2xl:mb-24"
-            >
+                className="css-subtitle-section container text-white md:max-w-3xl mb-12 md:mb-16 2xl:mb-18">
                 Voici quelques avantages concrets à collaborer avec moi
                 <br className="max-md:hidden"/> plutôt qu’avec une agence.
             </AnimParagraph>

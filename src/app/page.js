@@ -30,7 +30,7 @@ export default function Home() {
               <ProjectsSection/>
               <WhySection/>
               <TestimonialsSection/>
-              <BrandList brands={technos} direction="right"/>
+              <BrandList brands={technos}/>
               <FAQSection/>
           </main>
       </>

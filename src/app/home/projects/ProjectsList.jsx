@@ -56,12 +56,12 @@ export const Card = ({i, title, date, tags, src, url, progress, range, targetSca
                 flex max-lg:flex-col-reverse justify-between shadow-lg border border-white/30 overflow-hidden duration-300`}
             >
                     <div className="lg:w-[45%] flex flex-col justify-between pt-2 pb-4 px-4 md:p-6 xl:p-8 2xl:p-12">
-                        <div>
-                            <p className="font-chivo tracking-tight text-black mb-1 md:mb-3">
+                        <div className="mb-4">
+                            <p className="max-md:text-sm font-chivo tracking-tight text-black mb-1 md:mb-3">
                                 {date}
                             </p>
                             <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl text-black tracking-tight font-figtree font-bold
-                            md:max-w-sm mb-3 md:mb-4">
+                            md:max-w-sm mb-2 md:mb-4">
                                 {title}
                             </h3>
                             <div className="flex flex-wrap gap-2">

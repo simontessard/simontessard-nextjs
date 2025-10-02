@@ -1,24 +1,16 @@
 'use client';
 
-import { useMemo, useRef } from 'react';
+import { useGSAP } from "@gsap/react";
+import { useRef } from 'react';
 import { gsap } from 'gsap';
 import Image from "next/image";
-import { useGSAP } from "@gsap/react";
 
-export default function BrandsList({ brands = [], direction = "left" }) {
+export default function BrandsList({ brands = [] }) {
     const containerRef = useRef(null);
-    const trackRef = useRef(null);
-
-    // Duplique les items pour une bande plus longue
-    const duplicatedProjects = useMemo(
-        () => [...brands, ...brands],
-        [brands]
-    );
 
     useGSAP(() => {
         const container = containerRef.current;
-        const track = trackRef.current;
-        if (!container || !track) return;
+        if (!container) return;
 
         gsap.to('.js-brand--item', {
             opacity: 1,
@@ -30,33 +22,31 @@ export default function BrandsList({ brands = [], direction = "left" }) {
                 start: 'top 85%',
             },
         });
-    }, [direction]);
+    },);
 
     return (
-        <div
-            ref={containerRef}
-            className="js-brand--list py-4 xl:py-6 bg-gradient-primary relative overflow-hidden w-full"
+        <div ref={containerRef}
+            className="js-brand--list py-8 xl:py-14 bg-gradient-primary relative overflow-hidden w-full"
         >
             <ul
-                ref={trackRef}
-                className="flex flex-nowrap gap-4 md:gap-6 xl:gap-12 2xl:gap-14 will-change-transform"
+                className="grid grid-cols-3 md:grid-cols-4 container mx-auto gap-6 xl:gap-12 2xl:gap-14 will-change-transform"
             >
-                {duplicatedProjects.map((brand, index) => {
+                {brands.map((brand, index) => {
                     const key = `${brand.title || 'brand'}-${index}`;
                     const hasUrl = Boolean(brand.url);
 
                     return (
                         <li
                             key={key}
-                            className="js-brand--item opacity-0 scale-90 shrink-0 group relative flex items-center justify-center p-4 md:p-6 2xl:p-7"
+                            className="js-brand--item opacity-0 scale-90 shrink-0 group relative flex items-center justify-center"
                         >
                             {brand.logo && (
                                 <Image
-                                    width={150}
-                                    height={150}
+                                    width={200}
+                                    height={200}
                                     src={brand.logo}
                                     alt={`${brand.title ?? 'Brand'} logo`}
-                                    className="size-12 md:size-16 xl:size-18 object-contain rounded-lg"
+                                    className="size-14 md:size-16 xl:size-20 object-contain rounded-lg"
                                 />
                             )}
 

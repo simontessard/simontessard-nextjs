@@ -28,7 +28,7 @@ export default function Page() {
             <AboutSection/>
             <ImageGallery/>
             <TestimonialsSection/>
-            <BrandList brands={brands} direction="right"/>
+            <BrandList brands={brands}/>
             <FAQSection/>
         </main>
     );
