@@ -20,7 +20,7 @@ export default function Page() {
                     { label: "Processus", href: "/process" }
                 ]}
                 uptitle="Processus"
-                title={<>« Trust the <span className="css-word-italic text-blue-primary/90">process.</span></>}
+                title={<>« Trust the <span className="css-word-italic text-blue-primary/90">process.</span> »</>}
                 subtitle={<>Toutes les bonnes choses sont accomplies par ceux qui sont prêts <br/> à y mettre passion, envie et savoir-faire.</>}
             />
 
