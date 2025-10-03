@@ -45,7 +45,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <FooterDivider />
+                    <FooterDivider className="mb-4 md:mb-6"/>
 
                     <div className="flex max-md:flex-col-reverse max-lg:gap-4 justify-between">
                         <FooterCopyright/>

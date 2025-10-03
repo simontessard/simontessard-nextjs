@@ -2,27 +2,36 @@
 
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import {useRef} from "react";
-import {usePathname} from "next/navigation";
+import { useRef } from "react";
+import { usePathname } from "next/navigation";
 
-export default function FooterDivider() {
+export default function FooterDivider({ className = "", useScrollTrigger = true }) {
     const dividerRef = useRef(null);
     const pathname = usePathname();
 
-    useGSAP(()=> {
-        gsap.to(dividerRef.current, {
-            width: "100%",
-            duration : 1,
-            ease: "none",
-            scrollTrigger: {
-                trigger: '.js-footer',
-                start: 'top 50%',
-            },
-        })
+    useGSAP(() => {
+        if (!dividerRef.current) return;
 
-    }, { dependencies: [pathname], revertOnUpdate: true })
+        const animConfig = {
+            width: "100%",
+            duration: .8,
+            ease: "none",
+        };
+
+        if (useScrollTrigger) {
+            animConfig.scrollTrigger = {
+                trigger: ".js-footer",
+                start: "top 50%",
+            };
+        }
+
+        gsap.to(dividerRef.current, animConfig);
+    }, { dependencies: [pathname, useScrollTrigger], revertOnUpdate: true });
 
     return (
-        <hr ref={dividerRef} className="md:w-0 text-black/20 mb-4 md:mb-6" />
-    )
+        <hr
+            ref={dividerRef}
+            className={`md:w-0 text-black/20 ${className}`}
+        />
+    );
 }

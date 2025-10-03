@@ -22,7 +22,7 @@ export default function ImageGallery() {
             alt: "Main travaillant sur ordinateur"
         },
         {
-            src: "/about/clavier.jpg",
+            src: "/about/clavier-2.png",
             alt: "Clavier sur bureau de travail"
         }
     ];

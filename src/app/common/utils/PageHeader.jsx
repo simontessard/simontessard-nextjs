@@ -3,17 +3,18 @@ import AnimText from "@/app/common/utils/AnimText";
 import AnimParagraph from "@/app/common/utils/AnimParagraph";
 import Uptitle from "@/app/common/utils/Uptitle";
 import Breadcrumbs from "@/app/common/utils/Breadcrumbs";
+import FooterDivider from "@/app/footer/FooterDivider";
 
 export default function PageHeader({ uptitle, title, subtitle, breadcrumbs }) {
     return (
         <div className="container">
-            <hr className="w-full text-black/20 mb-3 md:mb-4" />
+            <FooterDivider useScrollTrigger={false} className="mb-3 md:mb-4"/>
 
             {breadcrumbs && (
                 <Breadcrumbs items={breadcrumbs} />
             )}
 
-            <div className="bg-white py-8 md:py-12 xl:py-14 w-full rounded-xl shadow-xs mb-8 md:mb-10">
+            <div className="bg-white py-8 md:py-12 xl:py-14 w-full rounded-xl shadow-xs mb-6 md:mb-8">
 
                 {uptitle && (
                     <Uptitle>

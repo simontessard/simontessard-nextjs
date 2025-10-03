@@ -36,7 +36,7 @@ export default function AboutImage() {
                 width={1400}
                 height={1400}
                 className="about-image size-full aspect-square object-cover object-[55%_70%] rounded-xl
-                         opacity-0 translate-y-8 scale-95" // États de départ avec Tailwind
+                         opacity-0 translate-y-8 scale-95"
                 alt="Portrait de Simon"
                 src="/about/simon.jpg"
             />
