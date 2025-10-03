@@ -11,7 +11,7 @@ if (typeof window !== 'undefined') {
 }
 
 export default function AnimText({ tag = 'h1', className = '', useScrollTrigger = false,
-                                   scrollTriggerOptions = { trigger: null, start: 'top 72%', end: 'bottom top' }, children }) {
+                                   scrollTriggerOptions = { trigger: null, start: 'top 75%', end: 'bottom top' }, children }) {
     const textRef = useRef(null);
     const pathname = usePathname();
     const Tag = tag;

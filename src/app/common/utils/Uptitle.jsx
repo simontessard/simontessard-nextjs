@@ -4,7 +4,7 @@ import { useEffect, useRef, useMemo } from 'react';
 import { gsap } from 'gsap';
 
 export default function Uptitle({ useScrollTrigger = false,
-                                  scrollTriggerOptions = { start: 'top 72%', end: 'bottom 20%' },
+                                  scrollTriggerOptions = { start: 'top 75%', end: 'bottom 20%' },
                                   className = '', children }) {
     const textEl = useRef(null);
     const textContent = useRef(null);
@@ -13,10 +13,8 @@ export default function Uptitle({ useScrollTrigger = false,
 
     const baseClasses = useMemo(
         () =>
-            ['text-xs md:text-sm 2xl:text-base uppercase font-figtree text-center tracking-tight',
-              'mb-4 md:mb-5 xl:mb-6',
-                className,
-            ]
+            ['text-xs md:text-sm 2xl:text-base uppercase font-figtree text-center tracking-tight', 'mb-4 md:mb-5 xl:mb-6',
+                className,]
                 .filter(Boolean)
                 .join(' '),
         [className]

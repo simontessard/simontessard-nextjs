@@ -8,7 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function AnimParagraph({ tag = 'p', className = '',
-                                        useScrollTrigger = false, scrollTriggerOptions = { start: 'top 72%', end: 'bottom 20%' },
+                                        useScrollTrigger = false, scrollTriggerOptions = { start: 'top 75%', end: 'bottom 20%' },
                                         children }) {
     const elRef = useRef(null);
     const Tag = tag;
