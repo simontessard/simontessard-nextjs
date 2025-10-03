@@ -18,7 +18,7 @@ export default function Page() {
                     ]}
                     uptitle="Réalisations"
                     title={<>Projets <span className="css-word-italic text-blue-700">récents.</span></>}
-                    subtitle="Chaque projet est différent, découvrez mes travaux ci dessous."
+                    subtitle="Découvrez des projets sur lesquels j'ai eu l'occasion de travailler."
                 />
 
                 <ProjectsList/>
