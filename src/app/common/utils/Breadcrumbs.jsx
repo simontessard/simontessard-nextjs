@@ -58,7 +58,7 @@ export default function Breadcrumbs({ items }) {
                                     <>
                                         <Link
                                             href={item.href}
-                                            className="md:hover:text-blue-primary transition-colors">
+                                            className="md:hover:text-blue-primary font-light transition-colors">
                                             {item.label}
                                         </Link>
                                         <span aria-hidden="true">
@@ -68,7 +68,7 @@ export default function Breadcrumbs({ items }) {
                                         </span>
                                     </>
                                 ) : (
-                                    <span className="text-black font-semibold" aria-current="page">
+                                    <span className="text-black font-medium" aria-current="page">
                                         {item.label}
                                     </span>
                                 )}
