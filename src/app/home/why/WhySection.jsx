@@ -14,7 +14,7 @@ export default function WhySection() {
                    className="absolute top-10 md:top-0 left-0 right-0 bottom-0 m-auto size-200 md:size-250 xl:size-325 opacity-3 md:opacity-2.5 object-contain"/>
 
             <Uptitle className="text-white"
-                     withScrollTrigger>Freelance vs Agence</Uptitle>
+                     useScrollTrigger>Freelance vs Agence</Uptitle>
 
             <AnimText
                 useScrollTrigger
@@ -27,7 +27,7 @@ export default function WhySection() {
             </AnimText>
 
             <AnimParagraph
-                withScrollTrigger
+                useScrollTrigger
                 tag="p"
                 className="css-subtitle-section container text-white md:max-w-3xl mb-12 md:mb-16 2xl:mb-18">
                 Voici quelques avantages concrets à collaborer avec moi
@@ -37,7 +37,7 @@ export default function WhySection() {
             <TwoColumns/>
 
             <CTABase
-                withScrollTrigger
+                useScrollTrigger
                 variant="white"
                 to="/contact"
                 text="Réserver un appel"

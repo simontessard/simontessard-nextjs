@@ -10,7 +10,7 @@ export default function ProjectsSection() {
             id="work"
             className="section-white flex flex-col bg-white-primary py-16 md:py-18 xl:py-22 2xl:py-24"
         >
-            <Uptitle className="text-black" withScrollTrigger>
+            <Uptitle className="text-black" useScrollTrigger>
                 Extrait du Portfolio
             </Uptitle>
 
@@ -24,7 +24,7 @@ export default function ProjectsSection() {
             </AnimText>
 
             <AnimParagraph
-                withScrollTrigger
+                useScrollTrigger
                 tag="p"
                 className="css-subtitle-section container text-black md:max-w-3xl"
             >
@@ -36,7 +36,7 @@ export default function ProjectsSection() {
             <ProjectsList/>
 
             <CTABase
-                withScrollTrigger
+                useScrollTrigger
                 variant="blue"
                 to="/realisations"
                 text="Voir tous les projets"

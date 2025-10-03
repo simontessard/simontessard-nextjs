@@ -18,7 +18,7 @@ export default function CtaSection() {
                 <div className="container relative flex flex-col items-center justify-center shadow-sm overflow-hidden
                      py-12 md:py-16 px-6 md:px-8 xl:px-30 2xl:px-40 rounded-t-xl md:rounded-t-2xl text-center text-white size-full">
 
-                    <Uptitle className="text-white" withScrollTrigger>
+                    <Uptitle className="text-white" useScrollTrigger>
                         Prêt à démarrer ?
                     </Uptitle>
 
@@ -31,7 +31,7 @@ export default function CtaSection() {
                     </AnimText>
 
                     <AnimParagraph
-                        withScrollTrigger
+                        useScrollTrigger
                         tag="p"
                         className="container font-figtree md:text-lg font-light tracking-tight text-white md:max-w-3xl mb-5 md:mb-6 xl:mb-10">
                         C&apos;est le moment de surprendre vos visiteurs avec une vitrine repensée.
@@ -42,7 +42,7 @@ export default function CtaSection() {
                             variant="white"
                             to="/contact"
                             text="Réserver un appel"
-                            withScrollTrigger
+                            useScrollTrigger
                         />
                     </div>
                 </div>

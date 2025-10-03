@@ -31,7 +31,7 @@ export default function BrandsList({ brands = [], title = "" }) {
         >
             {title && (
                 <Uptitle
-                    withScrollTrigger={true}
+                    useScrollTrigger={true}
                     className="text-white mb-8 md:mb-10 xl:mb-12">
                     {title}
                 </Uptitle>

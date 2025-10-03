@@ -9,7 +9,7 @@ export default function CompareImageSection() {
             className="section-white bg-white-primary py-16 md:py-18 xl:py-22 2xl:py-24">
 
             <div className="container">
-                <Uptitle className="text-black" withScrollTrigger>Avant / Après</Uptitle>
+                <Uptitle className="text-black" useScrollTrigger>Avant / Après</Uptitle>
 
                 <AnimText
                     useScrollTrigger
@@ -20,7 +20,7 @@ export default function CompareImageSection() {
                 </AnimText>
 
                 <AnimParagraph
-                    withScrollTrigger
+                    useScrollTrigger
                     tag="p"
                     className="css-subtitle-section container text-black md:max-w-3xl
                 mb-8 md:mb-12 xl:mb-16 2xl:mb-20"

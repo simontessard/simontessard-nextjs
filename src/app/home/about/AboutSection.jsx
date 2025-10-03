@@ -15,7 +15,7 @@ export default function AboutSection() {
 
                     <div className="flex flex-col justify-between min-h-max lg:py-1 w-full lg:w-1/2 lg:aspect-square rounded-xl">
                         <div>
-                            <Uptitle withScrollTrigger className="mb-4 md:mb-5 xl:mb-6 text-start">
+                            <Uptitle useScrollTrigger className="mb-4 md:mb-5 xl:mb-6 text-start">
                                 Qui suis-je ?
                             </Uptitle>
 
@@ -55,7 +55,7 @@ export default function AboutSection() {
                         </div>
 
                         <CTABase
-                            withScrollTrigger
+                            useScrollTrigger
                             variant="black"
                             to="/a-propos"
                             text="En savoir plus"

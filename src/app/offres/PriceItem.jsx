@@ -37,7 +37,7 @@ export default function PriceItem({ title, citation, price, desc, list = [], pop
                     </p>
 
                     <CTABase
-                        withScrollTrigger
+                        useScrollTrigger
                         to="/contact"
                         text="Choisir cette offre"
                         variant={popular ? 'blue' : undefined}

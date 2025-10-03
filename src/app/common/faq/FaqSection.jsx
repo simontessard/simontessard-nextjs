@@ -7,7 +7,7 @@ export default function FAQSection() {
     return (
         <section id="faq" className="section-white bg-white-primary py-16 md:py-18 xl:py-22 2xl:py-24">
             <div className="container">
-                <Uptitle withScrollTrigger>
+                <Uptitle useScrollTrigger>
                     FAQ
                 </Uptitle>
 

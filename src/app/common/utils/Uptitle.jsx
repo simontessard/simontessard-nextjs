@@ -3,7 +3,7 @@
 import { useEffect, useRef, useMemo } from 'react';
 import { gsap } from 'gsap';
 
-export default function Uptitle({ withScrollTrigger = false,
+export default function Uptitle({ useScrollTrigger = false,
                                   scrollTriggerOptions = { start: 'top 72%', end: 'bottom 20%' },
                                   className = '', children }) {
     const textEl = useRef(null);
@@ -26,13 +26,13 @@ export default function Uptitle({ withScrollTrigger = false,
         if (!textEl.current) return;
 
         const tl = gsap.timeline({
-            scrollTrigger: withScrollTrigger
+            scrollTrigger: useScrollTrigger
                 ? {
                     trigger: textEl.current,
                     ...scrollTriggerOptions,
                 }
                 : undefined,
-            delay: withScrollTrigger ? 0 : .8,
+            delay: useScrollTrigger ? 0 : .8,
         });
 
         tl.to(textContent.current, {
@@ -60,7 +60,7 @@ export default function Uptitle({ withScrollTrigger = false,
             if (tl.scrollTrigger) tl.scrollTrigger.kill();
             tl.kill();
         };
-    }, [withScrollTrigger, scrollTriggerOptions]);
+    }, [useScrollTrigger, scrollTriggerOptions]);
 
     return (
         <p ref={textEl} className={baseClasses}>

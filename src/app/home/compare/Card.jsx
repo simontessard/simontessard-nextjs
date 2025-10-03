@@ -35,7 +35,7 @@ export default function Card({ data }) {
             ))}
             {data.special && (
                 <CTABase
-                    withScrollTrigger
+                    useScrollTrigger
                     variant="blue"
                     to="/contact"
                     text="Transformer mon site"

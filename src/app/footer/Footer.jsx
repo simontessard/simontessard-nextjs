@@ -21,7 +21,7 @@ export default function Footer() {
                             <BackHome header={false} className="mb-4"/>
 
                             <AnimText
-                                withScrollTrigger
+                                useScrollTrigger
                                 tag="p"
                                 className="font-figtree font-light md:text-lg text-black mb-4 md:mb-6">
                                 Toute l&apos;expertise d&apos;une agence <br />

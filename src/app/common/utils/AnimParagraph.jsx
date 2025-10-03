@@ -8,7 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function AnimParagraph({ tag = 'p', className = '',
-                                        withScrollTrigger = false, scrollTriggerOptions = { start: 'top 72%', end: 'bottom 20%' },
+                                        useScrollTrigger = false, scrollTriggerOptions = { start: 'top 72%', end: 'bottom 20%' },
                                         children }) {
     const elRef = useRef(null);
     const Tag = tag;
@@ -34,7 +34,7 @@ export default function AnimParagraph({ tag = 'p', className = '',
 
             gsap.set(el, { opacity: 0, y: 24 });
 
-            if (withScrollTrigger) {
+            if (useScrollTrigger) {
                 gsap.to(el, {
                     ...animConfig,
                     scrollTrigger: {
@@ -48,7 +48,7 @@ export default function AnimParagraph({ tag = 'p', className = '',
                 gsap.to(el, { ...animConfig, delay: 0.6 });
             }
         },
-        { scope: elRef, dependencies: [withScrollTrigger, animConfig, scrollTriggerOptions] }
+        { scope: elRef, dependencies: [useScrollTrigger, animConfig, scrollTriggerOptions] }
     );
 
     return (

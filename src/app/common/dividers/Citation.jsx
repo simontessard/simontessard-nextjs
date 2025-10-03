@@ -25,7 +25,7 @@ export default function Citation() {
                 </AnimText>
 
                 <CTABase
-                    withScrollTrigger
+                    useScrollTrigger
                     variant="white"
                     to="/contact"
                     text="Réserver un appel"/>

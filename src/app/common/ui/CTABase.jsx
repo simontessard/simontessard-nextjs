@@ -22,7 +22,7 @@ function TextFlip({ text, innerRef }) {
 export default function CTABase({
                                     to = '/', text, variant = 'white',
                                     customClass = '', hideArrow = false,
-                                    target = '', external = false, withScrollTrigger = false,
+                                    target = '', external = false, useScrollTrigger = false,
                                     scrollTriggerOptions = { start: 'top 80%', end: 'bottom 20%' },
                                 }) {
     const rootEl = useRef(null);
@@ -50,8 +50,8 @@ export default function CTABase({
 
         const tl = gsap.timeline({
             defaults: { ease: 'power2.out' },
-            scrollTrigger: withScrollTrigger ? { trigger: rootEl.current, ...scrollTriggerOptions } : undefined,
-            delay: withScrollTrigger ? 0 : 1,
+            scrollTrigger: useScrollTrigger ? { trigger: rootEl.current, ...scrollTriggerOptions } : undefined,
+            delay: useScrollTrigger ? 0 : 1,
         });
 
         tl.to(rootEl.current, { opacity: 1, scale: 1, duration: 1 });
@@ -60,7 +60,7 @@ export default function CTABase({
         tlRef.current = tl;
 
         return () => tl.kill();
-    }, [withScrollTrigger, scrollTriggerOptions]);
+    }, [useScrollTrigger, scrollTriggerOptions]);
 
     const handleClick = () => {
         if (!hideArrow) return;
