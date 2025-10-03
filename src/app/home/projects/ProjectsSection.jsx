@@ -19,7 +19,7 @@ export default function ProjectsSection() {
                 tag="h2"
                 className="css-title-section text-black container mb-4 md:mb-5 xl:mb-6"
             >
-                Quelques <span className="css-word-italic text-blue-primary/90">réussites</span>
+                Quelques <span className="css-word-italic text-blue-700">réussites</span>
                 <br className="max-md:hidden"/> marquantes.
             </AnimText>
 

@@ -17,7 +17,7 @@ export default function Page() {
                         { label: "Réalisations", href: "/realisations" }
                     ]}
                     uptitle="Réalisations"
-                    title={<>Projets <span className="css-word-italic text-blue-primary/90">récents.</span></>}
+                    title={<>Projets <span className="css-word-italic text-blue-700">récents.</span></>}
                     subtitle="Chaque projet est différent, découvrez mes travaux ci dessous."
                 />
 

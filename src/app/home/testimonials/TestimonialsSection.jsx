@@ -16,7 +16,7 @@ export default function TestimonialsSection() {
                 useScrollTrigger
                 tag="h2"
                 className="container css-title-section mb-12 md:mb-16 2xl:mb-18">
-                Des clients <span className="css-word-italic text-blue-primary/90">satisfaits.</span>
+                Des clients <span className="css-word-italic text-blue-700">satisfaits.</span>
             </AnimText>
 
             <AnimatedTestimonials testimonials={testimonials} />

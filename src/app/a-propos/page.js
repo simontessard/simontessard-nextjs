@@ -21,7 +21,7 @@ export default function Page() {
                     { label: "À propos", href: "/a-propos" },
                 ]}
                 uptitle="Qui suis-je ?"
-                title={<>À <span className="css-word-italic text-blue-primary/90">propos.</span> </>}
+                title={<>À <span className="css-word-italic text-blue-700">propos.</span> </>}
                 subtitle={<> Développeur web, je crée des expériences digitales uniques <br/> en alliant expertise technique et sens du détail. </>}
             />
 

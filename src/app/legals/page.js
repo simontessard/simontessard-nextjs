@@ -15,7 +15,7 @@ export default function Page() {
                     { label: "Accueil", href: "/" },
                     { label: "Mentions légales", href: "/legals" }
                 ]}
-                title={<>Mentions <span className="css-word-italic text-blue-primary/90">légales.</span></>}
+                title={<>Mentions <span className="css-word-italic text-blue-700">légales.</span></>}
             />
 
             <LegalsContent/>

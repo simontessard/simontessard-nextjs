@@ -19,7 +19,7 @@ export default function Page() {
                     { label: "Offres", href: "/offres" }
                 ]}
                 uptitle="offres"
-                title={<>Une mission : <span className="css-word-italic text-blue-primary/90">convertir.</span></>}
+                title={<>Une mission : <span className="css-word-italic text-blue-700">convertir.</span></>}
                 subtitle={<>Choisissez l&apos;offre qui vous convient le mieux. <br className="max-md:hidden" /> </>}
             />
 

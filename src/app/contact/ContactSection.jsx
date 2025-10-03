@@ -14,9 +14,9 @@ export default function ContactSection() {
                     { label: "Réserver un appel", href: "/contact" }
                 ]}
                 uptitle="Réserver un appel de 30 minutes"
-                title={<>Créons <span className="css-word-italic text-blue-primary/90">ensemble</span>
+                title={<>Créons <span className="css-word-italic text-blue-700">ensemble</span>
                     <br className="max-md:hidden"/>
-                    votre <span className="css-word-italic text-blue-primary/90">projet.</span></>}
+                    votre <span className="css-word-italic text-blue-700">projet.</span></>}
             />
 
             <Calendar/>

@@ -16,7 +16,7 @@ export default function CompareImageSection() {
                     tag="h2"
                     className="css-title-section text-black container mb-4 md:mb-5 xl:mb-6"
                 >
-                    <span className="css-word-italic text-blue-primary/90">Transformez</span> votre site.
+                    <span className="css-word-italic text-blue-700">Transformez</span> votre site.
                 </AnimText>
 
                 <AnimParagraph
