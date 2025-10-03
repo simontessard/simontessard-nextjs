@@ -53,7 +53,7 @@ export default function Breadcrumbs({ items }) {
                         const isLast = index === items.length - 1;
 
                         return (
-                            <li key={index} className="opacity-0 translate-y-4 flex items-center gap-1 md:gap-1.5">
+                            <li key={index} className="opacity-0 translate-y-2 flex items-center gap-1 md:gap-1.5">
                                 {!isLast ? (
                                     <>
                                         <Link

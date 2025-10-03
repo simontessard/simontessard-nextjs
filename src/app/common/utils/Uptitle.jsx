@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useMemo } from 'react';
 import { gsap } from 'gsap';
+import {usePathname} from "next/navigation";
 
 export default function Uptitle({ useScrollTrigger = false,
                                   scrollTriggerOptions = { start: 'top 75%', end: 'bottom 20%' },
@@ -10,6 +11,8 @@ export default function Uptitle({ useScrollTrigger = false,
     const textContent = useRef(null);
     const leftBracket = useRef(null);
     const rightBracket = useRef(null);
+
+    const pathname = usePathname();
 
     const baseClasses = useMemo(
         () =>
@@ -58,7 +61,7 @@ export default function Uptitle({ useScrollTrigger = false,
             if (tl.scrollTrigger) tl.scrollTrigger.kill();
             tl.kill();
         };
-    }, [useScrollTrigger, scrollTriggerOptions]);
+    }, [useScrollTrigger, scrollTriggerOptions, pathname]);
 
     return (
         <p ref={textEl} className={baseClasses}>
