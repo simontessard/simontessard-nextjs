@@ -39,7 +39,7 @@ export default function ProjectsFilters({ projects, onFilter }) {
                     className={`cursor-pointer scale-0 translate-y-2 px-3 md:px-4.5 py-1.5 md:py-2 rounded-full font-figtree text-xs md:text-sm transition ${
                         selectedTag === tag
                             ? "bg-blue-700 text-white font-medium"
-                            : "bg-blue-primary/10 md:hover:bg-gray-300"
+                            : "bg-blue-primary/10 md:hover:bg-blue-700 md:hover:text-white"
                     }`}
                 >
                     {tag}

@@ -13,7 +13,7 @@ export default function PageHeader({ uptitle, title, subtitle, breadcrumbs }) {
                 <Breadcrumbs items={breadcrumbs} />
             )}
 
-            <div className="bg-white py-8 md:py-12 xl:py-14 w-full rounded-xl shadow-xs mb-10 md:mb-14">
+            <div className="bg-white py-8 md:py-12 xl:py-14 w-full rounded-xl shadow-xs mb-8 md:mb-10">
 
                 {uptitle && (
                     <Uptitle>
