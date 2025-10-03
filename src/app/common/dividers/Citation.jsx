@@ -31,7 +31,6 @@ export default function Citation() {
                     text="Découvrir mon processus"/>
             </div>
 
-
         </section>
     );
 }

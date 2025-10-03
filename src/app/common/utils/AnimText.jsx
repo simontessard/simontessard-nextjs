@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
+import {usePathname} from "next/navigation";
 
 if (typeof window !== 'undefined') {
     gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -12,6 +13,7 @@ if (typeof window !== 'undefined') {
 export default function AnimText({ tag = 'h1', className = '', useScrollTrigger = false,
                                    scrollTriggerOptions = { trigger: null, start: 'top 72%', end: 'bottom top' }, children }) {
     const textRef = useRef(null);
+    const pathname = usePathname();
     const Tag = tag;
 
     useEffect(() => {
@@ -71,7 +73,7 @@ export default function AnimText({ tag = 'h1', className = '', useScrollTrigger 
             }
             split.revert();
         };
-    }, [useScrollTrigger, scrollTriggerOptions]);
+    }, [useScrollTrigger, scrollTriggerOptions, pathname]);
 
     return (
         <Tag ref={textRef} className={`opacity-0 ${className}`}>

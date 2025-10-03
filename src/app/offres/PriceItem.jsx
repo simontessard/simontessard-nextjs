@@ -1,5 +1,6 @@
 import AnimText from "@/app/common/utils/AnimText";
 import CTABase from "@/app/common/ui/CTABase";
+import AnimParagraph from "@/app/common/utils/AnimParagraph";
 
 export default function PriceItem({ title, citation, price, desc, list = [], popular = false,}) {
     return (
@@ -28,9 +29,12 @@ export default function PriceItem({ title, citation, price, desc, list = [], pop
                         « {citation} »
                     </p>
 
-                    <p className="text-center font-chivo font-medium tracking-tighter mb-2 md:mb-4 text-3xl xl:text-4xl text-black">
+                    <AnimParagraph
+                        useScrollTrigger
+                        tag="p"
+                        className="text-center font-chivo font-medium tracking-tighter mb-2 md:mb-4 text-3xl xl:text-4xl text-black">
                         {price}
-                    </p>
+                    </AnimParagraph>
 
                     <p className="text-center text-sm md:text-lg text-black font-light font-figtree mb-6">
                         {desc}
