@@ -71,36 +71,36 @@ export default function FaqList() {
                         .join(' ')}
                 >
                     <div className="flex justify-between items-center gap-2 mb-1">
-                        <h3
-                            className={[
+                        <h3 className={[
                                 'transition-colors duration-300 font-figtree md:text-lg xl:text-xl font-medium',
                                 item.open ? 'text-white' : 'md:group-hover:text-white',
-                            ].join(' ')}
-                        >
+                            ].join(' ')}>
                             <span>
                                 {item.question}
                             </span>
                         </h3>
 
-                        <svg
-                            className="shrink-0 size-8 md:size-10 rounded-full p-1.5 md:p-2 bg-white"
+                        <svg className={[
+                                'shrink-0 size-8 md:size-10 border-2 border-white rounded-full p-1.5 md:p-2 transition-colors duration-300',
+                                item.open ? 'bg-white' : 'bg-gradient-primary '
+                            ].join(' ')}
                             width="20"
                             height="21"
                             viewBox="0 0 20 21"
-                            fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                             aria-hidden="true"
                             focusable="false"
                         >
                             <path
+                                className={item.open ? 'stroke-[#1C211C]' : 'stroke-white'}
                                 d="M5 10.3125H15"
-                                stroke="#1C211C"
                                 strokeWidth="1.25"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                             />
                             {!item.open && (
                                 <path
+                                    className={item.open ? 'stroke-[#1C211C]' : 'stroke-white'}
                                     d="M10 5.3125V15.3125"
                                     stroke="#1C211C"
                                     strokeWidth="1.25"

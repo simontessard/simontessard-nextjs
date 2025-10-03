@@ -60,7 +60,7 @@ export default function ProjectCard({ project }) {
                             />
                         </svg>
                     </div>
-                    <p className="text-sm md:text-base mb-4 md:mb-6">
+                    <p className="text-sm md:text-base font-light mb-4 md:mb-6">
                         {project.description}
                     </p>
                     <div className="flex justify-between items-end">

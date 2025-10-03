@@ -1,9 +1,10 @@
 import AnimText from "@/app/common/utils/AnimText";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function FaqInfo() {
     return (
-        <Link href="/contact" className="sticky top-12 max-md:hidden flex gap-4 lg:gap-6 xl:gap-8 shrink-0 bg-white shadow-xs p-4 md:p-5 xl:p-6 rounded-xl h-fit mb-6">
+        <Link href="/contact" className="sticky top-12 max-md:hidden flex gap-4 lg:gap-6 shrink-0 bg-white shadow-xs p-4 md:p-5 xl:p-6 rounded-xl h-fit mb-6">
             <div className="w-full">
                 <AnimText
                     useScrollTrigger
@@ -18,23 +19,8 @@ export default function FaqInfo() {
                 </p>
             </div>
 
-            <svg
-                className="shrink-0 size-10 p-2 rounded-full bg-gradient-primary stroke-white"
-                width="32"
-                height="33"
-                viewBox="0 0 32 33"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-                focusable="false"
-            >
-                <path
-                    d="M9.3335 23.1668L22.6668 9.8335M22.6668 9.8335H12.0002M22.6668 9.8335V20.5002"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                />
-            </svg>
+            <Image src="/about/simon.jpg" width={100} height={100} alt="Portrait de Simon TESSARD"
+                   className="shrink-0 size-14 object-cover rounded-full"/>
         </Link>
     );
 }
