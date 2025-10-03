@@ -36,6 +36,7 @@ export default function Nav() {
             >
                 {/* Fond animé */}
                 <span
+                    aria-hidden="true"
                     className="absolute top-1/2 -translate-y-1/2 h-[calc(100%-1rem)] bg-blue-primary/7 rounded-md transition-all duration-500 ease-out"
                     style={{
                         left: `${backgroundStyle.left}px`,
