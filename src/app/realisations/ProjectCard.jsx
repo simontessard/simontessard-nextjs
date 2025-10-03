@@ -71,7 +71,7 @@ export default function ProjectCard({ project, animationKey }) {
                     <div className="absolute top-0 left-0 size-full bg-black/30 md:bg-black/60 opacity-100 md:opacity-0 md:group-hover:opacity-100
                     flex justify-center items-center transition-opacity duration-500">
                         <div className="md:scale-75 md:group-hover:scale-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-500
-                        border border-white rounded-md flex size-fit items-center gap-1
+                        rounded-md flex size-fit items-center gap-1
                         font-figtree uppercase tracking-tight text-white max-md:text-sm pl-4 pr-3 py-2">
                             Voir le site
                             <svg
@@ -116,8 +116,8 @@ export default function ProjectCard({ project, animationKey }) {
                                 key={index}
                                 className="px-3 py-1 bg-blue-700 font-figtree text-white text-xs md:text-sm rounded-full font-medium"
                             >
-                {tag}
-              </span>
+                                {tag}
+                            </span>
                         ))}
                     </div>
                 </div>
