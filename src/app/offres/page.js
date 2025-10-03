@@ -11,7 +11,7 @@ export const metadata = {
 export default function Page() {
     return (
         <main className="flex flex-col items-center bg-white-primary text-black
-        pt-20 md:pt-25">
+        pt-20 md:pt-25.5">
 
             <PageHeader
                 breadcrumbs={[

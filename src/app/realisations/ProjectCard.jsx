@@ -39,7 +39,7 @@ export default function ProjectCard({ project }) {
 
                 <div className="px-5 md:px-6 pt-5 md:pt-6 pb-4">
                     <div className="flex justify-between">
-                        <h3 className="text-2xl xl:text-3xl font-semibold mb-3 md:mb-3.5">
+                        <h3 className="text-xl md:text-2xl xl:text-3xl font-semibold mb-3 md:mb-3.5">
                             {project.title}
                         </h3>
                         <svg

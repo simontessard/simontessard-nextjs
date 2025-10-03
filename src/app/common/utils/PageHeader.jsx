@@ -7,6 +7,8 @@ import Breadcrumbs from "@/app/common/utils/Breadcrumbs";
 export default function PageHeader({ uptitle, title, subtitle, breadcrumbs }) {
     return (
         <div className="container">
+            <hr className="w-full text-black/20 mb-3 md:mb-4" />
+
             {breadcrumbs && (
                 <Breadcrumbs items={breadcrumbs} />
             )}

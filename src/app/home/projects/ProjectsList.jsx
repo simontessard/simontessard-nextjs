@@ -60,8 +60,7 @@ export const Card = ({i, title, date, tags, src, url, progress, range, targetSca
                             <p className="max-md:text-sm font-chivo tracking-tight text-black mb-1 md:mb-3">
                                 {date}
                             </p>
-                            <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl text-black tracking-tight font-figtree font-bold
-                            md:max-w-sm mb-2 md:mb-4">
+                            <h3 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl text-black tracking-tight font-figtree font-bold md:max-w-sm mb-2 md:mb-4">
                                 {title}
                             </h3>
                             <div className="flex flex-wrap gap-2">
@@ -73,7 +72,7 @@ export const Card = ({i, title, date, tags, src, url, progress, range, targetSca
                                 ))}
                             </div>
                         </div>
-                        <CTABase to={url} external={true} variant="black" text="Voir le site"/>
+                        <CTABase to={url} external={true} variant="black" text="Voir le site" customClass="max-md:w-full max-md:justify-center"/>
                     </div>
 
                     {src && (
