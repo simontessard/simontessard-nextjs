@@ -38,9 +38,9 @@ export default function WhySection() {
 
             <CTABase
                 useScrollTrigger
-                variant="white"
-                to="/contact"
-                text="Réserver un appel"
+                variant="black"
+                to="/offres"
+                text="Découvrir mes offres"
                 customClass="mx-auto mt-6 md:mt-10"
             />
 

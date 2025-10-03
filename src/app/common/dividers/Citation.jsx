@@ -27,8 +27,8 @@ export default function Citation() {
                 <CTABase
                     useScrollTrigger
                     variant="white"
-                    to="/contact"
-                    text="Réserver un appel"/>
+                    to="/process"
+                    text="Découvrir mon processus"/>
             </div>
 
 
