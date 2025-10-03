@@ -60,11 +60,11 @@ export default function TimelineDemo() {
                         Des points réguliers permettent d'ajuster si nécessaire.
                     </p>
                     <Image
-                        src="/about/clavier.jpg"
+                        src="/about/clavier-2.png"
                         alt="2 mains posées sur un clavier"
                         width={1200}
                         height={1000}
-                        className="h-60 md:h-80 xl:h-96 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                        className="h-60 md:h-80 w-full md:w-3/4 rounded-lg object-cover"
                     />
                 </div>
             ),
@@ -83,7 +83,7 @@ export default function TimelineDemo() {
                         alt="Portrait Simon TESSARD"
                         width={500}
                         height={800}
-                        className="aspect-square size-40 md:size-70 rounded-lg object-cover"
+                        className="aspect-square size-40 md:size-50 lg:size-60 rounded-lg object-cover"
                     />
                 </div>
             ),
