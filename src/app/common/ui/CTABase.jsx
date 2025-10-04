@@ -23,7 +23,7 @@ export default function CTABase({
                                     to = '/', text, variant = 'white',
                                     customClass = '', hideArrow = false,
                                     target = '', external = false, useScrollTrigger = false,
-                                    scrollTriggerOptions = { start: 'top 80%', end: 'bottom 20%' },
+                                    scrollTriggerOptions = { start: 'top 85%', end: 'bottom 20%' },
                                 }) {
     const rootEl = useRef(null);
     const textEl = useRef(null);
