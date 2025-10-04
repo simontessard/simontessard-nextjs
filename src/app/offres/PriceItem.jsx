@@ -1,6 +1,7 @@
 import AnimText from "@/app/common/utils/AnimText";
 import CTABase from "@/app/common/ui/CTABase";
 import AnimParagraph from "@/app/common/utils/AnimParagraph";
+import ShinyText from "@/app/common/ui/ShinyText";
 
 export default function PriceItem({ title, citation, price, desc, list = [], popular = false,}) {
     return (
@@ -11,9 +12,10 @@ export default function PriceItem({ title, citation, price, desc, list = [], pop
             <div className="flex flex-col justify-between">
                 <div className={[ 'rounded-xl mb-4 md:mb-6 pb-4 pt-6 px-4 md:pt-8 md:pb-5 md:px-5 shadow-sm', popular ? 'bg-white' : 'bg-white-primary'].join(' ')}>
 
+                    {/* Annotation populaire */}
                     {popular && (
-                          <p className="absolute -top-2.5 md:-top-3.5 right-6 md:right-8 size-fit
-                          bg-gradient-to-r from-blue-600 to-theme-primary rounded-full text-white font-figtree py-2 md:py-2.5 px-4 md:px-5 text-xs md:text-sm">
+                          <p className="absolute -top-2.5 md:-top-3 right-6 md:right-8 size-fit
+                          bg-gradient-to-r from-blue-600 to-theme-primary rounded-full text-white font-figtree py-2 px-4 md:px-5 text-xs md:text-sm">
                              La + populaire
                           </p>
                     )}
@@ -29,11 +31,14 @@ export default function PriceItem({ title, citation, price, desc, list = [], pop
                         « {citation} »
                     </p>
 
-                    <AnimParagraph
-                        useScrollTrigger
-                        tag="p"
+                    <AnimParagraph useScrollTrigger tag="p"
                         className="text-center font-chivo font-medium tracking-tighter mb-2 md:mb-4 text-3xl xl:text-4xl text-black">
-                        {price}
+                        <ShinyText
+                            text={price}
+                            disabled={false}
+                            speed={2.5}
+                            className='custom-class bg-black'
+                        />
                     </AnimParagraph>
 
                     <p className="text-center text-sm md:text-lg text-black font-light font-figtree mb-6">

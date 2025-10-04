@@ -5,8 +5,6 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function ProjectCard({ project, animationKey }) {
     const cardRef = useRef(null);
     const imageRef = useRef(null);
@@ -45,11 +43,8 @@ export default function ProjectCard({ project, animationKey }) {
             });
         },
         {
-            // 🔁 re-run quand la version change
             dependencies: [animationKey],
-            // 🔒 limite les sélecteurs/animations au composant
             scope: cardRef,
-            // 🧹 cleanup auto (kill ScrollTriggers & tweens de ce scope)
             revertOnUpdate: true,
         }
     );

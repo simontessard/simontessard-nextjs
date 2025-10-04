@@ -1,6 +1,5 @@
 import pricingData from "@/data/pricing.json";
 import PriceItem from "@/app/offres/PriceItem";
-import FAQSection from "@/app/common/faq/FaqSection";
 import PageHeader from "@/app/common/utils/PageHeader";
 
 export const metadata = {
@@ -16,8 +15,7 @@ export default function Page() {
             <PageHeader
                 breadcrumbs={[
                     { label: "Accueil", href: "/" },
-                    { label: "Offres", href: "/offres" }
-                ]}
+                    { label: "Offres", href: "/offres" } ]}
                 uptitle="offres"
                 title={<>Une mission : <span className="css-word-italic text-blue-700">convertir.</span></>}
                 subtitle={<>Choisissez l&apos;offre qui vous convient le mieux. <br className="max-md:hidden" /> </>}
