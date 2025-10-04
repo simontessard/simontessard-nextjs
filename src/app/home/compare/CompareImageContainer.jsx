@@ -64,7 +64,7 @@ export default function CompareImageContainer() {
     }, []);
 
     return (
-        <div className="grid grid-cols-1 xl:grid-cols-4 gap-y-6 gap-x-4 mb-8 xl:mb-10 2xl:mb-12">
+        <div className="grid grid-cols-1 xl:grid-cols-4 gap-y-6 gap-x-4">
             {/* Avant */}
             <Card data={avantData} />
 
