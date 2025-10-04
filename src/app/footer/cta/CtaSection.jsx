@@ -9,7 +9,9 @@ import Uptitle from "@/app/common/utils/Uptitle";
 export default function CtaSection() {
     const pathname = usePathname();
     const isContact = pathname === "/contact";
-    if (isContact) return null;
+    const isMentionsLegales = pathname === "/mentions-legales";
+
+    if (isContact || isMentionsLegales) return null;
 
     return (
         <section id="cta" className="p-3 md:p-5">

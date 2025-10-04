@@ -1,4 +1,4 @@
-import LegalsContent from "@/app/legals/LegalsContent";
+import LegalsContent from "@/app/mentions-legales/LegalsContent";
 import PageHeader from "@/app/common/utils/PageHeader";
 
 export const metadata = {
@@ -13,7 +13,7 @@ export default function Page() {
             <PageHeader
                 breadcrumbs={[
                     { label: "Accueil", href: "/" },
-                    { label: "Mentions légales", href: "/legals" }
+                    { label: "Mentions légales", href: "/mentions-legales" }
                 ]}
                 title={<>Mentions <span className="css-word-italic text-blue-700">légales.</span></>}
             />

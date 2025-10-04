@@ -32,5 +32,5 @@ export const navigationSecondaryLinks = [
 ];
 
 export const contactLinks = [
-    { title: "Mentions légales", href: "/legals" }
+    { title: "Mentions légales", href: "/mentions-legales" }
 ];

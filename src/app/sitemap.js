@@ -37,7 +37,7 @@ export default function sitemap() {
             priority: 0.6,
         },
         {
-            url: 'https://simontessard.fr/legals',
+            url: 'https://simontessard.fr/mentions-legales',
             lastModified: new Date(),
             changeFrequency: 'yearly',
             priority: 0.2,

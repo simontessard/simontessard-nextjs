@@ -9,14 +9,15 @@ export default function LegalsContent() {
     useGSAP(() => {
         gsap.to(contentRef.current, {
             opacity: 1,
-            delay: 1,
+            y : 0,
+            delay: .7,
             duration: 1,
             ease: "power2.out",
         })
     }, []);
 
     return (
-        <section ref={contentRef} className="container opacity-0 text-black font-figtree tracking-tight pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
+        <section ref={contentRef} className="container translate-y-4 opacity-0 text-black font-figtree tracking-tight pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
 
             <p className="max-md:text-sm">
                 Conformément à la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, nous
