@@ -48,9 +48,9 @@ export default function AnimText({ tag = 'h1', className = '', useScrollTrigger 
         const tweenConfig = {
             y: 0,
             opacity: 1,
-            delay: .15,
-            stagger: 0.03,
-            duration: 0.7,
+            delay: .2,
+            stagger: 0.05,
+            duration: 0.5,
             ease: 'circ.out',
         };
 

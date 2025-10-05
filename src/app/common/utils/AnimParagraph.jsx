@@ -14,7 +14,7 @@ export default function AnimParagraph({ tag = 'p', className = '',
     const Tag = tag;
 
     const animConfig = useMemo(
-        () => ({ y: 0, opacity: 1, duration: 0.75, ease: "back.out(1.7)", }),
+        () => ({ y: 0, opacity: 1, duration: 0.8, delay : .1, ease: "back.out(1.7)", }),
         []
     );
 
