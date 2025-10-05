@@ -3,7 +3,6 @@ import { useRef } from "react";
 import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function ProjectCard({ project, animationKey }) {
     const cardRef = useRef(null);
@@ -22,12 +21,12 @@ export default function ProjectCard({ project, animationKey }) {
             gsap.to(imageRef.current, {
                 opacity: 1,
                 scale: 1,
-                duration: 1,
+                duration: .8,
                 ease: "power3.inOut",
                 scrollTrigger: {
                     trigger: cardRef.current,
                     start: "top 65%",
-                },
+                }
             });
 
             // Titre
@@ -63,8 +62,8 @@ export default function ProjectCard({ project, animationKey }) {
                         priority={false}
                     />
 
-                    <div className="absolute top-0 left-0 size-full bg-black/30 md:bg-black/60 opacity-100 md:opacity-0 md:group-hover:opacity-100
-                    flex justify-center items-center transition-opacity duration-500">
+                    <div className="absolute top-0 left-0 size-full bg-black/30 md:bg-black/60 opacity-0 md:group-hover:opacity-100
+                        flex justify-center items-center transition-opacity duration-500">
                         <div className="md:scale-75 md:group-hover:scale-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-500
                         rounded-md flex size-fit items-center gap-1
                         font-figtree uppercase tracking-tight text-white max-md:text-sm pl-4 pr-3 py-2">

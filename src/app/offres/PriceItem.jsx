@@ -28,7 +28,7 @@ export default function PriceItem({ title, citation, price, desc, list = [], pop
                     </p>
 
                     <AnimParagraph useScrollTrigger tag="p"
-                        className="text-center font-chivo font-medium tracking-tighter mb-2 md:mb-4 text-3xl xl:text-4xl text-black">
+                        className="text-center font-chivo font-medium tracking-tighter mb-2 md:mb-4 text-2xl xl:text-3xl text-black">
                         <ShinyText
                             text={price} disabled={false}
                             speed={2.5} className='bg-black'
