@@ -37,7 +37,7 @@ export default function Nav() {
                 {/* Fond animé */}
                 <span
                     aria-hidden="true"
-                    className="absolute top-1/2 -translate-y-1/2 h-[calc(100%-1rem)] bg-blue-primary/7 rounded-md transition-all duration-500 ease-out"
+                    className="absolute top-1/2 -translate-y-1/2 h-[calc(100%-1rem)] bg-blue-primary/90 rounded-2xl transition-all duration-500 ease-out"
                     style={{
                         left: `${backgroundStyle.left}px`,
                         width: `${backgroundStyle.width}px`,
@@ -45,28 +45,35 @@ export default function Nav() {
                     }}
                 />
 
-                {navItems.map((item, index) => (
-                    <li
-                        key={index}
-                        ref={el => itemRefs.current[index] = el}
-                        className="size-fit relative z-10"
-                        onMouseEnter={() => setHoveredIndex(index)}
-                    >
-                        <Link
-                            href={item.path || '/'}
-                            className="group flex relative text-black py-[1.15rem] font-figtree px-4 size-fit"
+                {navItems.map((item, index) => {
+                    const isHovered = index === hoveredIndex;
+                    const shouldBeWhite = isHovered || (index === activeIndex && hoveredIndex === null);
+
+                    return (
+                        <li
+                            key={index}
+                            ref={el => itemRefs.current[index] = el}
+                            className="size-fit relative z-10"
+                            onMouseEnter={() => setHoveredIndex(index)}
                         >
-                            <span className="relative inline-block overflow-hidden size-fit mx-auto">
-                                <span className="inline-block md:group-hover:-translate-y-full transition-transform duration-700 ease-in-out">
-                                    {item.label}
+                            <Link
+                                href={item.path || '/'}
+                                className={`group flex relative py-[1.15rem] font-figtree px-4 size-fit transition-colors duration-300 ${
+                                    shouldBeWhite ? 'text-white' : 'text-black'
+                                }`}
+                            >
+                                <span className="relative inline-block overflow-hidden size-fit mx-auto">
+                                    <span className="inline-block md:group-hover:-translate-y-full transition-transform duration-700 ease-in-out">
+                                        {item.label}
+                                    </span>
+                                    <span className="absolute left-0 bottom-0 translate-y-full md:group-hover:translate-y-0 transition-transform duration-700 ease-in-out inline-block size-fit">
+                                        {item.label}
+                                    </span>
                                 </span>
-                                <span className="absolute left-0 bottom-0 translate-y-full md:group-hover:translate-y-0 transition-transform duration-700 ease-in-out inline-block size-fit">
-                                    {item.label}
-                                </span>
-                            </span>
-                        </Link>
-                    </li>
-                ))}
+                            </Link>
+                        </li>
+                    );
+                })}
             </ul>
         </nav>
     );
