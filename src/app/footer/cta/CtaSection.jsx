@@ -16,8 +16,8 @@ export default function CtaSection() {
     return (
         <section id="cta" className="p-3 md:p-5">
 
-            <div style={{backgroundImage: "url(/cta.png)"}} className="bg-gradient-primary bg-center bg-cover rounded-xl">
-                <div className="container relative flex flex-col items-center justify-center shadow-sm overflow-hidden
+            <div style={{backgroundImage: "url(/cta.png)"}} className="container bg-gradient-primary bg-center bg-cover rounded-xl">
+                <div className="relative flex flex-col items-center justify-center shadow-sm overflow-hidden
                      py-12 md:py-16 px-6 md:px-8 xl:px-30 2xl:px-40 rounded-xl md:rounded-2xl text-center text-white size-full">
 
                     <Uptitle className="text-white" useScrollTrigger>

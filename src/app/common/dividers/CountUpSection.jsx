@@ -3,7 +3,7 @@ import numbers from '@/data/numbers.json';
 
 export default function CountUpSection() {
     return (
-        <section className="bg-gradient-primary py-14">
+        <section style={{backgroundImage: "url(/cta.png)"}} className="bg-cover bg-center py-14">
             <ul className="container flex max-md:flex-col md:justify-between gap-y-10">
                 {numbers.map((stat, index) => (
                     <NumberCard key={`${stat.label}-${index}`} stat={stat} index={index} />

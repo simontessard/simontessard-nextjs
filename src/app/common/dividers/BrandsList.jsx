@@ -26,8 +26,8 @@ export default function BrandsList({ brands = [], title = "" }) {
     },);
 
     return (
-        <div ref={containerRef}
-            className="js-brand--list py-8 xl:py-14 bg-gradient-primary relative overflow-hidden w-full"
+        <div ref={containerRef} style={{backgroundImage: "url(/cta.png)"}}
+            className="js-brand--list bg-cover bg-center py-8 xl:py-14 relative overflow-hidden w-full"
         >
             {title && (
                 <Uptitle
