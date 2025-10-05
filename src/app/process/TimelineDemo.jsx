@@ -13,7 +13,7 @@ export default function TimelineDemo() {
                     </p>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
                         <Image
-                            src="/about/clavier-souris.jpg"
+                            src="/about/clavier-souris.png"
                             alt="Main gauche sur le clavier et main droite sur une souris"
                             width={400}
                             height={400}

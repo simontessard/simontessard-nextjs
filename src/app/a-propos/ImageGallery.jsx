@@ -10,7 +10,7 @@ export default function ImageGallery() {
 
     const images = [
         {
-            src: "/about/clavier-souris.jpg",
+            src: "/about/clavier-souris.png",
             alt: "Setup clavier et souris"
         },
         {
