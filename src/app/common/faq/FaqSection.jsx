@@ -21,7 +21,7 @@ export default function FAQSection() {
 
                 <hr className="text-black-primary/15 mb-6 md:mb-8" />
 
-                <div className="relative flex max-md:flex-col-reverse gap-6 md:gap-10 xl:gap-14 justify-between">
+                <div className="relative flex max-md:flex-col-reverse gap-6 md:gap-10 justify-between">
                     <FaqInfo />
                     <FaqList />
                 </div>

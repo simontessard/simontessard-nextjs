@@ -63,16 +63,15 @@ export default function FaqList() {
                     key={index}
                     onClick={() => toggle(index)}
                     className={[
-                        'cursor-pointer group shadow-xs transition-colors duration-300 pt-4 px-4 pb-3 md:pb-4 xl:pb-5 md:px-5 md:pt-5 xl:pt-6 xl:px-6 rounded-xl md:rounded-2xl mb-4 md:mb-6',
+                        'cursor-pointer group shadow-xs transition-colors duration-300 pt-4 px-4 pb-3 md:pb-4 md:px-5 xl:px-6 ' +
+                        'rounded-xl md:rounded-2xl mb-4 md:mb-5',
                         item.open ? 'bg-theme-primary' : 'bg-white',
                         !item.open && 'md:hover:bg-theme-primary',
                     ]
                         .filter(Boolean)
-                        .join(' ')}
-                >
-                    <div className="flex justify-between items-center gap-2 mb-1">
-                        <h3 className={[
-                                'transition-colors duration-300 font-figtree md:text-lg xl:text-xl font-medium',
+                        .join(' ')}>
+                    <div className="flex justify-between items-center gap-2">
+                        <h3 className={['transition-colors duration-300 font-figtree md:text-lg font-medium',
                                 item.open ? 'text-white' : 'md:group-hover:text-white',
                             ].join(' ')}>
                             <span>
@@ -80,8 +79,7 @@ export default function FaqList() {
                             </span>
                         </h3>
 
-                        <svg className={[
-                                'shrink-0 size-8 md:size-10 border-2 border-white rounded-full p-1.5 md:p-2 transition-colors duration-300',
+                        <svg className={[ 'shrink-0 size-8 md:size-10 border-2 border-white rounded-full p-1.5 md:p-2 transition-colors duration-300',
                                 item.open ? 'bg-white' : 'bg-gradient-primary '
                             ].join(' ')}
                             width="20"
@@ -111,17 +109,13 @@ export default function FaqList() {
                         </svg>
                     </div>
 
-                    <div
-                        className="overflow-hidden transition-all duration-300 ease-out"
+                    <div className="overflow-hidden transition-all duration-300 ease-out"
                         ref={(el) => setAnswerRef(el, index)}
                         style={{ maxHeight: 0, opacity: 0 }}
                     >
-                        <p
-                            className={[
-                                'max-md:text-sm font-figtree font-light transition-colors duration-300',
+                        <p className={[ 'max-md:text-sm font-figtree font-light transition-colors duration-300',
                                 item.open ? 'text-white' : 'md:group-hover:text-white',
-                            ].join(' ')}
-                        >
+                            ].join(' ')}>
                             {item.answer}
                         </p>
                     </div>

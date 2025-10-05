@@ -16,9 +16,7 @@ export default function PriceItem({ title, citation, price, desc, list = [], pop
 
                     {popular && <PopularBadge />}
 
-                    <AnimText
-                        useScrollTrigger
-                        tag="h3"
+                    <AnimText useScrollTrigger tag="h3"
                         className="text-center text-black text-2xl md:text-3xl font-figtree font-bold mb-1 md:mb-2">
                         {title}
                     </AnimText>
