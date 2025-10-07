@@ -41,8 +41,7 @@ export default function Header() {
         <>
             <header ref={headerRef}
                 className="js-header fixed left-0 top-4 md:top-3 2xl:top-5 z-101 -translate-y-[150%] pointer-events-none
-                flex items-center w-full py-2 md:py-4 transition-colors duration-500"
-            >
+                flex items-center w-full py-2 md:py-4 transition-colors duration-500">
                 <div className="container">
                     <div className="size-fit max-lg:flex max-lg:justify-between items-center bg-white rounded-xl px-3 py-1.5 lg:grid lg:grid-cols-5 w-full">
                         <BackHome />

@@ -9,6 +9,7 @@ import CompareImageSection from "@/app/home/compare/CompareImageSection";
 import CountUpSection from "@/app/common/dividers/CountUpSection";
 import WhySection from "@/app/home/why/WhySection";
 import technos from '@/data/technos.json';
+import ScrollBaseAnimation from "@/app/common/utils/Test";
 
 export const metadata = {
     title: "Simon Tessard | Création de sites web",
@@ -23,6 +24,13 @@ export default function Home() {
       <>
           <main>
               <HeroSection/>
+              <ScrollBaseAnimation
+                  baseVelocity={3}
+                  scrollDependent={true}
+                  clasname='font-medium font-figtree tracking-tight leading-[90%] pt-6 md:pt-10'
+              >
+                  L'expérience avant tout ·
+              </ScrollBaseAnimation>
               <CompareImageSection/>
               <Citation/>
               <AboutSection/>
