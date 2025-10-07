@@ -30,7 +30,7 @@ export default function ProjectsFilters({ projects, onFilter }) {
     }, []);
 
     return (
-        <div className="flex flex-wrap gap-3 mb-6 md:mb-8">
+        <div className="flex flex-wrap md:max-w-xl gap-3 mb-6 md:mb-8">
             {allTags.map((tag, index) => (
                 <button
                     key={tag}

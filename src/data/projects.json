@@ -4,7 +4,7 @@
     "description": "Site e-commerce pour des kinésithérapeutes, mettant en avant l'entreprise et son savoir-faire, avec catalogue de produits, panier et paiement en ligne.",
     "image": "/projects/project-tt-pro.jpg",
     "date" : "2025",
-    "tags": ["E-commerce", "Santé"],
+    "tags": ["Site Complet" ,"E-commerce", "Santé"],
     "logo": "/brands/logo-tt-pro.png",
     "url": "https://pros.training-therapie.fr/"
   },
@@ -13,7 +13,7 @@
     "description": "Site vitrine pour un festival de cinéma, présentant les films, le programme, les invités présents, des actualités et des informations pratiques génériques.",
     "image": "/projects/project-fdd.jpg",
     "date" : "2025",
-    "tags": ["Vitrine", "Cinéma"],
+    "tags": ["Site Complet","Vitrine", "Cinéma"],
     "logo": "/brands/logo-ffd.webp",
     "url": "https://filmdedemain.fr"
   },
@@ -22,7 +22,7 @@
     "description": "Site vitrine pour une chaîne d’hôtels, mettant en avant ses services et présentant également les activités locales afin d’aider le visiteur à se projeter.",
     "image": "/projects/mockup.jpg",
     "date" : "2024",
-    "tags": ["Vitrine", "Tourisme"],
+    "tags": ["Site Complet","Vitrine", "Tourisme"],
     "logo": "/brands/logo-iniva.png",
     "url": "https://inivatourism.com/"
   },
@@ -31,7 +31,7 @@
     "description": "Un site vitrine pour un graphiste freelance, avec un portfolio et ses projets ainsi que les témoignages de ses clients et des sections appel à l'action.",
     "image": "/projects/mockup-maxim.jpg",
     "date" : "2025",
-    "tags": ["Vitrine", "Graphisme"],
+    "tags": ["One Page","Vitrine", "Graphisme"],
     "logo": "/brands/logo-maxime.png",
     "url": "https://maximelebec.fr"
   },
@@ -40,7 +40,7 @@
     "description": "Site vitrine pour un festival de cinéma à Vannes, présentant les films, le programme, les partenaires, les actualités et des informations pratiques.",
     "image": "/projects/project-cc.jpg",
     "date" : "2025",
-    "tags": ["Vitrine", "Cinéma"],
+    "tags": ["Site Complet","Vitrine", "Cinéma"],
     "logo": "/brands/logo-fcc.png",
     "url": "https://festival-cinecitoyen.ouest-france.fr/"
   },
@@ -49,16 +49,16 @@
     "description": "Site vitrine pour des kinésithérapeutes, mettant en avant l'entreprise et son savoir-faire.",
     "image": "/projects/project-tt.jpg",
     "date" : "2025",
-    "tags": ["Vitrine", "Santé"],
+    "tags": ["Site Complet","Vitrine", "Santé"],
     "logo": "/brands/logo-tt.png",
     "url": "https://training-therapie.fr/"
   },
   {
     "title": "Melvin Hamon",
     "description": "Un site vitrine pour un graphiste du sport freelance, avec un portfolio de projets. Ses collaborations sont mises en avant, on peut aussi prendre RDV.",
-    "image": "/projects/mockup-melvin.jpg",
+    "image": "/projects/project-melvin.png",
     "date" : "2025",
-    "tags": ["Vitrine", "Graphisme"],
+    "tags": ["One Page","Vitrine", "Graphisme", "Photographie"],
     "logo": "/brands/logo-maxime.png",
     "url": "https://melvinhamon.fr"
   }
