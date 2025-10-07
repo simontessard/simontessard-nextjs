@@ -40,8 +40,8 @@ export default function ProjectsFilters({ projects, onFilter }) {
                         key={tag}
                         ref={(el) => (buttonsRef.current[index] = el)}
                         onClick={() => handleFilter(tag, index)}
-                        className={`cursor-pointer scale-0 translate-y-2 px-3 md:px-4.5 py-1.5 md:py-2 font-medium rounded-full 
-                    shadow-sm font-figtree text-xs md:text-sm size-fit transition ${
+                        className={`cursor-pointer scale-0 translate-y-2 px-4 py-1.5 font-medium rounded-full 
+                    shadow-sm font-figtree text-sm size-fit transition ${
                             selectedTag === tag
                                 ? "bg-blue-700 text-white"
                                 : "bg-white md:hover:bg-blue-700 md:hover:text-white"
