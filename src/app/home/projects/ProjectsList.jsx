@@ -11,10 +11,13 @@ export default function ProjectsList() {
         target: container,
         offset: ['start start', 'end end'],
     });
+
+    const featuredProjects = projects.filter(project => project.featured);
+
     return (
             <div ref={container}>
                 <section className="text-white w-full bg-white-secondary">
-                    {projects.slice(0, 5).map((project, i) => {
+                    {featuredProjects.map((project, i) => {
                         const targetScale = 1 - (projects.length - i) * 0.05;
                         return (
                             <Card

@@ -28,7 +28,7 @@ export default function ProjectsList() {
     }, [animVersion, filteredProjects.length]);
 
     return (
-        <section className="container pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
+        <section className="container flex max-lg:flex-col gap-8 lg:gap-20 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
             <ProjectsFilters projects={projects} onFilter={setSelectedTag} />
 
             <div className="grid grid-cols-1 gap-y-12 lg:gap-y-14 gap-x-8 lg:grid-cols-2">

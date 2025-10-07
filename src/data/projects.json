@@ -3,63 +3,70 @@
     "title": "Training Thérapie Pro",
     "description": "Site e-commerce pour des kinésithérapeutes, mettant en avant l'entreprise et son savoir-faire, avec catalogue de produits, panier et paiement en ligne.",
     "image": "/projects/project-tt-pro.jpg",
-    "date" : "2025",
-    "tags": ["Site Complet" ,"E-commerce", "Santé"],
+    "date": "2025",
+    "tags": ["Site Complet", "E-commerce", "Santé"],
     "logo": "/brands/logo-tt-pro.png",
-    "url": "https://pros.training-therapie.fr/"
+    "url": "https://pros.training-therapie.fr/",
+    "featured": true
   },
   {
     "title": "Festival du Film de Demain",
     "description": "Site vitrine pour un festival de cinéma, présentant les films, le programme, les invités présents, des actualités et des informations pratiques génériques.",
     "image": "/projects/project-fdd.jpg",
-    "date" : "2025",
-    "tags": ["Site Complet","Vitrine", "Cinéma"],
+    "date": "2025",
+    "tags": ["Site Complet", "Vitrine", "Cinéma"],
     "logo": "/brands/logo-ffd.webp",
-    "url": "https://filmdedemain.fr"
+    "url": "https://filmdedemain.fr",
+    "featured": false
   },
   {
     "title": "Iniva Hôtel",
-    "description": "Site vitrine pour une chaîne d’hôtels, mettant en avant ses services et présentant également les activités locales afin d’aider le visiteur à se projeter.",
+    "description": "Site vitrine pour une chaîne d'hôtels, mettant en avant ses services et présentant également les activités locales afin d'aider le visiteur à se projeter.",
     "image": "/projects/mockup.jpg",
-    "date" : "2024",
-    "tags": ["Site Complet","Vitrine", "Tourisme"],
+    "date": "2024",
+    "tags": ["Site Complet", "Vitrine", "Tourisme"],
     "logo": "/brands/logo-iniva.png",
-    "url": "https://inivatourism.com/"
+    "url": "https://inivatourism.com/",
+    "featured": true
   },
   {
     "title": "Maxime Le Bec",
     "description": "Un site vitrine pour un graphiste freelance, avec un portfolio et ses projets ainsi que les témoignages de ses clients et des sections appel à l'action.",
     "image": "/projects/mockup-maxim.jpg",
-    "date" : "2025",
-    "tags": ["One Page","Vitrine", "Graphisme"],
+    "date": "2025",
+    "tags": ["One Page", "Vitrine", "Graphisme"],
     "logo": "/brands/logo-maxime.png",
-    "url": "https://maximelebec.fr"
+    "url": "https://maximelebec.fr",
+    "featured": true
   },
   {
     "title": "Festival Ciné Citoyen",
     "description": "Site vitrine pour un festival de cinéma à Vannes, présentant les films, le programme, les partenaires, les actualités et des informations pratiques.",
     "image": "/projects/project-cc.jpg",
-    "date" : "2025",
-    "tags": ["Site Complet","Vitrine", "Cinéma"],
+    "date": "2025",
+    "tags": ["Site Complet", "Vitrine", "Cinéma"],
     "logo": "/brands/logo-fcc.png",
-    "url": "https://festival-cinecitoyen.ouest-france.fr/"
+    "url": "https://festival-cinecitoyen.ouest-france.fr/",
+    "featured": true
   },
   {
     "title": "Training Thérapie",
     "description": "Site vitrine pour des kinésithérapeutes, mettant en avant l'entreprise et son savoir-faire.",
     "image": "/projects/project-tt.jpg",
-    "date" : "2025",
-    "tags": ["Site Complet","Vitrine", "Santé"],
+    "date": "2025",
+    "tags": ["Site Complet", "Vitrine", "Santé"],
     "logo": "/brands/logo-tt.png",
-    "url": "https://training-therapie.fr/"
+    "url": "https://training-therapie.fr/",
+    "featured": false
   },
   {
     "title": "Melvin Hamon",
     "description": "Un site vitrine pour un graphiste du sport freelance, avec un portfolio de projets. Ses collaborations sont mises en avant, on peut aussi prendre RDV.",
     "image": "/projects/project-melvin.png",
-    "date" : "2025",
-    "tags": ["One Page","Vitrine", "Graphisme", "Photographie"],
+    "date": "2025",
+    "tags": ["One Page", "Vitrine", "Graphisme", "Photographie"],
     "logo": "/brands/logo-maxime.png",
-    "url": "https://melvinhamon.fr"
+    "url": "https://melvinhamon.fr",
+    "featured": true
   }
 ]

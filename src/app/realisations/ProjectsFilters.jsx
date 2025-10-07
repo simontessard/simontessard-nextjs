@@ -21,8 +21,8 @@ export default function ProjectsFilters({ projects, onFilter }) {
         gsap.to(buttonsRef.current, {
                 scale: 1,
                 y: 0,
-                duration: 1,
-                stagger: 0.08,
+                duration: .7,
+                stagger: 0.04,
                 delay : .3,
                 ease: "power3.out",
             }
@@ -30,21 +30,26 @@ export default function ProjectsFilters({ projects, onFilter }) {
     }, []);
 
     return (
-        <div className="flex flex-wrap md:max-w-xl gap-3 mb-6 md:mb-8">
-            {allTags.map((tag, index) => (
-                <button
-                    key={tag}
-                    ref={(el) => (buttonsRef.current[index] = el)}
-                    onClick={() => handleFilter(tag, index)}
-                    className={`cursor-pointer scale-0 translate-y-2 px-3 md:px-4.5 py-1.5 md:py-2 font-medium rounded-full shadow-sm font-figtree text-xs md:text-sm transition ${
-                        selectedTag === tag
-                            ? "bg-blue-700 text-white"
-                            : "bg-white md:hover:bg-blue-700 md:hover:text-white"
-                    }`}
-                >
-                    {tag}
-                </button>
-            ))}
+        <div className="relative">
+            <div className="lg:sticky lg:top-28 flex flex-wrap lg:flex-col gap-3">
+                <p className="font-figtree tracking-tight max-md:text-sm underline underline-offset-2 md:mb-1">
+                    Trier :
+                </p>
+                {allTags.map((tag, index) => (
+                    <button
+                        key={tag}
+                        ref={(el) => (buttonsRef.current[index] = el)}
+                        onClick={() => handleFilter(tag, index)}
+                        className={`cursor-pointer scale-0 translate-y-2 px-3 md:px-4.5 py-1.5 md:py-2 font-medium rounded-full 
+                    shadow-sm font-figtree text-xs md:text-sm size-fit transition ${
+                            selectedTag === tag
+                                ? "bg-blue-700 text-white"
+                                : "bg-white md:hover:bg-blue-700 md:hover:text-white"
+                        }`}>
+                        {tag}
+                    </button>
+                ))}
+            </div>
         </div>
     );
 }
