@@ -28,7 +28,7 @@ export default function Nav() {
     }, [hoveredIndex, activeIndex, pathname]);
 
     return (
-        <nav className="max-lg:hidden md:col-span-3 md:mx-auto">
+        <nav className="max-lg:hidden md:col-span-3 md:mx-auto bg-white rounded-full">
             <ul
                 ref={navRef}
                 className="js-nav pointer-events-auto rounded-lg flex items-center gap-1 xl:gap-3 size-fit px-8 relative"
@@ -37,7 +37,7 @@ export default function Nav() {
                 {/* Fond animé */}
                 <span
                     aria-hidden="true"
-                    className="absolute top-1/2 -translate-y-1/2 h-[calc(100%-1rem)] bg-blue-primary/90 rounded-2xl transition-all duration-500 ease-out"
+                    className="absolute top-1/2 -translate-y-1/2 h-[calc(100%-1rem)] bg-blue-700 rounded-full transition-all duration-500 ease-out"
                     style={{
                         left: `${backgroundStyle.left}px`,
                         width: `${backgroundStyle.width}px`,
@@ -58,15 +58,15 @@ export default function Nav() {
                         >
                             <Link
                                 href={item.path || '/'}
-                                className={`group flex relative py-[1.15rem] font-figtree px-4 size-fit transition-colors duration-300 ${
+                                className={`group flex relative py-4 font-figtree px-4 size-fit transition-colors duration-300 ${
                                     shouldBeWhite ? 'text-white' : 'text-black'
                                 }`}
                             >
                                 <span className="relative inline-block overflow-hidden size-fit mx-auto">
-                                    <span className="inline-block md:group-hover:-translate-y-full transition-transform duration-700 ease-in-out">
+                                    <span className="inline-block md:group-hover:-translate-y-full transition-transform duration-500 ease-in-out">
                                         {item.label}
                                     </span>
-                                    <span className="absolute left-0 bottom-0 translate-y-full md:group-hover:translate-y-0 transition-transform duration-700 ease-in-out inline-block size-fit">
+                                    <span className="absolute left-0 bottom-0 translate-y-full md:group-hover:translate-y-0 transition-transform duration-500 ease-in-out inline-block size-fit">
                                         {item.label}
                                     </span>
                                 </span>

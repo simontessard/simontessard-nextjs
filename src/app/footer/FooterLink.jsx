@@ -12,10 +12,10 @@ export default function FooterLink({ title, href, arrow = false }) {
                 className="relative flex gap-1 md:gap-1.5 items-center size-fit"
             >
                 <span className="relative inline-block overflow-hidden size-fit">
-                    <span className="inline-block md:group-hover:-translate-y-full transition-transform duration-700 ease-in-out">
+                    <span className="inline-block md:group-hover:-translate-y-full transition-transform duration-500 ease-in-out">
                         {title}
                     </span>
-                    <span className="absolute left-0 bottom-0 translate-y-full md:group-hover:translate-y-0 transition-transform duration-700 ease-in-out inline-block size-fit">
+                    <span className="absolute left-0 bottom-0 translate-y-full md:group-hover:translate-y-0 transition-transform duration-500 ease-in-out inline-block size-fit">
                         {title}
                     </span>
                 </span>

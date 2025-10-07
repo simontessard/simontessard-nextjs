@@ -151,14 +151,14 @@ export const AnimatedTestimonials = ({
                         <button
                             aria-label="Témoignage précédent"
                             onClick={handlePrev}
-                            className="group/button cursor-pointer flex size-12 items-center justify-center rounded-xl bg-black-primary"
+                            className="group/button cursor-pointer flex size-12 items-center justify-center rounded-full bg-black-primary"
                         >
                             <IconArrowLeft className="size-5 md:size-6 text-white transition-transform duration-300" />
                         </button>
                         <button
                             aria-label="Témoignage suivant"
                             onClick={handleNext}
-                            className="group/button cursor-pointer flex size-12 items-center justify-center rounded-xl bg-black-primary"
+                            className="group/button cursor-pointer flex size-12 items-center justify-center rounded-full bg-black-primary"
                         >
                             <IconArrowRight className="size-5 md:size-6 text-white transition-transform duration-300" />
                         </button>
