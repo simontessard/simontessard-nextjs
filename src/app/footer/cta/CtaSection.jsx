@@ -34,7 +34,7 @@ export default function CtaSection() {
 
                     <AnimParagraph
                         useScrollTrigger
-                        tag="p"
+                        tag="h3"
                         className="container font-figtree md:text-lg font-light tracking-tight text-white md:max-w-3xl mb-5 md:mb-6 xl:mb-10">
                         C&apos;est le moment de surprendre vos visiteurs avec une vitrine repensée.
                     </AnimParagraph>
