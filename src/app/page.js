@@ -13,7 +13,7 @@ import ScrollBaseAnimation from "@/app/common/utils/Test";
 
 export const metadata = {
     title: "Simon Tessard | Création de sites web",
-    description: "Portfolio de Simon TESSARD. Développeur web freelance, expert en création de sites performants, design moderne et SEO pour maximiser votre visibilité en ligne.",
+    description: "Portfolio de Simon TESSARD. Développeur web freelance, expert en création de sites performants, design moderne, SEO pour maximiser votre visibilité en ligne.",
     alternates: {
         canonical: "https://simontessard.fr/",
     },

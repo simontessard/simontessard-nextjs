@@ -11,7 +11,7 @@ export default function Citation() {
             <div className="container flex flex-col items-center gap-10 md:gap-14">
                 <AnimText
                     useScrollTrigger
-                    tag="h3"
+                    tag="p"
                     className="text-white font-figtree font-medium tracking-tight text-center
                      text-xl md:text-3xl xl:text-4xl 2xl:text-5xl
                      leading-8 md:leading-10 xl:leading-13 2xl:leading-15"
