@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function Page() {
     return (
-        <main className="flex flex-col  items-center bg-white-primary text-black pt-20 lg:pt-32.5">
+        <main className="flex flex-col  items-center bg-white-primary text-black">
 
             <PageHeader
                 breadcrumbs={[

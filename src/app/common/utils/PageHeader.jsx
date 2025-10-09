@@ -7,32 +7,34 @@ import FooterDivider from "@/app/footer/FooterDivider";
 
 export default function PageHeader({ uptitle, title, subtitle, breadcrumbs }) {
     return (
-        <div className="container">
-            <FooterDivider useScrollTrigger={false} className="mb-3 md:mb-4"/>
+        <div className="bg-white pt-20 lg:pt-32.5 w-full rounded-b-xl md:rounded-b-3xl mb-6 md:mb-8 xl:mb-10">
+            <div className="container">
+                <FooterDivider useScrollTrigger={false} className="mb-3 md:mb-4"/>
 
-            {breadcrumbs && (
-                <Breadcrumbs items={breadcrumbs} />
-            )}
-
-            <div className="bg-white py-8 md:py-12 xl:py-14 w-full rounded-xl shadow-xs mb-6 md:mb-8">
-
-                {uptitle && (
-                    <Uptitle>
-                        {uptitle}
-                    </Uptitle>
+                {breadcrumbs && (
+                    <Breadcrumbs items={breadcrumbs} />
                 )}
 
-                <AnimText tag="h1" className="css-title-section">
-                    {title}
-                </AnimText>
+                <div className="pt-8 pb-10 md:pt-10 md:pb-14 xl:pb-20 w-full">
 
-                {subtitle && (
-                    <AnimParagraph
-                        tag="p"
-                        className="css-subtitle-section container mt-4 md:mt-5 xl:mt-6 md:max-w-3xl">
-                        {subtitle}
-                    </AnimParagraph>
-                )}
+                    {uptitle && (
+                        <Uptitle>
+                            {uptitle}
+                        </Uptitle>
+                    )}
+
+                    <AnimText tag="h1" className="css-title-section">
+                        {title}
+                    </AnimText>
+
+                    {subtitle && (
+                        <AnimParagraph
+                            tag="p"
+                            className="css-subtitle-section container mt-4 md:mt-5 xl:mt-6 md:max-w-3xl">
+                            {subtitle}
+                        </AnimParagraph>
+                    )}
+                </div>
             </div>
         </div>
     );

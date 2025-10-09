@@ -32,9 +32,6 @@ export default function ProjectsFilters({ projects, onFilter }) {
     return (
         <div className="relative">
             <div className="lg:sticky lg:top-28 flex flex-wrap lg:flex-col gap-3">
-                <p className="font-figtree tracking-tight max-md:text-sm underline underline-offset-2 md:mb-1">
-                    Trier :
-                </p>
                 {allTags.map((tag, index) => (
                     <button
                         key={tag}

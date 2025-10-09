@@ -6,7 +6,7 @@ export default function ContactSection() {
 
     return (
         <section className="bg-white-primary flex flex-col items-center min-h-screen
-        pt-20 lg:pt-32.5 pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
+         pb-16 md:pb-18 xl:pb-22 2xl:pb-26">
 
             <PageHeader
                 breadcrumbs={[
