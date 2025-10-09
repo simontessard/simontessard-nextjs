@@ -15,7 +15,7 @@ export default function HeroSection() {
 
                 <HeroBackground />
 
-                <div className="relative z-51 container flex justify-between items-end md:pt-24">
+                <div className="relative z-51 container flex justify-between items-end pt-16 md:pt-24">
                     <div className="flex flex-col items-center mx-auto">
                         <Uptitle className="text-white">
                             Création de sites web
