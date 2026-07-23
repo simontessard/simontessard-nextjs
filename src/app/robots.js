@@ -3,10 +3,9 @@ export default function robots() {
     return {
         rules: [
             {
-                userAgent: '*',   // tous les robots
-                allow: '/',       // autorise tout le site
+                userAgent: '*',   // Tous les robots
+                disallow: '/',    // Interdit tout le site
             },
         ],
-        sitemap: 'https://simontessard.fr/sitemap.xml',
     };
 }
